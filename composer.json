@@ -1,0 +1,23 @@
+{
+    "name" : "quiqqer/template-qui",
+    "type" : "quiqqer-template",
+    "description" : "QUI Template",
+
+    "version" : "dev-master",
+    "license" : "MIT",
+
+    "authors" : [{
+        "name": "Henning Leutz",
+        "email": "leutz@pcsg.de",
+        "homepage": "http://www.pcsg.de",
+        "role": "Developer"
+    }],
+
+    "support" : {
+        "email" : "support@pcsg.de"
+    },
+
+    "require": {
+        "quiqqer/quiqqer" : "~1"
+    }
+}
