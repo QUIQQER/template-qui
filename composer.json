@@ -18,6 +18,7 @@
     },
 
     "require": {
-        "quiqqer/quiqqer" : "*@dev"
+        "quiqqer/quiqqer" : "*@dev",
+        "quiqqer/block"   : "*@dev"
     }
 }

@@ -1,0 +1,27 @@
+
+<div class="grid-100 mobile-grid-100 grid-parent page-multible-content" role="main">
+
+    <div class="page-multible-left">
+
+        <div class="page-box">
+            <div class="page-box-inner">
+                test
+            </div>
+        </div>
+
+    </div>
+
+    <div class="page-multible-right">
+        <div class="page-box">
+            {if $Site->getAttribute('image_emotion')}
+            <div class="page-image">
+                {image src=$Site->getAttribute('image_emotion') width=1200}
+            </div>
+            {/if}
+
+            <div class="page-box-inner">
+                {$Site->getAttribute('content')}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+
+.page-multible-left {
+    float: left;
+    padding-right: 10px;
+    width: 30%;
+}
+
+.page-multible-left .page-box {
+    margin-bottom: 20px;
+}
+
+.page-multible-right {
+    float: left;
+    padding-left: 10px;
+    width: 70%;
+}

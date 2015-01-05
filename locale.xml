@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locales>
+
+    <groups name="quiqqer/template-qui" datatype="php,js">
+        <locale name="area.footer.left.title">
+            <de><![CDATA[Footer links]]></de>
+            <en><![CDATA[Footer left]]></en>
+        </locale>
+        <locale name="area.footer.left.description">
+            <de><![CDATA[Linke Spalte im Footer]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+        <locale name="area.footer.right.title">
+            <de><![CDATA[Footer rechts]]></de>
+            <en><![CDATA[Footer right]]></en>
+        </locale>
+        <locale name="area.footer.right.description">
+            <de><![CDATA[Rechte Spalte im Footer]]></de>
+            <en><![CDATA[Right side in the footer]]></en>
+        </locale>
+        <locale name="area.sidebar.left.title">
+            <de><![CDATA[Linke Sidebar]]></de>
+            <en><![CDATA[Left sidebar]]></en>
+        </locale>
+        <locale name="area.sidebar.left.description">
+            <de><![CDATA[Links neben dem Inhalt]]></de>
+            <en><![CDATA[Left side in the footer]]></en>
+        </locale>
+        <locale name="area.sidebar.right.title">
+            <de><![CDATA[Rechte Sidebar]]></de>
+            <en><![CDATA[Right sidebar]]></en>
+        </locale>
+        <locale name="area.sidebar.right.description">
+            <de><![CDATA[Rechts neben dem Inhalt]]></de>
+            <en><![CDATA[Right side in the footer]]></en>
+        </locale>
+    </groups>
+
+</locales>

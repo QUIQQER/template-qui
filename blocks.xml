@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiqqer>
+    <blocks>
+
+        <!-- defined blocks in the template -->
+        <templateAreas>
+            <!-- global blocks -->
+            <areas>
+                <area name="footerLeft">
+                    <title>
+                        <locale group="quiqqer/template-qui" var="area.footer.left.title" />
+                    </title>
+                    <description>
+                        <locale group="quiqqer/template-qui" var="area.footer.left.description" />
+                    </description>
+                </area>
+                <area name="footerRight">
+                    <title>
+                        <locale group="quiqqer/template-qui" var="area.footer.right.title" />
+                    </title>
+                    <description>
+                        <locale group="quiqqer/template-qui" var="area.footer.right.description" />
+                    </description>
+                </area>
+            </areas>
+
+            <!-- specific type blocks -->
+            <types>
+                <type type="quiqqer/template-qui:types/leftSidebar">
+                    <area name="leftSidebar">
+                        <title>
+                            <locale group="quiqqer/template-qui" var="area.sidebar.left.title" />
+                        </title>
+                        <description>
+                            <locale group="quiqqer/template-qui" var="area.sidebar.left.description" />
+                        </description>
+                    </area>
+                </type>
+                <type type="quiqqer/template-qui:types/rightSidebar">
+                    <area name="rightSidebar">
+                        <title>
+                            <locale group="quiqqer/template-qui" var="area.sidebar.right.title" />
+                        </title>
+                        <description>
+                            <locale group="quiqqer/template-qui" var="area.sidebar.right.description" />
+                        </description>
+                    </area>
+                </type>
+            </types>
+        </templateAreas>
+    </blocks>
+
+</quiqqer>

@@ -1,0 +1,121 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="{$Project->getAttribute('lang')}"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="{$Project->getAttribute('lang')}"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="{$Project->getAttribute('lang')}"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="{$Project->getAttribute('lang')}"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=1" />
+
+    {$Template->getHeader()}
+    {object class="\QUI\Blocks\Manager" assign=BlockManager}
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic"
+        rel="stylesheet"
+        type="text/css"
+    />
+
+    <!--[if (lt IE 9) & (!IEMobile)]>
+        <link rel="stylesheet" href="{$URL_TPL_DIR}bin/css/unsemantic/ie.css" />
+    <![endif]-->
+
+    <!-- [begin] css combine -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="{$URL_TPL_DIR}bin/css/unsemantic/unsemantic-grid-responsive.css" rel="stylesheet" type="text/css" />
+        <link href="{$URL_TPL_DIR}bin/css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- [end] css combine -->
+
+</head>
+<body>
+
+    <!-- navigation -->
+    <nav class="page-menu" data-qui="project/ElasticMenu" style="display: none">
+        <div class="page-navigation">
+
+            <a href="{url id=1}" class="page-navigation-home">
+                <span class="fa fa-home"></span>
+                {site id=1 attribute="title"}
+            </a>
+
+            {include file="`$TPL_DIR`leftMenu.html"
+                Site=$Project->firstChild()
+                ActiveSite=$Site
+            }
+        </div>
+    </nav>
+
+    <!-- page -->
+    <div class="body-container">
+        <!-- header -->
+        <header class="grid-100 mobile-grid-100 page-header">
+            <h1>{$Site->getAttribute( 'title' )}</h1>
+
+            <div class="page-header-short">
+                {$Site->getAttribute( 'short' )}
+            </div>
+        </header>
+
+        <!-- content -->
+        <div class="grid-container grid-parent page" id="page">
+            {if $Site->getId() != 1}
+            <div class="page-breadcrumb">
+                {control control="\QUI\Controls\Breadcrumb"}
+            </div>
+            {/if}
+
+            {if $ownSideType}
+                {$Template->getBody()}
+            {else}
+                <div class="page-multible-content">
+                    {if $Site->getAttribute('image_emotion')}
+                    <div class="page-image">
+                        {image src=$Site->getAttribute('image_emotion') width=1200}
+                    </div>
+                    {/if}
+
+                    <div class="grid-100 mobile-grid-100 page-content page-box" role="main">
+                        {$Template->getBody()}
+                    </div>
+                </div>
+            {/if}
+        </div>
+
+        <!-- footer -->
+        <footer class="page-footer">
+
+            <div class="grid-container page-footer-container">
+                <div class="page-footer-left">
+                    {assign var=footerLeft value=$BlockManager->getBlocksByArea('footerLeft', $Site)}
+                    {foreach from=$footerLeft item=Block}
+                        {$Block->create()}
+                    {/foreach}
+                </div>
+
+                <div class="page-footer-right">
+                    {assign var=footerLeft value=$BlockManager->getBlocksByArea('footerRight', $Site)}
+                    {foreach from=$footerLeft item=Block}
+                        {$Block->create()}
+                    {/foreach}
+                </div>
+
+                <p class="page-footer-copyright">
+                    Copyright {$smarty.now|date_format:"%Y"}
+                </p>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <!-- [begin] js combine -->
+    <script src="{$URL_OPT_DIR}bin/require.js"></script>
+    <script src="{$URL_TPL_DIR}bin/init.js"></script>
+    <!-- [end] js combine -->
+
+    <!-- Start Piwik Code -->
+
+    <!-- End Piwik Code -->
+
+</body>
+</html>

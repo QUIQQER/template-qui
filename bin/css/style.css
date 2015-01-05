@@ -1,0 +1,247 @@
+@CHARSET "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+
+        box-sizing: border-box;
+   -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #f7f7f7;
+    color: #5d5d5d;
+    font: 12pt "Open Sans";
+    line-height: 1.75em;
+}
+
+input, textarea, select {
+    background: rgba( 255, 255, 255, 0.05 );
+    border: none;
+    color: #5d5d5d;
+    font: 12pt "Open Sans";
+    line-height: 1.75em;
+    padding: 5px 10px;
+}
+
+img {
+    padding:0;
+    margin:0
+}
+
+a {
+    color: #d14;
+    padding: 0 3px;
+    text-decoration: underline;
+
+-webkit-transition: all 0.2s ease;
+   -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+     -o-transition: all 0.2s ease;
+}
+
+a:hover {
+    background: #d14;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+
+-webkit-transition: all 0.2s ease;
+   -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+     -o-transition: all 0.2s ease;
+}
+
+ul, ol {
+    padding-left: 30px;
+}
+
+::-webkit-input-placeholder { color: rgba( 255, 255, 255, 0.4 ); }
+::-moz-placeholder { color: rgba( 255, 255, 255, 0.4 ); }
+:-ms-input-placeholder { color: rgba( 255, 255, 255, 0.4 ); }
+input:-moz-placeholder { color: rgba( 255, 255, 255, 0.4 ); }
+
+/** qui design
+ * ========================================================== */
+
+.qui-button {
+    font-size: 1.1em;
+    padding: 0.65em 1.5em !important;
+    text-decoration: none;
+}
+
+/** page design
+ * ========================================================== */
+
+.page-box {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+.page-box-inner {
+    padding: 20px;
+}
+
+.page-multible-content {
+    margin: 20px 0 0;
+}
+
+/** page header
+ * ========================================================== */
+
+.page-header {
+    background: #ffffff;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-size: 14pt;
+    text-align: center;
+    padding: 4.5em 0 4em;
+}
+
+.page-header img {
+    max-width: 100%;
+}
+
+.page-header-short {
+    font-size: 12pt;
+    font-style: italic;
+    padding: 2em 0 0;
+}
+
+/** page image
+ * ========================================================== */
+
+.page-image {
+    height: 400px;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/** page content
+ * ========================================================== */
+
+.page-content {
+    font-size: 12pt;
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+.page-content blockquote,
+.page-content ol,
+.page-content p,
+.page-content pre,
+.page-content ul {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.page-content ol,
+.page-content ul {
+    margin: 10px 0;
+}
+
+.page-content li {
+    clear: both;
+    float: left;
+    margin: 0 0 10px 0;
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5 {
+    color: #333;
+    float: left;
+    line-height: 1.2;
+    padding: 20pt 0 10pt 0;
+    width: 100%;
+}
+
+.page-content h1,
+.page-content h2 { font-size: 2.3em; }
+.page-content h3 { font-size: 2em; }
+.page-content h4 { font-size: 1.8em; }
+
+.page-content p {
+    margin-bottom: 2em;
+}
+
+.page-content p:last-child {
+    margin-bottom: 0;
+}
+
+/** page breadcrumb
+ * ========================================================== */
+
+.page-breadcrumb {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    margin: 20px 0 0;
+    padding: 20px;
+}
+
+/** page footer
+ * ========================================================== */
+
+.page-footer {
+    background: #2E2633;
+    clear: both;
+    color: #858484;
+    float: left;
+    line-height: 1.4em;
+    margin: 40px 0 0;
+    padding: 20px;
+    width: 100%;
+}
+
+.page-footer-left {
+    float: left;
+    padding-right: 20px;
+    width: 60%;
+}
+
+.page-footer-right {
+    float: left;
+    padding-left: 20px;
+    width: 40%;
+}
+
+.page-footer input,
+.page-footer textarea,
+.page-footer select {
+    color: #c5c4c4;
+}
+
+.page-footer header,
+.page-footer header a {
+    color: #ffffff;
+    font-size: 1.1em;
+    text-decoration: none;
+    padding: 0;
+}
+
+.page-footer label {
+    font-size: 0.8em;
+}
+
+.page-footer-copyright {
+    clear: both;
+    float: left;
+    font-size: 0.8em;
+    margin-top: 40px;
+    text-align: center;
+    width: 100%;
+}
