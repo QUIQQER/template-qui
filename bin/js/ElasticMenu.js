@@ -244,9 +244,6 @@ define('project/ElasticMenu', [
 
             var self = this;
 
-            this.$open    = false;
-            this.$animate = false;
-
             if ( this.getAttribute( 'moveCointainer' ) )
             {
                 moofx( this.getAttribute('moveCointainer') ).animate({
@@ -255,7 +252,7 @@ define('project/ElasticMenu', [
                 }, {
                     callback: function ()
                     {
-                        this.getAttribute( 'moveCointainer' ).setStyles({
+                        self.getAttribute( 'moveCointainer' ).setStyles({
                             width : null,
                             left  : null
                         });
@@ -279,6 +276,7 @@ define('project/ElasticMenu', [
                 }, 800, mina.elastic, function()
                 {
                     self.$animate = false;
+                    self.$open    = false;
                 });
             });
         },
