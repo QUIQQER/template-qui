@@ -210,13 +210,11 @@ input:-moz-placeholder { color: rgba( 255, 255, 255, 0.4 ); }
 .page-footer-left {
     float: left;
     padding-right: 20px;
-    width: 60%;
 }
 
 .page-footer-right {
     float: left;
     padding-left: 20px;
-    width: 40%;
 }
 
 .page-footer input,
@@ -233,8 +231,23 @@ input:-moz-placeholder { color: rgba( 255, 255, 255, 0.4 ); }
     padding: 0;
 }
 
+.page-footer h2,
+.page-footer h3,
+.page-footer h4 {
+    color: #ffffff;
+    font-size: 1.7em;
+    margin: 0.8em 0 1em;
+}
+
 .page-footer label {
     font-size: 0.8em;
+}
+
+.page-footer-left-section,
+.page-footer-right-section {
+    float: left;
+    margin-bottom: 2em;
+    width: 100%;
 }
 
 .page-footer-copyright {
@@ -244,4 +257,15 @@ input:-moz-placeholder { color: rgba( 255, 255, 255, 0.4 ); }
     margin-top: 40px;
     text-align: center;
     width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .page-footer-left {
+        padding-right: 0px;
+    }
+
+    .page-footer-right {
+        float: left;
+        padding-left: 0px;
+    }
 }

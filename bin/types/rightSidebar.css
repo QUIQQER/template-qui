@@ -1,16 +1,27 @@
 
 .page-multible-left {
     float: left;
-    padding-right: 10px;
-    width: 70%;
+    padding-right: 10px !important;
 }
 
 .page-multible-right {
     float: left;
-    padding-left: 10px;
-    width: 30%;
+    padding-left: 10px !important;
 }
 
 .page-multible-right .page-box {
     margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .page-multible-left {
+        padding-right: 0px !important;
+    }
+
+    .page-multible-right {
+        padding-left: 0px !important;
+    }
+
 }

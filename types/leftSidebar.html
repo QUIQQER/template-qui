@@ -3,7 +3,7 @@
 
 <div class="grid-100 mobile-grid-100 grid-parent page-multible-content" role="main">
 
-    <div class="page-multible-left">
+    <div class="page-multible-left grid-parent grid-33 mobile-grid-100">
         {if !empty( $leftSideBar)}
         {foreach from=$leftSideBar item=Block}
         <div class="page-box">
@@ -15,7 +15,7 @@
         {/if}
     </div>
 
-    <div class="page-multible-right">
+    <div class="page-multible-right grid-parent grid-66 mobile-grid-100">
         <div class="page-box">
             {if $Site->getAttribute('image_emotion')}
             <div class="page-image">

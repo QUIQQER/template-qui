@@ -85,17 +85,27 @@
         <footer class="page-footer">
 
             <div class="grid-container page-footer-container">
-                <div class="page-footer-left">
+                <div class="page-footer-left grid-parent grid-60 mobile-grid-100">
                     {assign var=footerLeft value=$BlockManager->getBlocksByArea('footerLeft', $Site)}
                     {foreach from=$footerLeft item=Block}
+                    <section class="page-footer-left-section">
+                        <header>
+                            <h3>{$Block->getAttribute('title')}</h3>
+                        </header>
                         {$Block->create()}
+                    </section>
                     {/foreach}
                 </div>
 
-                <div class="page-footer-right">
+                <div class="page-footer-right grid-parent grid-40 mobile-grid-100">
                     {assign var=footerLeft value=$BlockManager->getBlocksByArea('footerRight', $Site)}
                     {foreach from=$footerLeft item=Block}
+                    <section class="page-footer-right-section">
+                        <header>
+                            <h3>{$Block->getAttribute('title')}</h3>
+                        </header>
                         {$Block->create()}
+                    </section>
                     {/foreach}
                 </div>
 
