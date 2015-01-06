@@ -24,9 +24,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     overflow: auto;
     transition: all 0.3s;
-    transform: translate3d(0, 0, 0);
-
-    -webkit-transform: translate3d(0, 0, 0);
     -webkit-transition: all 0.3s;
 }
 

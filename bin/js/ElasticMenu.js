@@ -29,7 +29,8 @@ define('project/ElasticMenu', [
             '$onImport',
             '$mouseenter',
             '$mouseleave',
-            'toggle'
+            'toggle',
+            'resize'
         ],
 
         options : {
@@ -48,13 +49,14 @@ define('project/ElasticMenu', [
             this.$animate    = false;
             this.$mouseDelay = false;
 
+            this.$NavElm    = false;
             this.$Shape     = false;
             this.$SVG       = false;
             this.$Path      = false;
             this.$pathReset = false;
 
             this.addEvents({
-                'onImport' : this.$onImport
+                onImport : this.$onImport
             });
         },
 
@@ -75,6 +77,10 @@ define('project/ElasticMenu', [
                     blur : this.$mouseleave
                 }
             });
+
+            window.addEvent( 'resize', this.resize );
+
+            this.$NavElm = Elm.getElement( '.page-navigation' );
 
             // menu button
             var Btn = new Element('button', {
@@ -118,12 +124,42 @@ define('project/ElasticMenu', [
                 });
             }
 
+            this.resize();
 
             Elm.setStyle( 'display', null );
 
             moofx( Btn ).animate({
                 opacity : 1
             });
+        },
+
+        /**
+         * resize the menu -> mobile menu
+         */
+        resize : function()
+        {
+            if ( !this.$Elm ) {
+                return;
+            }
+
+            var maxSize  = document.body.getSize(),
+                maxWidth = maxSize.x;
+
+            if ( maxWidth > 510 )
+            {
+                moofx( this.$Elm ).style({
+                    transform : null
+                });
+
+                return;
+            }
+
+            moofx( this.$Elm ).style({
+                transform : 'translate3d(-'+ (maxWidth - 80) +'px, 0, 0)',
+                width     : maxWidth
+            });
+
+            this.$NavElm.setStyle( 'width', maxWidth - 80 );
         },
 
         /**
@@ -163,9 +199,16 @@ define('project/ElasticMenu', [
             this.$animate = true;
 
 
-            (function() {
+            (function()
+            {
+                moofx( self.getElm() ).style({
+                    transform : 'translate3d(0, 0, 0)'
+                });
+
                 self.getElm().addClass( 'menu-open' );
+
             }).delay( 300 );
+
 
             this.$Path.stop().animate({
                 path : this.$Shape.getAttribute( 'data-morph-open' )
@@ -210,7 +253,8 @@ define('project/ElasticMenu', [
                     width : '100%',
                     left  : 0
                 }, {
-                    callback: function () {
+                    callback: function ()
+                    {
                         this.getAttribute( 'moveCointainer' ).setStyles({
                             width : null,
                             left  : null
@@ -220,8 +264,10 @@ define('project/ElasticMenu', [
             }
 
 
-            (function() {
+            (function()
+            {
                 self.getElm().removeClass( 'menu-open' );
+                self.resize();
             }).delay( 300 );
 
             this.$Path.stop().animate({
@@ -274,5 +320,4 @@ define('project/ElasticMenu', [
             }).delay( this.getAttribute('mouseCloseDelay'), this );
         }
     });
-
 });
