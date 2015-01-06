@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
     <types>
+        <type type="types/startpage">
+            <locale group="quiqqer/template-qui" var="admin.types.startpage" />
+            <desc>
+                <locale group="quiqqer/template-qui" var="admin.types.startpage.desc" />
+            </desc>
+        </type>
+
         <type type="types/leftSidebar">
             <locale group="quiqqer/template-qui" var="admin.types.leftSidebar" />
             <desc>

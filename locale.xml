@@ -36,4 +36,11 @@
         </locale>
     </groups>
 
+    <groups name="quiqqer/template-qui" datatype="php">
+        <locale name="copyright.text">
+            <de><![CDATA[Copyright [year]]]></de>
+            <en><![CDATA[Copyright [year]]]></en>
+        </locale>
+    </groups>
+
 </locales>

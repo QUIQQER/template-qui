@@ -23,7 +23,6 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="{$URL_TPL_DIR}bin/css/unsemantic/unsemantic-grid-responsive.css" rel="stylesheet" type="text/css" />
         <link href="{$URL_TPL_DIR}bin/css/style.css" rel="stylesheet" type="text/css" />
-
     <!-- [end] css combine -->
 
 </head>
@@ -54,6 +53,27 @@
             <div class="page-header-short">
                 {$Site->getAttribute( 'short' )}
             </div>
+
+            <nav class="page-header-navigation hide-on-mobile">
+                {assign var=FirstChild value=$Project->firstChild()}
+                {assign var=children value=$FirstChild->getNavigation()}
+                <ul>
+                    <li>
+                        <a href="{url site=$FirstChild}">
+                            <i class="fa fa-home"></i>
+                            {$FirstChild->getAttribute('title')}
+                        </a>
+                    </li>
+                    {foreach from=$children item=Child}
+                    <li>
+                        <a href="{url site=$Child}">
+                            <i class="fa fa-caret-right"></i>
+                            {$Child->getAttribute('title')}
+                        </a>
+                    </li>
+                    {/foreach}
+                </ul>
+            </nav>
         </header>
 
         <!-- content -->
@@ -110,7 +130,7 @@
                 </div>
 
                 <p class="page-footer-copyright">
-                    Copyright {$smarty.now|date_format:"%Y"}
+                    {locale group="quiqqer/template-qui" var="copyright.text" year=$smarty.now|date_format:"%Y"}
                 </p>
             </div>
 
