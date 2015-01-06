@@ -35,6 +35,7 @@ define('project/ElasticMenu', [
         options : {
             moveCointainer  : false, // [optional] html element which move with the menu
             mouseenter      : true,  // use mouseenter and mouseleave
+            mouseleave      : false,  // use mouseleave and mouseleave
             mouseOpenDelay  : 750,   // delay for the open event
             mouseCloseDelay : 250    // delay for the close event
         },
@@ -64,6 +65,17 @@ define('project/ElasticMenu', [
         {
             var Elm = this.getElm();
 
+            Elm.set({
+                tabindex : -1,
+                styles   : {
+                    outline : 'none',
+                    '-moz-outline': 'none'
+                },
+                events : {
+                    blur : this.$mouseleave
+                }
+            });
+
             // menu button
             var Btn = new Element('button', {
                 'class' : 'page-menu-opener',
@@ -92,10 +104,16 @@ define('project/ElasticMenu', [
             this.$pathReset = this.$Path.attr( 'd' );
 
             // mouseenter / leave
-            if ( this.getAttribute('mouseenter') )
+            if ( this.getAttribute( 'mouseenter' ) )
             {
                 Elm.addEvents({
-                    mouseenter : this.$mouseenter,
+                    mouseenter : this.$mouseenter
+                });
+            }
+
+            if ( this.getAttribute( 'mouseleave' ) )
+            {
+                Elm.addEvents({
                     mouseleave : this.$mouseleave
                 });
             }
@@ -103,7 +121,7 @@ define('project/ElasticMenu', [
 
             Elm.setStyle( 'display', null );
 
-            moofx( Btn).animate({
+            moofx( Btn ).animate({
                 opacity : 1
             });
         },
@@ -158,6 +176,8 @@ define('project/ElasticMenu', [
                 }, 800, mina.elastic );
 
                 self.$animate = false;
+
+                self.getElm().focus();
 
                 // move container
                 if ( self.getAttribute( 'moveCointainer' ) )
