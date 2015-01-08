@@ -118,8 +118,13 @@ input:focus::-moz-placeholder {
     padding: 4.5em 0 4em;
 }
 
+
+.page-header-logo:hover {
+    background: none;
+}
+
 .page-header img {
-    max-width: 100%;
+    max-width: 70%;
 }
 
 .page-header-navigation {
@@ -292,6 +297,11 @@ input:focus::-moz-placeholder {
 }
 
 @media screen and (max-width: 767px) {
+
+    .page-header {
+        padding: 1em 0;
+    }
+
     .page-footer-left {
         padding-right: 0;
     }

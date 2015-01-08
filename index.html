@@ -48,7 +48,15 @@
     <div class="body-container">
         <!-- header -->
         <header class="grid-100 mobile-grid-100 page-header">
-            <h1>{$Site->getAttribute( 'title' )}</h1>
+            {if $logo}
+                <a href="{url id=1}" class="page-header-logo">
+                    {image src=$logo}
+                </a>
+            {else}
+            <h1>
+                {$Site->getAttribute( 'title' )}
+            </h1>
+            {/if}
 
             {assign var=FirstChild value=$Project->firstChild()}
             {assign var=children value=$FirstChild->getNavigation()}
