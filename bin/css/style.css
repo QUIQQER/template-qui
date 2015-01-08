@@ -76,9 +76,18 @@ input:focus::-moz-placeholder {
  * ========================================================== */
 
 .qui-button {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #999;
+    cursor: pointer;
+    float: left;
     font-size: 1.1em;
+    line-height: 30px;
+    margin: 0;
     padding: 0.65em 1.5em !important;
+    position: relative;
     text-decoration: none;
+    transition: all 0.2s ease 0s;
 }
 
 /** page design
@@ -111,12 +120,6 @@ input:focus::-moz-placeholder {
 
 .page-header img {
     max-width: 100%;
-}
-
-.page-header-short {
-    color: rgba(0,0,0,0.5);
-    font-size: 12pt;
-    padding: 2em 0 0;
 }
 
 .page-header-navigation {

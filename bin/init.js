@@ -29,4 +29,9 @@ window.addEvent('domready', function()
     // load QUI
     require(['qui/QUI']);
 
+    // Ellipsify
+    require(['project/Ellipsify'], function(Ellipsify) {
+        Ellipsify.parse();
+    });
+
 });

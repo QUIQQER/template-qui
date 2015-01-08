@@ -1,0 +1,42 @@
+
+<section class="templateQUI-startpage2box grid-parent grid-100 mobile-grid-100">
+
+    {if $this->getAttribute('title')}
+    <header>
+        <h2>{$this->getAttribute('title')}</h2>
+    </header>
+    {/if}
+
+    {foreach from=$children item=Child}
+    <article class="grid-50 grid-mobile-100 templateQUI-startpage2box-entry"
+             title="{$Child->getAttribute('title')}"
+    >
+        <div class="page-box templateQUI-startpage2box-entry-inner">
+            <!-- image -->
+            {if $Child->getAttribute('image_emotion')}
+            {image assign=image src=$Child->getAttribute('image_emotion') width=500 onlysrc=true rewrited=true}
+            <div class="templateQUI-startpage2box-entry-image"
+                 style="background-image: url('{$image}')"
+            ></div>
+            {/if}
+
+            <div class="templateQUI-startpage2box-entry-content">
+                <h3>
+                    {$Child->getAttribute('title')}
+                </h3>
+
+                <p class="ellipsify">
+                    {$Child->getAttribute('short')}
+                </p>
+                <a href="{url site=$Child}"
+                   class="qui-button templateQUI-startpage2box-entry-content-button"
+                >
+                    <span class="fa fa-file"></span>
+                    Continue Reading
+                </a>
+            </div>
+        </div>
+    </article>
+    {/foreach}
+
+</section>

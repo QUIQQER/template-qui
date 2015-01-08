@@ -1,0 +1,81 @@
+
+.templateQUI-startpage3box {
+    clear: both;
+    float: left;
+    width: 100%;
+}
+
+.templateQUI-startpage3box header {
+    border-top: 1px solid #ccc;
+    margin: 5em 0 2em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.templateQUI-startpage3box header:after {
+    clear: both;
+    content: "";
+}
+
+.templateQUI-startpage3box h2 {
+    background: #f7f7f7;
+    display: inline;
+    float: none;
+    font-size: 1.5em;
+    padding: 0 2em;
+    position: relative;
+    top: -0.7em;
+    width: 20%;
+}
+
+.templateQUI-startpage3box-entry:nth-child(3n+5) {
+    clear: both;
+}
+
+
+.templateQUI-startpage3box-entry-inner {
+    float: left;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.templateQUI-startpage3box-entry-image {
+    background-color: #dddddd;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    padding: 8em 0;
+    text-align: center;
+}
+
+.templateQUI-startpage3box-entry-inner h3 {
+    font-size: 1.35em;
+}
+
+.templateQUI-startpage3box-entry-content {
+    float: left;
+    margin-bottom: 0.7em;
+    padding: 1em 1.75em 2.75em;
+    width: 100%
+}
+
+.templateQUI-startpage3box-entry-content p {
+    height: 100px;
+}
+
+.templateQUI-startpage3box-entry-content-button {
+    background: #353132 !important;
+    color: #fff !important;
+}
+
+.templateQUI-startpage3box-entry-content-button:hover {
+    background: #252122 !important;
+}
+
+
+@media screen and (max-width: 767px) {
+    .templateQUI-startpage3box-entry {
+        padding: 0 !important;
+    }
+}

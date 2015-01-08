@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,maximum-scale=1" />
 
     {$Template->getHeader()}
-    {object class="\QUI\Blocks\Manager" assign=BlockManager}
+    {object class="\QUI\Bricks\Manager" assign=BricksManager}
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic"
         rel="stylesheet"
@@ -50,20 +50,20 @@
         <header class="grid-100 mobile-grid-100 page-header">
             <h1>{$Site->getAttribute( 'title' )}</h1>
 
-            <div class="page-header-short">
-                {$Site->getAttribute( 'short' )}
-            </div>
-
+            {assign var=FirstChild value=$Project->firstChild()}
+            {assign var=children value=$FirstChild->getNavigation()}
+            {if count($children)}
             <nav class="page-header-navigation hide-on-mobile">
-                {assign var=FirstChild value=$Project->firstChild()}
-                {assign var=children value=$FirstChild->getNavigation()}
+
                 <ul>
+                    {if $Site->getId() != 1}
                     <li>
                         <a href="{url site=$FirstChild}">
                             <i class="fa fa-home"></i>
                             {$FirstChild->getAttribute('title')}
                         </a>
                     </li>
+                    {/if}
                     {foreach from=$children item=Child}
                     <li>
                         <a href="{url site=$Child}">
@@ -74,9 +74,13 @@
                     {/foreach}
                 </ul>
             </nav>
+            {/if}
         </header>
 
         <!-- content -->
+        {if $Site->getAttribute('type') == 'quiqqer/template-qui:types/startpage'}
+            {$Template->getBody()}
+        {else}
         <div class="grid-container grid-parent page" id="page">
             {if $Site->getId() != 1}
             <div class="page-breadcrumb">
@@ -100,31 +104,32 @@
                 </div>
             {/if}
         </div>
+        {/if}
 
         <!-- footer -->
         <footer class="page-footer">
 
             <div class="grid-container page-footer-container">
                 <div class="page-footer-left grid-parent grid-60 mobile-grid-100">
-                    {assign var=footerLeft value=$BlockManager->getBlocksByArea('footerLeft', $Site)}
-                    {foreach from=$footerLeft item=Block}
+                    {assign var=footerLeft value=$BricksManager->getBricksByArea('footerLeft', $Site)}
+                    {foreach from=$footerLeft item=Brick}
                     <section class="page-footer-left-section">
                         <header>
-                            <h3>{$Block->getAttribute('title')}</h3>
+                            <h3>{$Brick->getAttribute('title')}</h3>
                         </header>
-                        {$Block->create()}
+                        {$Brick->create()}
                     </section>
                     {/foreach}
                 </div>
 
                 <div class="page-footer-right grid-parent grid-40 mobile-grid-100">
-                    {assign var=footerLeft value=$BlockManager->getBlocksByArea('footerRight', $Site)}
-                    {foreach from=$footerLeft item=Block}
+                    {assign var=footerLeft value=$BricksManager->getBricksByArea('footerRight', $Site)}
+                    {foreach from=$footerLeft item=Brick}
                     <section class="page-footer-right-section">
                         <header>
-                            <h3>{$Block->getAttribute('title')}</h3>
+                            <h3>{$Brick->getAttribute('title')}</h3>
                         </header>
-                        {$Block->create()}
+                        {$Brick->create()}
                     </section>
                     {/foreach}
                 </div>

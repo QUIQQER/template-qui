@@ -1,0 +1,18 @@
+
+.templateQUI-startpage-intro {
+    clear: both;
+}
+
+.templateQUI-startpage-intro-entry {
+    float: left;
+    text-align: center;
+    margin: 3em 0 0;
+}
+
+.templateQUI-startpage-intro-entry .fa {
+    font-size: 4.5em;
+}
+
+.templateQUI-startpage-intro h3 {
+    margin: 0.5em 0;
+}
