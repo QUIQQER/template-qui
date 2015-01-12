@@ -37,6 +37,10 @@
     </groups>
 
     <groups name="quiqqer/template-qui" datatype="php">
+        <locale name="continue.reading">
+            <de><![CDATA[weiterlesen]]></de>
+            <en><![CDATA[Continue Reading]]></en>
+        </locale>
         <locale name="copyright.text">
             <de><![CDATA[Copyright [year]]]></de>
             <en><![CDATA[Copyright [year]]]></en>

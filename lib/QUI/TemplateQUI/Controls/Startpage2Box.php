@@ -23,9 +23,11 @@ class Startpage2Box extends QUI\Control
     {
         // default options
         $this->setAttributes(array(
-            'class' => '',
-            'limit' => 2,
-            'title' => 'Header'
+            'class'     => '',
+            'limit'     => 2,
+            'title'     => 'Header',
+            'sitetypes' => false,
+            'showImage' => true
         ));
 
         parent::setAttributes( $attributes );
@@ -44,16 +46,35 @@ class Startpage2Box extends QUI\Control
         $Engine   = QUI::getTemplateManager()->getEngine();
         $Project  = $this->_getProject();
 
-        $limit = $this->getAttribute('limit');
+        $limit     = $this->getAttribute( 'limit' );
+        $sitetypes = $this->getAttribute( 'sitetypes' );
+        $order     = $this->getAttribute( 'order' );
 
         if ( !$limit ) {
             $limit = 2;
         }
 
-        $children = $Project->getSites(array(
-            'limit' => $limit,
-            'order' => 'c_date ASC'
-        ));
+        if ( !$order ) {
+            $order = 'release_from ASC';
+        }
+
+        if ( !empty( $sitetypes ) )
+        {
+            $children = $Project->getSites(array(
+                'limit' => $limit,
+                'order' => $order,
+                'where' => array(
+                    'type' => $sitetypes
+                )
+            ));
+
+        } else
+        {
+            $children = $Project->getSites(array(
+                'limit' => $limit,
+                'order' => $order
+            ));
+        }
 
 
         $Engine->assign(array(

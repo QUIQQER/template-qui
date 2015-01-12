@@ -40,6 +40,7 @@
 }
 
 .templateQUI-startpage2box-entry-image {
+    background-color: #dddddd;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% auto;
@@ -60,6 +61,7 @@
 
 .templateQUI-startpage2box-entry-content p {
     height: 100px;
+    overflow: hidden;
 }
 
 .templateQUI-startpage2box-entry-content-button {

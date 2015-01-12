@@ -16,3 +16,12 @@
 .templateQUI-startpage-intro h3 {
     margin: 0.5em 0;
 }
+
+.templateQUI-startpage-intro a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.templateQUI-startpage-intro a:hover {
+    background: transparent;
+}

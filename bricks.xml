@@ -9,7 +9,48 @@
             <description>
                 <locale group="quiqqer/template-qui" var="bricks.StartpageIntro.description" />
             </description>
+            <settings>
+                <setting name="title1">
+                    <locale group="quiqqer/bricks" var="startpage.title1" />
+                </setting>
+                <setting name="icon1">
+                    <locale group="quiqqer/bricks" var="startpage.icon1" />
+                </setting>
+                <setting name="text1">
+                    <locale group="quiqqer/bricks" var="startpage.text1" />
+                </setting>
+                <setting name="link1">
+                    <locale group="quiqqer/bricks" var="startpage.link1" />
+                </setting>
+
+                <setting name="title2">
+                    <locale group="quiqqer/bricks" var="startpage.title2" />
+                </setting>
+                <setting name="icon2">
+                    <locale group="quiqqer/bricks" var="startpage.icon2" />
+                </setting>
+                <setting name="text2">
+                    <locale group="quiqqer/bricks" var="startpage.text2" />
+                </setting>
+                <setting name="link2">
+                    <locale group="quiqqer/bricks" var="startpage.link2" />
+                </setting>
+
+                <setting name="title3">
+                    <locale group="quiqqer/bricks" var="startpage.title3" />
+                </setting>
+                <setting name="icon3">
+                    <locale group="quiqqer/bricks" var="startpage.icon3" />
+                </setting>
+                <setting name="text3">
+                    <locale group="quiqqer/bricks" var="startpage.text3" />
+                </setting>
+                <setting name="link3">
+                    <locale group="quiqqer/bricks" var="startpage.link3" />
+                </setting>
+            </settings>
         </brick>
+
         <brick control="\QUI\TemplateQUI\Controls\Startpage2Box">
             <title>
                 <locale group="quiqqer/template-qui" var="bricks.Startpage2Box.title" />
@@ -17,7 +58,22 @@
             <description>
                 <locale group="quiqqer/template-qui" var="bricks.Startpage2Box.description" />
             </description>
+            <settings>
+                <setting name="title">
+                    <locale group="quiqqer/bricks" var="Startpage2Box.title" />
+                </setting>
+                <setting name="limit" type="number">
+                    <locale group="quiqqer/bricks" var="Startpage2Box.limit" />
+                </setting>
+                <setting name="sitetypes" data-qui="controls/projects/project/site/Select">
+                    <locale group="quiqqer/bricks" var="Startpage2Box.sitetypes" />
+                </setting>
+                <setting name="showImage" type="checkbox">
+                    <locale group="quiqqer/bricks" var="Startpage2Box.sitetypes" />
+                </setting>
+            </settings>
         </brick>
+
         <brick control="\QUI\TemplateQUI\Controls\Startpage3Box">
             <title>
                 <locale group="quiqqer/template-qui" var="bricks.Startpage3Box.title" />
@@ -25,6 +81,20 @@
             <description>
                 <locale group="quiqqer/template-qui" var="bricks.Startpage3Box.description" />
             </description>
+            <settings>
+                <setting name="title">
+                    <locale group="quiqqer/bricks" var="Startpage3Box.title" />
+                </setting>
+                <setting name="limit" type="number">
+                    <locale group="quiqqer/bricks" var="Startpage3Box.limit" />
+                </setting>
+                <setting name="sitetypes" data-qui="controls/projects/project/site/Select">
+                    <locale group="quiqqer/bricks" var="Startpage3Box.sitetypes" />
+                </setting>
+                <setting name="showImage" type="checkbox">
+                    <locale group="quiqqer/bricks" var="Startpage3Box.sitetypes" />
+                </setting>
+            </settings>
         </brick>
 
 

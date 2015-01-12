@@ -1,12 +1,14 @@
 
 .page-multible-left {
     float: left;
+    padding-left: 0 !important;
     padding-right: 10px !important;
 }
 
 .page-multible-right {
     float: left;
     padding-left: 10px !important;
+    padding-right: 0 !important;
 }
 
 .page-multible-right .page-box {
@@ -17,11 +19,11 @@
 @media screen and (max-width: 767px) {
 
     .page-multible-left {
-        padding-right: 0px !important;
+        padding-right: 0 !important;
     }
 
     .page-multible-right {
-        padding-left: 0px !important;
+        padding-left: 0 !important;
     }
 
 }

@@ -23,7 +23,22 @@ class StartpageIntro extends QUI\Control
     {
         // default options
         $this->setAttributes(array(
-            'class' => ''
+            'class'  => '',
+
+            'title1' => '',
+            'icon1'  => '',
+            'text1'  => '',
+            'link1'  => '',
+
+            'title2' => '',
+            'icon2'  => '',
+            'text2'  => '',
+            'link2'  => '',
+
+            'title3' => '',
+            'icon3'  => '',
+            'text3'  => '',
+            'link3'  => ''
         ));
 
         parent::setAttributes( $attributes );
@@ -40,10 +55,10 @@ class StartpageIntro extends QUI\Control
     public function getBody()
     {
         $Engine  = QUI::getTemplateManager()->getEngine();
-        $Project = $this->_getProject();
 
-
-
+        $Engine->assign(array(
+            'this' => $this
+        ));
 
         return $Engine->fetch( dirname( __FILE__ ) .'/StartpageIntro.html' );
     }

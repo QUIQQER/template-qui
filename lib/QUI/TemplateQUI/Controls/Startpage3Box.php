@@ -23,10 +23,11 @@ class Startpage3Box extends QUI\Control
     {
         // default options
         $this->setAttributes(array(
-            'class' => '',
-            'limit' => 6,
-            'title' => 'Header 3',
-            'sites' => false
+            'class'     => '',
+            'limit'     => 6,
+            'title'     => 'Header 3',
+            'sites'     => false,
+            'showImage' => true
         ));
 
         parent::setAttributes( $attributes );

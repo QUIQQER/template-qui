@@ -1,32 +1,62 @@
 
 <section class="templateQUI-startpage-intro">
     <section class="grid-33 grid-mobile-100 templateQUI-startpage-intro-entry">
-        <span class="fa fa-gears"></span>
+        {if $this->getAttribute('icon1')}
+        <a href="{$this->getAttribute('link1')}">
+            <span class="fa {$this->getAttribute('icon1')}"></span>
+        </a>
+        {/if}
+        {if $this->getAttribute('title1')}
         <h3>
-            Ipsum consequat
+            <a href="{$this->getAttribute('link1')}">
+                {$this->getAttribute('title1')}
+            </a>
         </h3>
+        {/if}
+        {if $this->getAttribute('text1')}
         <p>
-            Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.
+            {$this->getAttribute('text1')}
         </p>
+        {/if}
     </section>
 
     <section class="grid-33 grid-mobile-100 templateQUI-startpage-intro-entry">
-        <span class="fa fa-gears"></span>
+        {if $this->getAttribute('icon2')}
+        <a href="{$this->getAttribute('link2')}">
+            <span class="fa {$this->getAttribute('icon2')}"></span>
+        </a>
+        {/if}
+        {if $this->getAttribute('title2')}
         <h3>
-            Ipsum consequat
+            <a href="{$this->getAttribute('link2')}">
+                {$this->getAttribute('title2')}
+            </a>
         </h3>
+        {/if}
+        {if $this->getAttribute('text2')}
         <p>
-            Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.
+            {$this->getAttribute('text2')}
         </p>
+        {/if}
     </section>
 
     <section class="grid-33 grid-mobile-100 templateQUI-startpage-intro-entry">
-        <span class="fa fa-gears"></span>
+        {if $this->getAttribute('icon3')}
+        <a href="{$this->getAttribute('link3')}">
+            <span class="fa {$this->getAttribute('icon3')}"></span>
+        </a>
+        {/if}
+        {if $this->getAttribute('title3')}
         <h3>
-            Ipsum consequat
+            <a href="{$this->getAttribute('link3')}">
+                {$this->getAttribute('title3')}
+            </a>
         </h3>
+        {/if}
+        {if $this->getAttribute('text3')}
         <p>
-            Nisl amet dolor sit ipsum veroeros sed blandit consequat veroeros et magna tempus.
+            {$this->getAttribute('text3')}
         </p>
+        {/if}
     </section>
 </section>

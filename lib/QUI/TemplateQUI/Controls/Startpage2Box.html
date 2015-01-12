@@ -12,12 +12,16 @@
              title="{$Child->getAttribute('title')}"
     >
         <div class="page-box templateQUI-startpage2box-entry-inner">
-            <!-- image -->
-            {if $Child->getAttribute('image_emotion')}
-            {image assign=image src=$Child->getAttribute('image_emotion') width=500 onlysrc=true rewrited=true}
-            <div class="templateQUI-startpage2box-entry-image"
-                 style="background-image: url('{$image}')"
-            ></div>
+            {if $Child->getAttribute('showImage')}
+                <!-- image -->
+                {if $Child->getAttribute('image_emotion')}
+                {image assign=image src=$Child->getAttribute('image_emotion') width=500 onlysrc=true rewrited=true}
+                <div class="templateQUI-startpage2box-entry-image"
+                     style="background-image: url('{$image}')"
+                ></div>
+                {else}
+                <div class="templateQUI-startpage2box-entry-image"></div>
+                {/if}
             {/if}
 
             <div class="templateQUI-startpage2box-entry-content">
@@ -32,7 +36,7 @@
                    class="qui-button templateQUI-startpage2box-entry-content-button"
                 >
                     <span class="fa fa-file"></span>
-                    Continue Reading
+                    {locale group="quiqqer/template-qui" var="continue.reading"}
                 </a>
             </div>
         </div>
