@@ -34,6 +34,11 @@
             <de><![CDATA[Rechts neben dem Inhalt]]></de>
             <en><![CDATA[Right side in the footer]]></en>
         </locale>
+
+        <locale name="area.startpageContent.title">
+            <de><![CDATA[Startseiten Inhalts-Zone]]></de>
+            <en><![CDATA[Startpage content area]]></en>
+        </locale>
     </groups>
 
     <groups name="quiqqer/template-qui" datatype="php">
@@ -44,6 +49,58 @@
         <locale name="copyright.text">
             <de><![CDATA[Copyright [year]]]></de>
             <en><![CDATA[Copyright [year]]]></en>
+        </locale>
+
+        <!-- bricks settings -->
+        <locale name="startpage.title1">
+            <de><![CDATA[Startseiten Box 1 - Titel]]></de>
+            <en><![CDATA[Startpage Box 1 - Title]]></en>
+        </locale>
+        <locale name="startpage.icon1">
+            <de><![CDATA[Startseiten Box 1 - Bild]]></de>
+            <en><![CDATA[Startpage Box 1 - Image]]></en>
+        </locale>
+        <locale name="startpage.text1">
+            <de><![CDATA[Startseiten Box 1 - Text]]></de>
+            <en><![CDATA[Startpage Box 1 - Text]]></en>
+        </locale>
+        <locale name="startpage.link1">
+            <de><![CDATA[Startseiten Box 1 - Link]]></de>
+            <en><![CDATA[Startpage Box 1 - Link]]></en>
+        </locale>
+
+        <locale name="startpage.title2">
+            <de><![CDATA[Startseiten Box 2 - Titel]]></de>
+            <en><![CDATA[Startpage Box 2 - Title]]></en>
+        </locale>
+        <locale name="startpage.icon2">
+            <de><![CDATA[Startseiten Box 2 - Bild]]></de>
+            <en><![CDATA[Startpage Box 2 - Image]]></en>
+        </locale>
+        <locale name="startpage.text2">
+            <de><![CDATA[Startseiten Box 2 - Text]]></de>
+            <en><![CDATA[Startpage Box 2 - Text]]></en>
+        </locale>
+        <locale name="startpage.link2">
+            <de><![CDATA[Startseiten Box 2 - Link]]></de>
+            <en><![CDATA[Startpage Box 2 - Link]]></en>
+        </locale>
+
+        <locale name="startpage.title3">
+            <de><![CDATA[Startseiten Box 3 - Titel]]></de>
+            <en><![CDATA[Startpage Box 3 - Title]]></en>
+        </locale>
+        <locale name="startpage.icon3">
+            <de><![CDATA[Startseiten Box 3 - Bild]]></de>
+            <en><![CDATA[Startpage Box 3 - Image]]></en>
+        </locale>
+        <locale name="startpage.text3">
+            <de><![CDATA[Startseiten Box 3 - Text]]></de>
+            <en><![CDATA[Startpage Box 3 - Text]]></en>
+        </locale>
+        <locale name="startpage.link3">
+            <de><![CDATA[Startseiten Box 3 - Link]]></de>
+            <en><![CDATA[Startpage Box 3 - Link]]></en>
         </locale>
     </groups>
 
