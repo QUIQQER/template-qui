@@ -102,7 +102,7 @@
         <templateAreas>
             <!-- global areas -->
             <areas>
-                <area name="footerLeft">
+                <area name="footerLeft" inheritance="1">
                     <title>
                         <locale group="quiqqer/template-qui" var="area.footer.left.title" />
                     </title>
@@ -110,7 +110,7 @@
                         <locale group="quiqqer/template-qui" var="area.footer.left.description" />
                     </description>
                 </area>
-                <area name="footerRight">
+                <area name="footerRight" inheritance="1">
                     <title>
                         <locale group="quiqqer/template-qui" var="area.footer.right.title" />
                     </title>
@@ -135,7 +135,7 @@
                 </type>
 
                 <type type="quiqqer/template-qui:types/leftSidebar">
-                    <area name="leftSidebar">
+                    <area name="leftSidebar" inheritance="1">
                         <title>
                             <locale group="quiqqer/template-qui" var="area.sidebar.left.title" />
                         </title>
@@ -145,7 +145,7 @@
                     </area>
                 </type>
                 <type type="quiqqer/template-qui:types/rightSidebar">
-                    <area name="rightSidebar">
+                    <area name="rightSidebar" inheritance="1">
                         <title>
                             <locale group="quiqqer/template-qui" var="area.sidebar.right.title" />
                         </title>
