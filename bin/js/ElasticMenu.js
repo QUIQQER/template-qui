@@ -35,7 +35,7 @@ define('project/ElasticMenu', [
 
         options : {
             moveCointainer  : false,  // [optional] html element which move with the menu
-            mouseenter      : true,   // use mouseenter and mouseleave
+            mouseenter      : false,  // use mouseenter and mouseleave
             mouseleave      : false,  // use mouseleave and mouseleave
             mouseOpenDelay  : 750,    // delay for the open event
             mouseCloseDelay : 250     // delay for the close event
