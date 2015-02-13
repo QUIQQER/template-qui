@@ -16,7 +16,7 @@
         "email": "support@pcsg.de"
     },
     "require": {
-        "quiqqer/quiqqer": "~1",
+        "quiqqer/quiqqer": "~1.0",
         "quiqqer/bricks": "dev-dev"
     },
 
