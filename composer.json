@@ -16,8 +16,8 @@
         "email": "support@pcsg.de"
     },
     "require": {
-        "quiqqer/quiqqer": "*@dev",
-        "quiqqer/bricks": "*@dev"
+        "quiqqer/quiqqer": "~1",
+        "quiqqer/bricks": "dev-dev"
     },
 
     "autoload": {

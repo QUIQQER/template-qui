@@ -98,6 +98,11 @@ input:focus::-moz-placeholder {
     border-bottom: 1px solid #ccc;
 }
 
+.page-box img {
+    max-width: 100%;
+    height: auto !important;
+}
+
 .page-box-inner {
     padding: 20px;
 }
@@ -147,6 +152,19 @@ input:focus::-moz-placeholder {
 
 .page-header-navigation a:hover {
     color: #ffffff;
+}
+
+/** page header
+ * ========================================================== */
+
+.page-languages {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.quiqqer-langSwitch a {
+    text-decoration: none;
 }
 
 /** page image
