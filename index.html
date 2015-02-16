@@ -77,11 +77,29 @@
                     </li>
                     {/if}
                     {foreach from=$children item=Child}
-                    <li>
+                    <li class="page-header-navigation-entry">
                         <a href="{url site=$Child}">
                             <i class="fa fa-caret-right"></i>
                             {$Child->getAttribute('title')}
                         </a>
+
+                        <!-- submenu -->
+                        {assign var=subnavigation value=$Child->getNavigation()}
+                        {if count( $subnavigation )}
+                        <div class="page-header-navigation-sub smooth">
+                            <ul class="page-header-navigation-sub-list">
+                                {foreach from=$subnavigation item=subChild}
+                                    <li class="page-header-navigation-sub-entry">
+                                        <a href="{url site=$subChild}"
+                                           class="page-header-navigation-sub-entry-link"
+                                        >
+                                            {$subChild->getAttribute('title')}
+                                        </a>
+                                    </li>
+                                {/foreach}
+                            </ul>
+                        </div>
+                        {/if}
                     </li>
                     {/foreach}
                 </ul>

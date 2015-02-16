@@ -132,6 +132,10 @@ input:focus::-moz-placeholder {
     max-width: 70%;
 }
 
+
+/** page header navigation
+ * ========================================================== */
+
 .page-header-navigation {
     margin-top: 3em;
     text-align: center;
@@ -153,6 +157,73 @@ input:focus::-moz-placeholder {
 .page-header-navigation a:hover {
     color: #ffffff;
 }
+
+    .page-header-navigation-entry {
+        position: relative;
+    }
+
+    .page-header-navigation-sub {
+        height: 0;
+        left: 0;
+        min-width: 240px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 2em;
+
+        -webkit-transition: all .3s ease .15s;
+        -moz-transition: all .3s ease .15s;
+        -o-transition: all .3s ease .15s;
+        -ms-transition: all .3s ease .15s;
+        transition: all .3s ease .15s;
+    }
+
+    .page-header-navigation-sub:before {
+        border-bottom: 10px solid rgba(34, 30, 31, 0.98);
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        content: "";
+        display: block;
+        left: 25%;
+        margin-left: -10px;
+        position: absolute;
+        top: 0.5em;
+    }
+
+    .page-header-navigation-sub-list {
+        background: rgba(34, 30, 31, 0.98);
+        border-radius: 5px;
+        box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.5);
+        margin-top: 1em;
+        padding: 1.25em 1.5em;
+        text-align: left;
+    }
+
+    .page-header-navigation-sub-entry-link {
+        clear: both;
+        float: left;
+        padding: 0 !important;
+    }
+
+    .page-header-navigation-sub-entry-link:hover {
+        background: transparent;
+        color: #fff;
+    }
+
+    .page-header-navigation-sub-entry {
+        clear: both;
+        margin: 0 0 0.5em 0 !important;
+        width: 100%;
+    }
+
+    .page-header-navigation-sub-entry:last-child {
+        margin: 0 !important;
+    }
+
+    .page-header-navigation-entry:hover .page-header-navigation-sub {
+        height: auto;
+        opacity:1;
+    }
 
 /** page header
  * ========================================================== */
