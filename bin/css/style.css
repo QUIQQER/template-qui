@@ -391,6 +391,10 @@ input:focus::-moz-placeholder {
 
 @media screen and (max-width: 767px) {
 
+    .body-container {
+        margin-top: 50px;
+    }
+
     .page-header {
         padding: 1em 0;
     }

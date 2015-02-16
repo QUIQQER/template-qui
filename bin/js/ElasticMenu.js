@@ -34,6 +34,7 @@ define('project/ElasticMenu', [
         ],
 
         options : {
+            headerMenu      : true,
             moveCointainer  : false,  // [optional] html element which move with the menu
             mouseenter      : false,  // use mouseenter and mouseleave
             mouseleave      : false,  // use mouseleave and mouseleave
@@ -65,7 +66,8 @@ define('project/ElasticMenu', [
          */
         $onImport : function()
         {
-            var Elm = this.getElm();
+            var self = this,
+                Elm  = this.getElm();
 
             Elm.set({
                 tabindex : -1,
@@ -78,13 +80,29 @@ define('project/ElasticMenu', [
                 }
             });
 
+            Elm.addClass( 'hide-on-mobile' );
+
             window.addEvent( 'resize', this.resize );
 
             this.$NavElm = Elm.getElement( '.page-navigation' );
 
+            // header menu
+            new Element('div', {
+                'class' : 'page-menu-mobile hide-on-desktop',
+                html    : '<span class="fa fa-list"></span>'+
+                          '<span>MENU</span>',
+                events : {
+                    click : function() {
+                        self.toggle();
+                    }
+                }
+            }).inject( document.body, 'top' );
+
+
+
             // menu button
             var Btn = new Element('button', {
-                'class' : 'page-menu-opener',
+                'class' : 'page-menu-opener hide-on-mobile',
                 html    : '<span class="fa fa-list"></span>'+
                           '<span class="page-menu-opener-text">MENU</span>',
                 styles : {
@@ -97,7 +115,7 @@ define('project/ElasticMenu', [
 
             // svg element
             this.$Shape = new Element('div', {
-                'class'            : 'page-menu-morph',
+                'class'            : 'page-menu-morph hide-on-mobile',
                 'data-morph-open'  : "M300-10c0,0,295,164,295,410c0,232-295,410-295,410",
                 'data-morph-close' : "M300-10C300-10,5,154,5,400c0,232,295,410,295,410",
                 html : '<svg width="100%" height="100%" viewBox="0 0 600 800" preserveAspectRatio="none">'+
@@ -198,6 +216,9 @@ define('project/ElasticMenu', [
             this.$open    = true;
             this.$animate = true;
 
+            this.$Elm.removeClass( 'hide-on-mobile' );
+            this.resize();
+
 
             (function()
             {
@@ -277,6 +298,8 @@ define('project/ElasticMenu', [
                 {
                     self.$animate = false;
                     self.$open    = false;
+
+                    self.$Elm.addClass( 'hide-on-mobile' );
                 });
             });
         },
