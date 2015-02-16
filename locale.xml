@@ -2,6 +2,16 @@
 <locales>
 
     <groups name="quiqqer/template-qui" datatype="php,js">
+        <locale name="package.title">
+            <de><![CDATA[QUIQQER - Template: QUI]]></de>
+            <en><![CDATA[QUIQQER - Template: QUI]]></en>
+        </locale>
+        <locale name="package.description">
+            <de><![CDATA[QUIQQER - Template: QUI]]></de>
+            <en><![CDATA[QUIQQER - Template: QUI]]></en>
+        </locale>
+
+
         <locale name="area.footer.left.title">
             <de><![CDATA[Footer links]]></de>
             <en><![CDATA[Footer left]]></en>
