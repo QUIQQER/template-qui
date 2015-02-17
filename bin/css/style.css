@@ -121,6 +121,8 @@ input:focus::-moz-placeholder {
     font-size: 14pt;
     text-align: center;
     padding: 4.5em 0 4em;
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -251,6 +253,10 @@ input:focus::-moz-placeholder {
 
 /** page content
  * ========================================================== */
+
+.page {
+    z-index: 1;
+}
 
 .page-content {
     font-size: 12pt;
