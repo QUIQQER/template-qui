@@ -152,6 +152,7 @@ input:focus::-moz-placeholder {
     font-style: italic;
     padding: 0.6em 1.2em;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .page-header-navigation a:hover {
