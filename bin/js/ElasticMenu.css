@@ -104,6 +104,7 @@
 
 .page-navigation-home {
     float: left;
+    font-size: 16px;
     padding: 10px !important;
     width: 100%;
 }
@@ -129,7 +130,7 @@
 
 .page-navigation-level-2 a {
     border-top: none;
-    font-size: 16px;
+    font-size: 14px;
     padding: 5px 0;
 }
 
