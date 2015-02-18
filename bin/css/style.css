@@ -406,6 +406,10 @@ input:focus::-moz-placeholder {
         padding: 1em 0;
     }
 
+    .page-content {
+        font-size: 11.5pt;
+    }
+
     .page-footer-left {
         padding-right: 0;
     }
