@@ -25,3 +25,32 @@
 .templateQUI-startpage-intro a:hover {
     background: transparent;
 }
+
+
+@media screen and (max-width: 767px) {
+
+    .templateQUI-startpage-intro h3 {
+        font-size: 1.25em;
+        margin: 0;
+        padding: 10pt 0;
+    }
+
+    .templateQUI-startpage-intro p {
+        margin-top: 0;
+    }
+
+    .templateQUI-startpage-intro-entry {
+        border-bottom: 1px solid #ccc;
+        margin: 3em 0 0;
+        padding-bottom: 3em;
+    }
+
+    .templateQUI-startpage-intro-entry:last-child {
+        border-bottom: none;
+    }
+
+    .templateQUI-startpage-intro-entry .fa {
+        font-size: 3.5em;
+    }
+
+}

@@ -81,8 +81,12 @@
     }
 
     .templateQUI-startpage2box h2 {
-        font-size: 16px;
+        font-size: 1.25em;
         top: -0.9em;
+    }
+
+    .templateQUI-startpage2box header {
+        margin: 2em 0;
     }
 
     .templateQUI-startpage2box-entry-inner h3 {
