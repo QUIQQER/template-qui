@@ -6,14 +6,14 @@
  * @author www.pcsg.de (Henning Leutz)
  */
 
-define('project/ElasticMenu', [
+define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
 
     'qui/QUI',
     'qui/controls/Control',
 
     URL_TEMPLATE_DIR +'bin/js/snap.svg-min.js',
 
-    'css!project/ElasticMenu.css'
+    'css!package/quiqqer/template-qui/bin/js/ElasticMenu.css'
 
 ], function(QUI, QUIControl)
 {

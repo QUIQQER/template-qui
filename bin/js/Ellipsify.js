@@ -1,7 +1,11 @@
 
 
 
-define('project/Ellipsify', ['css!project/Ellipsify.css'], function()
+define('package/quiqqer/template-qui/bin/js/Ellipsify', [
+
+    'css!package/quiqqer/template-qui/bin/js/Ellipsify.css'
+
+], function()
 {
     "use strict";
 
