@@ -69,7 +69,7 @@
                     <locale group="quiqqer/template-qui" var="Startpage2Box.sitetypes" />
                 </setting>
                 <setting name="showImage" type="checkbox">
-                    <locale group="quiqqer/template-qui" var="Startpage2Box.sitetypes" />
+                    <locale group="quiqqer/template-qui" var="Startpage2Box.showImage" />
                 </setting>
             </settings>
         </brick>
@@ -92,7 +92,7 @@
                     <locale group="quiqqer/template-qui" var="Startpage3Box.sitetypes" />
                 </setting>
                 <setting name="showImage" type="checkbox">
-                    <locale group="quiqqer/template-qui" var="Startpage3Box.sitetypes" />
+                    <locale group="quiqqer/template-qui" var="Startpage3Box.showImage" />
                 </setting>
             </settings>
         </brick>

@@ -4,11 +4,9 @@ require.config({
     baseUrl : URL_BIN_DIR +'QUI',
 
     paths : {
-        "package"  : URL_OPT_DIR +'bin',
         "qui"      : URL_OPT_DIR +'bin/qui/qui',
         "locale"   : URL_VAR_DIR +'locale/bin',
-        "controls" : URL_BIN_DIR +'QUI/controls',
-        "project"  : URL_TEMPLATE_DIR +'bin/js'
+        "controls" : URL_BIN_DIR +'QUI/controls'
     },
 
     waitSeconds : 0,

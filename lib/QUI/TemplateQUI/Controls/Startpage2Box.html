@@ -12,7 +12,7 @@
              title="{$Child->getAttribute('title')}"
     >
         <div class="page-box templateQUI-startpage2box-entry-inner">
-            {if $Child->getAttribute('showImage')}
+            {if $this->getAttribute('showImage')}
                 <!-- image -->
                 {if $Child->getAttribute('image_emotion')}
                 {image assign=image src=$Child->getAttribute('image_emotion') width=500 onlysrc=true rewrited=true}

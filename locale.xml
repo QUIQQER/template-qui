@@ -112,6 +112,17 @@
             <de><![CDATA[Startseiten Box 3 - Link]]></de>
             <en><![CDATA[Startpage Box 3 - Link]]></en>
         </locale>
+
+        <locale name="Startpage2Box.showImage">
+            <de><![CDATA[Seitenbilder anzeigen]]></de>
+            <en><![CDATA[Show site images]]></en>
+        </locale>
+
+        <locale name="Startpage3Box.showImage">
+            <de><![CDATA[Seitenbilder anzeigen]]></de>
+            <en><![CDATA[Show site images]]></en>
+        </locale>
+
     </groups>
 
 </locales>
