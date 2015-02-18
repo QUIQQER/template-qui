@@ -43,8 +43,7 @@ class Startpage2Box extends QUI\Control
      */
     public function getBody()
     {
-        $Engine   = QUI::getTemplateManager()->getEngine();
-        $Project  = $this->_getProject();
+        $Engine = QUI::getTemplateManager()->getEngine();
 
         $limit     = $this->getAttribute( 'limit' );
         $sitetypes = $this->getAttribute( 'sitetypes' );
@@ -60,22 +59,15 @@ class Startpage2Box extends QUI\Control
 
         if ( !empty( $sitetypes ) )
         {
-            $children = $Project->getSites(array(
-                'limit' => $limit,
-                'order' => $order,
-                'where' => array(
-                    'type' => $sitetypes
-                )
-            ));
+            $children = $this->_getSitesByList();
 
         } else
         {
-            $children = $Project->getSites(array(
+            $children = $this->_getProject()->getSites(array(
                 'limit' => $limit,
                 'order' => $order
             ));
         }
-
 
         $Engine->assign(array(
             'children' => $children,
@@ -84,5 +76,65 @@ class Startpage2Box extends QUI\Control
 
 
         return $Engine->fetch( dirname( __FILE__ ) .'/Startpage2Box.html' );
+    }
+
+    /**
+     * Return the sites via the site types option
+     *
+     * @return array
+     */
+    protected function _getSitesByList()
+    {
+        $Project   = $this->_getProject();
+        $limit     = $this->getAttribute( 'limit' );
+        $sitetypes = $this->getAttribute( 'sitetypes' );
+        $order     = $this->getAttribute( 'order' );
+
+        if ( !$limit ) {
+            $limit = 2;
+        }
+
+        if ( !$order ) {
+            $order = 'release_from ASC';
+        }
+
+        $sitetypes = explode( ';', $sitetypes );
+
+        $ids   = array();
+        $types = array();
+        $where = array();
+
+        foreach ( $sitetypes as $sitetypeEntry )
+        {
+            if ( is_numeric( $sitetypeEntry ) )
+            {
+                $ids[] = $sitetypeEntry;
+                continue;
+            }
+
+            $types[] = $sitetypeEntry;
+        }
+
+        if ( !empty( $ids ) )
+        {
+            $where['id'] = array(
+                'type' => 'IN',
+                'value' => $ids
+            );
+        }
+
+        if ( !empty( $types ) )
+        {
+            $where['type'] = array(
+                'type' => 'IN',
+                'value' => $types
+            );
+        }
+
+        return $Project->getSites(array(
+            'where_or' => $where,
+            'limit'    => $limit,
+            'order'    => $order
+        ));
     }
 }
