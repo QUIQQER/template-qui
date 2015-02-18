@@ -52,11 +52,35 @@ class Startpage3Box extends QUI\Control
             $limit = 6;
         }
 
-        $children = $Project->getSites(array(
-            'limit' => $limit,
-            'order' => 'c_date ASC'
-        ));
+        $children = array();
 
+        if ( $this->getAttribute( 'sites' ) )
+        {
+            $ids = explode( ',', $this->getAttribute( 'sites' ) );
+
+            foreach ( $ids as $id )
+            {
+                if ( !is_numeric( $id ) ) {
+                    continue;
+                }
+
+                try
+                {
+                    $children[] = $Project->get( (int)$id );
+
+                } catch ( \QUI\Exception $Exception )
+                {
+
+                }
+            }
+
+        } else
+        {
+            $children = $Project->getSites(array(
+                'limit' => $limit,
+                'order' => 'c_date ASC'
+            ));
+        }
 
         $Engine->assign(array(
             'children' => $children,
