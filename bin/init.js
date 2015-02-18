@@ -28,7 +28,7 @@ window.addEvent('domready', function()
     require(['qui/QUI']);
 
     // Ellipsify
-    require(['project/Ellipsify'], function(Ellipsify) {
+    require(['package/quiqqer/template-qui/bin/js/Ellipsify'], function(Ellipsify) {
         Ellipsify.parse();
     });
 
