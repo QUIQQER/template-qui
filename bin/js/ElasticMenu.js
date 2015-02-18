@@ -320,7 +320,6 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
             this.$mouseDelay = (function() {
                 this.open();
             }).delay( this.getAttribute('mouseOpenDelay'), this );
-
         },
 
         /**

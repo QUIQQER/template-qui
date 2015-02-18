@@ -75,7 +75,14 @@
 
 
 @media screen and (max-width: 767px) {
+
     .templateQUI-startpage2box-entry {
         padding: 0 !important;
     }
+
+    .templateQUI-startpage2box h2 {
+        font-size: 16px;
+        top: -0.9em;
+    }
+
 }

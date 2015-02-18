@@ -13,6 +13,7 @@
     width: 100%;
 }
 
+
 .templateQUI-startpage3box header:after {
     clear: both;
     content: "";
@@ -26,7 +27,6 @@
     padding: 0 2em;
     position: relative;
     top: -0.7em;
-    width: 20%;
 }
 
 .templateQUI-startpage3box-entry:nth-child(3n+5) {
@@ -75,7 +75,14 @@
 
 
 @media screen and (max-width: 767px) {
+
     .templateQUI-startpage3box-entry {
         padding: 0 !important;
     }
+
+    .templateQUI-startpage3box h2 {
+        font-size: 16px;
+        top: -0.9em;
+    }
+
 }
