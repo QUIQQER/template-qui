@@ -50,11 +50,12 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
             this.$animate    = false;
             this.$mouseDelay = false;
 
-            this.$NavElm    = false;
-            this.$Shape     = false;
-            this.$SVG       = false;
-            this.$Path      = false;
-            this.$pathReset = false;
+            this.$NavElm      = false;
+            this.$Shape       = false;
+            this.$SVG         = false;
+            this.$Path        = false;
+            this.$MobileClose = false;
+            this.$pathReset   = false;
 
             this.addEvents({
                 onImport : this.$onImport
@@ -97,6 +98,24 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
                     }
                 }
             }).inject( document.body, 'top' );
+
+            // mobile header
+            this.$MobileClose = new Element('div', {
+                'class' : 'hide-on-desktop hide-on-desktop',
+                html   : 'schließen',
+                styles : {
+                    background : '#dddddd',
+                    cursor     : 'pointer',
+                    textAlign  : 'center',
+                    padding    : 10
+                },
+                events :
+                {
+                    click : function() {
+                        self.close();
+                    }
+                }
+            }).inject( Elm, 'top' );
 
 
 
@@ -160,24 +179,9 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
                 return;
             }
 
-            var maxSize  = document.body.getSize(),
-                maxWidth = maxSize.x;
-
-            if ( maxWidth > 510 )
-            {
-                moofx( this.$Elm ).style({
-                    transform : null
-                });
-
-                return;
+            if ( this.$open ) {
+                this.close();
             }
-
-            moofx( this.$Elm ).style({
-                transform : 'translate3d(-'+ (maxWidth - 80) +'px, 0, 0)',
-                width     : maxWidth
-            });
-
-            this.$NavElm.setStyle( 'width', maxWidth - 80 );
         },
 
         /**
@@ -217,7 +221,9 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
             this.$animate = true;
 
             this.$Elm.removeClass( 'hide-on-mobile' );
-            this.resize();
+            this.$MobileClose.removeClass( 'hide-on-mobile' );
+
+            this.$calcMenu();
 
 
             (function()
@@ -285,7 +291,7 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
             (function()
             {
                 self.getElm().removeClass( 'menu-open' );
-                self.resize();
+                self.$calcMenu();
             }).delay( 300 );
 
             this.$Path.stop().animate({
@@ -300,6 +306,7 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
                     self.$open    = false;
 
                     self.$Elm.addClass( 'hide-on-mobile' );
+                    self.$MobileClose.addClass( 'hide-on-mobile' );
                 });
             });
         },
@@ -338,6 +345,31 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
             this.$mouseDelay = (function() {
                 this.close();
             }).delay( this.getAttribute('mouseCloseDelay'), this );
+        },
+
+        /**
+         *
+         */
+        $calcMenu : function()
+        {
+            var maxSize  = document.body.getSize(),
+                maxWidth = maxSize.x;
+
+            if ( maxWidth > 510 )
+            {
+                moofx( this.$Elm ).style({
+                    transform : null
+                });
+
+                return;
+            }
+
+            moofx( this.$Elm ).style({
+                transform : 'translate3d(-'+ (maxWidth) +'px, 0, 0)',
+                width     : maxWidth
+            });
+
+            this.$NavElm.setStyle( 'width', maxWidth );
         }
     });
 });
