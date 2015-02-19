@@ -15,7 +15,7 @@
             {if $this->getAttribute( 'showImage' )}
             <!-- image -->
                 {if $Child->getAttribute( 'image_emotion' )}
-                {image assign=image src=$Child->getAttribute('image_emotion') width=500 onlysrc=true rewrited=true}
+                {image assign=image src=$Child->getAttribute('image_site') width=500 onlysrc=true rewrited=true}
                 <div class="templateQUI-startpage3box-entry-image"
                      style="background-image: url('{$image}')"
                 ></div>
