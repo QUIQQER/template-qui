@@ -23,6 +23,14 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="{$URL_TPL_DIR}bin/css/unsemantic/unsemantic-grid-responsive.css" rel="stylesheet" type="text/css" />
         <link href="{$URL_TPL_DIR}bin/css/style.css" rel="stylesheet" type="text/css" />
+
+        {if $quiTplType && $quiTplType == 'rightSidebar'}
+            <link href="{$URL_TPL_DIR}bin/types/rightSidebar.css" rel="stylesheet" type="text/css" />
+        {/if}
+
+        {if $quiTplType && $quiTplType == 'leftSidebar'}
+            <link href="{$URL_TPL_DIR}bin/types/leftSidebar.css" rel="stylesheet" type="text/css" />
+        {/if}
     <!-- [end] css combine -->
 
 </head>
@@ -111,6 +119,7 @@
         <!-- content -->
         {if $Site->getAttribute('type') == 'quiqqer/template-qui:types/startpage'}
             {$Template->getBody()}
+
         {else}
         <div class="grid-container grid-parent page" id="page">
             {if $Site->getId() != 1}
@@ -121,6 +130,13 @@
 
             {if $ownSideType}
                 {$Template->getBody()}
+
+            {elseif $quiTplType && $quiTplType == 'rightSidebar'}
+                {include file="`$TPL_DIR`types/rightSidebar.html"}
+
+            {elseif $quiTplType && $quiTplType == 'leftSidebar'}
+                {include file="`$TPL_DIR`types/leftSidebar.html"}
+
             {else}
                 <div class="page-multible-content">
                     {if $Site->getAttribute('image_emotion')}

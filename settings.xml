@@ -8,6 +8,9 @@
                     <conf name="logo">
                         <type><![CDATA[string]]></type>
                     </conf>
+                    <conf name="standardType">
+                        <type><![CDATA[string]]></type>
+                    </conf>
                 </section>
             </config>
 
@@ -25,7 +28,15 @@
                             <input conf="templateQUI.settings.logo" class="media-image">
                                 <text>Header-Logo</text>
                             </input>
+
+                            <select conf="templateQUI.settings.standardType">
+                                <text>Standard Aussehen</text>
+                                <option value="standard">Standard</option>
+                                <option value="rightSidebar">Rechte Sitebar</option>
+                                <option value="leftSidebar">Linke Sitebar</option>
+                            </select>
                         </settings>
+
                     </category>
                 </categories>
 
