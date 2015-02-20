@@ -134,6 +134,11 @@ input:focus::-moz-placeholder {
     height: auto !important;
 }
 
+.page-box pre {
+    max-width: 100%;
+    overflow: auto;
+}
+
 .page-box-inner {
     padding: 20px;
 }

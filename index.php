@@ -6,13 +6,16 @@
 
 \QUI\Utils\Site::setRecursivAttribute( $Site, 'image_emotion' );
 
-// Project Logo
+/**
+ * Project Logo
+ */
 $logo       = false;
 $configLogo = $Project->getConfig( 'templateQUI.settings.logo' );
 
 if ( QUI\Projects\Media\Utils::isMediaUrl( $configLogo ) ) {
     $logo = $configLogo;
 }
+
 
 /**
  * own site type?
