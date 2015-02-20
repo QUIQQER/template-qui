@@ -281,7 +281,7 @@ input:focus::-moz-placeholder {
  * ========================================================== */
 
 .page-image {
-    height: 400px;
+    max-height: 400px;
     overflow: hidden;
     width: 100%;
 }
@@ -432,6 +432,9 @@ input:focus::-moz-placeholder {
     width: 100%;
 }
 
+/** responsive
+ **************************************************/
+
 @media screen and (max-width: 767px) {
 
     .body-container {
@@ -442,9 +445,13 @@ input:focus::-moz-placeholder {
         padding: 1em 0;
     }
 
-    .page-content {
-        font-size: 11.5pt;
-    }
+    .page-content { font-size: 11.5pt; }
+
+    .page-content h1 { font-size: 1.5em; }
+    .page-content h2 { font-size: 1.4em; }
+    .page-content h3 { font-size: 1.3em; }
+    .page-content h4 { font-size: 1.2em; }
+
 
     .page-footer-left {
         padding-right: 0;
