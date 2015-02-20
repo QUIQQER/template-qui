@@ -90,6 +90,37 @@ input:focus::-moz-placeholder {
     transition: all 0.2s ease 0s;
 }
 
+.quiqqer-sheets-desktop a,
+.quiqqer-sheets-desktop span {
+    border-radius: 3px !important;
+    color: #5d5d5d;
+    margin-right: 2px !important;
+}
+
+.quiqqer-sheets-desktop a:hover {
+    border: 1px solid #d14 !important;
+}
+
+.quiqqer-sheets-desktop-current {
+    background: #D9D6D7 !important;
+    border: 1px solid #D9D6D7 !important;
+    border-radius: 3px !important;
+    color: #231F20 !important;
+}
+
+.quiqqer-sheets-desktop-disabled {
+    color: #AAAAAA !important;
+    border-color: #DDDDDD !important;
+}
+
+.control-background {
+    background: #D9D6D7;
+}
+
+.control-color {
+    color: #231F20;
+}
+
 /** page design
  * ========================================================== */
 
@@ -259,9 +290,9 @@ input:focus::-moz-placeholder {
 }
 
 .page-content {
-    font-size: 12pt;
+    font-size: 11pt;
     letter-spacing: 0.01rem;
-    line-height: 1.5;
+    line-height: 1.7;
     max-width: 100%;
     overflow-x: auto;
     padding: 20px;
@@ -304,8 +335,8 @@ input:focus::-moz-placeholder {
     padding: 0 0 10pt;
 }
 
-.page-content h1,
-.page-content h2 { font-size: 2.3em; }
+.page-content h1 { font-size: 2.3em; }
+.page-content h2 { font-size: 2.1em; }
 .page-content h3 { font-size: 2em; }
 .page-content h4 { font-size: 1.8em; }
 

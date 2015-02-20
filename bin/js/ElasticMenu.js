@@ -102,7 +102,7 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
             // mobile header
             this.$MobileClose = new Element('div', {
                 'class' : 'hide-on-desktop hide-on-desktop',
-                html   : 'schließen',
+                html   : 'Menü schließen',
                 styles : {
                     background : '#dddddd',
                     cursor     : 'pointer',
@@ -348,7 +348,7 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
         },
 
         /**
-         *
+         * calcuation of the menu nodes
          */
         $calcMenu : function()
         {
