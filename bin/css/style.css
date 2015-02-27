@@ -127,6 +127,8 @@ input:focus::-moz-placeholder {
 .page-box {
     background: #fff;
     border-bottom: 1px solid #ccc;
+    float: left;
+    width: 100%;
 }
 
 .page-box img {
@@ -140,7 +142,9 @@ input:focus::-moz-placeholder {
 }
 
 .page-box-inner {
+    float: left;
     padding: 20px;
+    width: 100%;
 }
 
 .page-multible-content {
