@@ -19,7 +19,7 @@
                 <setting name="text1">
                     <locale group="quiqqer/template-qui" var="startpage.text1" />
                 </setting>
-                <setting name="link1">
+                <setting name="link1" class="project-site">
                     <locale group="quiqqer/template-qui" var="startpage.link1" />
                 </setting>
 
@@ -32,7 +32,7 @@
                 <setting name="text2">
                     <locale group="quiqqer/template-qui" var="startpage.text2" />
                 </setting>
-                <setting name="link2">
+                <setting name="link2" class="project-site">
                     <locale group="quiqqer/template-qui" var="startpage.link2" />
                 </setting>
 
@@ -45,7 +45,7 @@
                 <setting name="text3">
                     <locale group="quiqqer/template-qui" var="startpage.text3" />
                 </setting>
-                <setting name="link3">
+                <setting name="link3" class="project-site">
                     <locale group="quiqqer/template-qui" var="startpage.link3" />
                 </setting>
             </settings>

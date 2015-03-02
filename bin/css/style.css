@@ -121,6 +121,11 @@ input:focus::-moz-placeholder {
     color: #231F20;
 }
 
+.control-background-active {
+    background: #d14 !important;
+    color: #FFF !important;
+}
+
 /** page design
  * ========================================================== */
 
