@@ -306,31 +306,34 @@ input:focus::-moz-placeholder {
 .page-content {
     font-size: 11pt;
     letter-spacing: 0.01rem;
-    line-height: 1.7;
+    line-height: 1.5;
     max-width: 100%;
     overflow-x: auto;
     padding: 20px;
 }
 
+.page-content .content-template {
+    margin-top: 20px;
+}
+
 .page-content blockquote,
-.page-content ol,
 .page-content p,
-.page-content pre,
-.page-content ul {
+.page-content pre {
     clear: both;
-    float: left;
     width: 100%;
 }
 
 .page-content ol,
 .page-content ul {
-    margin: 10px 0;
+    clear: both;
+    margin: 0 0 10px 0;
 }
 
 .page-content li {
     clear: both;
-    float: left;
+    line-height: 1.5;
     margin: 0 0 10px 0;
+    width: 100%;
 }
 
 .page-content h1,
@@ -355,11 +358,15 @@ input:focus::-moz-placeholder {
 .page-content h4 { font-size: 1.8em; }
 
 .page-content p {
-    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .page-content p:last-child {
     margin-bottom: 0;
+}
+
+.page-content li p {
+    margin: 0;
 }
 
 /** page breadcrumb
