@@ -31,6 +31,5 @@ define('package/quiqqer/template-qui/bin/js/Ellipsify', [
                 }
             }
         }
-
     };
 });

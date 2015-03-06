@@ -32,8 +32,8 @@
                             <select conf="templateQUI.settings.standardType">
                                 <text>Standard Aussehen</text>
                                 <option value="standard">Standard</option>
-                                <option value="rightSidebar">Rechte Sitebar</option>
-                                <option value="leftSidebar">Linke Sitebar</option>
+                                <option value="rightSidebar">Rechte Sidebar</option>
+                                <option value="leftSidebar">Linke Sidebar</option>
                             </select>
                         </settings>
 
@@ -42,6 +42,11 @@
 
             </window>
         </settings>
+
+        <wysiwyg class="page-content">
+            <css src="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic" />
+            <css src="URL_OPT_DIR/quiqqer/template-qui/bin/css/style.css" />
+        </wysiwyg>
 
     </project>
 </quiqqer>

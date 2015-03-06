@@ -16,7 +16,6 @@ if ( QUI\Projects\Media\Utils::isMediaUrl( $configLogo ) ) {
     $logo = $configLogo;
 }
 
-
 /**
  * own site type?
  */
