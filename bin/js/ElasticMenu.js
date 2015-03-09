@@ -355,11 +355,17 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
             var maxSize   = document.body.getSize(),
                 maxWidth  = maxSize.x,
                 maxHeight = maxSize.y,
-                shapeSize = this.$Shape.getSize();
+                shapeSize = this.$Shape.getScrollSize();
 
-            if ( shapeSize.y < maxHeight ) {
+            if ( shapeSize.y > maxHeight )
+            {
+                this.$Shape.setStyle( 'height', shapeSize.y - 10 );
+
+            } else
+            {
                 this.$Shape.setStyle( 'height', maxHeight - 10 );
             }
+
 
 
             if ( maxWidth > 510 )
