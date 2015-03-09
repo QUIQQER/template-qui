@@ -355,17 +355,16 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
             var maxSize   = document.body.getSize(),
                 maxWidth  = maxSize.x,
                 maxHeight = maxSize.y,
-                shapeSize = this.$Shape.getScrollSize();
+                navSize   = this.$NavElm.getSize();
 
-            if ( shapeSize.y > maxHeight )
+            if ( navSize.y > maxHeight )
             {
-                this.$Shape.setStyle( 'height', shapeSize.y - 10 );
+                this.$Shape.setStyle( 'height', navSize.y - 10 );
 
             } else
             {
                 this.$Shape.setStyle( 'height', maxHeight - 10 );
             }
-
 
 
             if ( maxWidth > 510 )
@@ -378,7 +377,7 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
             }
 
             moofx( this.$Elm ).style({
-                transform : 'translate3d(-'+ (maxWidth) +'px, 0, 0)',
+                transform : 'translate3d(-'+ maxWidth +'px, 0, 0)',
                 width     : maxWidth
             });
 
