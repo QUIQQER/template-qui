@@ -22,6 +22,7 @@
                 <locale group="quiqqer/template-qui" var="admin.layout.rightSidebar.desc" />
             </desc>
         </layout>
+
     </layouts>
 
 </site>
