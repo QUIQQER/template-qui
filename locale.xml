@@ -123,6 +123,45 @@
             <en><![CDATA[Show site images]]></en>
         </locale>
 
+
+        <locale name="area.startpageContent.title">
+            <de><![CDATA[Template: Helios - Inhalt]]></de>
+            <en><![CDATA[Template: Helios - Content]]></en>
+        </locale>
+        <locale name="area.startpageContent.description">
+            <de><![CDATA[Inhaltsbereich eines Startseiten Layouts]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+
+
+        <locale name="admin.layout.leftSidebar">
+            <de><![CDATA[Layout - Linke Sidebar]]></de>
+            <en><![CDATA[Layout - Left sidebar]]></en>
+        </locale>
+        <locale name="admin.layout.leftSidebar.description">
+            <de><![CDATA[]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+
+        <locale name="admin.layout.rightSidebar">
+            <de><![CDATA[Layout - Rechte Sidebar]]></de>
+            <en><![CDATA[Layout - Right sidebar]]></en>
+        </locale>
+        <locale name="area.sidebar.right.description">
+            <de><![CDATA[]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+
+        <locale name="admin.layout.startpage">
+            <de><![CDATA[Layout - Startseite]]></de>
+            <en><![CDATA[Layout - startpage]]></en>
+        </locale>
+        <locale name="area.sidebar.no.description">
+            <de><![CDATA[]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+
+
     </groups>
 
 </locales>
