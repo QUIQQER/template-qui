@@ -4,10 +4,14 @@
         <!-- new available bricks -->
         <brick control="\QUI\TemplateQUI\Controls\StartpageIntro">
             <title>
-                <locale group="quiqqer/template-qui" var="bricks.StartpageIntro.title" />
+                <locale group="quiqqer/template-qui"
+                        var="bricks.StartpageIntro.title"
+                />
             </title>
             <description>
-                <locale group="quiqqer/template-qui" var="bricks.StartpageIntro.description" />
+                <locale group="quiqqer/template-qui"
+                        var="bricks.StartpageIntro.description"
+                />
             </description>
             <settings>
                 <setting name="title1">
@@ -53,46 +57,70 @@
 
         <brick control="\QUI\TemplateQUI\Controls\Startpage2Box">
             <title>
-                <locale group="quiqqer/template-qui" var="bricks.Startpage2Box.title" />
+                <locale group="quiqqer/template-qui"
+                        var="bricks.Startpage2Box.title"
+                />
             </title>
             <description>
-                <locale group="quiqqer/template-qui" var="bricks.Startpage2Box.description" />
+                <locale group="quiqqer/template-qui"
+                        var="bricks.Startpage2Box.description"
+                />
             </description>
             <settings>
                 <setting name="title">
-                    <locale group="quiqqer/template-qui" var="Startpage2Box.title" />
+                    <locale group="quiqqer/template-qui"
+                            var="Startpage2Box.title"
+                    />
                 </setting>
                 <setting name="limit" type="number">
-                    <locale group="quiqqer/template-qui" var="Startpage2Box.limit" />
+                    <locale group="quiqqer/template-qui"
+                            var="Startpage2Box.limit"
+                    />
                 </setting>
                 <setting name="sitetypes" data-qui="controls/projects/project/site/Select">
-                    <locale group="quiqqer/template-qui" var="Startpage2Box.sitetypes" />
+                    <locale group="quiqqer/template-qui"
+                            var="Startpage2Box.sitetypes"
+                    />
                 </setting>
                 <setting name="showImage" type="checkbox">
-                    <locale group="quiqqer/template-qui" var="Startpage2Box.showImage" />
+                    <locale group="quiqqer/template-qui"
+                            var="Startpage2Box.showImage"
+                    />
                 </setting>
             </settings>
         </brick>
 
         <brick control="\QUI\TemplateQUI\Controls\Startpage3Box">
             <title>
-                <locale group="quiqqer/template-qui" var="bricks.Startpage3Box.title" />
+                <locale group="quiqqer/template-qui"
+                        var="bricks.Startpage3Box.title"
+                />
             </title>
             <description>
-                <locale group="quiqqer/template-qui" var="bricks.Startpage3Box.description" />
+                <locale group="quiqqer/template-qui"
+                        var="bricks.Startpage3Box.description"
+                />
             </description>
             <settings>
                 <setting name="title">
-                    <locale group="quiqqer/template-qui" var="Startpage3Box.title" />
+                    <locale group="quiqqer/template-qui"
+                            var="Startpage3Box.title"
+                    />
                 </setting>
                 <setting name="limit" type="number">
-                    <locale group="quiqqer/template-qui" var="Startpage3Box.limit" />
+                    <locale group="quiqqer/template-qui"
+                            var="Startpage3Box.limit"
+                    />
                 </setting>
                 <setting name="sitetypes" data-qui="controls/projects/project/site/Select">
-                    <locale group="quiqqer/template-qui" var="Startpage3Box.sitetypes" />
+                    <locale group="quiqqer/template-qui"
+                            var="Startpage3Box.sitetypes"
+                    />
                 </setting>
                 <setting name="showImage" type="checkbox">
-                    <locale group="quiqqer/template-qui" var="Startpage3Box.showImage" />
+                    <locale group="quiqqer/template-qui"
+                            var="Startpage3Box.showImage"
+                    />
                 </setting>
             </settings>
         </brick>
@@ -104,57 +132,77 @@
             <areas>
                 <area name="footerLeft" inheritance="1">
                     <title>
-                        <locale group="quiqqer/template-qui" var="area.footer.left.title" />
+                        <locale group="quiqqer/template-qui"
+                                var="area.footer.left.title"
+                        />
                     </title>
                     <description>
-                        <locale group="quiqqer/template-qui" var="area.footer.left.description" />
+                        <locale group="quiqqer/template-qui"
+                                var="area.footer.left.description"
+                        />
                     </description>
                 </area>
                 <area name="footerRight" inheritance="1">
                     <title>
-                        <locale group="quiqqer/template-qui" var="area.footer.right.title" />
+                        <locale group="quiqqer/template-qui"
+                                var="area.footer.right.title"
+                        />
                     </title>
                     <description>
-                        <locale group="quiqqer/template-qui" var="area.footer.right.description" />
+                        <locale group="quiqqer/template-qui"
+                                var="area.footer.right.description"
+                        />
                     </description>
                 </area>
             </areas>
 
             <!-- specific type areas -->
-            <types>
+            <layouts>
 
-                <type type="quiqqer/template-qui:types/startpage">
+                <layout type="layout/startpage">
                     <area name="startpageContent">
                         <title>
-                            <locale group="quiqqer/template-qui" var="area.startpageContent.title" />
+                            <locale group="quiqqer/template-qui"
+                                    var="area.startpageContent.title"
+                            />
                         </title>
                         <description>
-                            <locale group="quiqqer/template-qui" var="area.startpageContent.description" />
+                            <locale group="quiqqer/template-qui"
+                                    var="area.startpageContent.description"
+                            />
                         </description>
                     </area>
-                </type>
+                </layout>
 
-                <type type="quiqqer/template-qui:types/leftSidebar">
+                <layout type="layout/leftSidebar">
                     <area name="leftSidebar" inheritance="1">
                         <title>
-                            <locale group="quiqqer/template-qui" var="area.sidebar.left.title" />
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.left.title"
+                            />
                         </title>
                         <description>
-                            <locale group="quiqqer/template-qui" var="area.sidebar.left.description" />
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.left.description"
+                            />
                         </description>
                     </area>
-                </type>
-                <type type="quiqqer/template-qui:types/rightSidebar">
+                </layout>
+                <layout type="layout/rightSidebar">
                     <area name="rightSidebar" inheritance="1">
                         <title>
-                            <locale group="quiqqer/template-qui" var="area.sidebar.right.title" />
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.right.title"
+                            />
                         </title>
                         <description>
-                            <locale group="quiqqer/template-qui" var="area.sidebar.right.description" />
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.right.description"
+                            />
                         </description>
                     </area>
-                </type>
-            </types>
+                </layout>
+            </layouts>
         </templateAreas>
     </bricks>
 

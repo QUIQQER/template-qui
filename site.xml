@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-    <types>
-        <type type="types/startpage">
+
+    <layouts>
+        <layout type="layout/startpage">
             <locale group="quiqqer/template-qui" var="admin.types.startpage" />
             <desc>
                 <locale group="quiqqer/template-qui" var="admin.types.startpage.desc" />
             </desc>
-        </type>
+        </layout>
 
-        <type type="types/leftSidebar">
+        <layout type="layout/leftSidebar">
             <locale group="quiqqer/template-qui" var="admin.types.leftSidebar" />
             <desc>
                 <locale group="quiqqer/template-qui" var="admin.types.leftSidebar.desc" />
             </desc>
-        </type>
+        </layout>
 
-        <type type="types/rightSidebar">
+        <layout type="layout/rightSidebar">
             <locale group="quiqqer/template-qui" var="admin.types.rightSidebar" />
             <desc>
                 <locale group="quiqqer/template-qui" var="admin.types.rightSidebar.desc" />
             </desc>
-        </type>
-    </types>
+        </layout>
+    </layouts>
+
 </site>

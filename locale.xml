@@ -56,7 +56,7 @@
             <de><![CDATA[weiterlesen]]></de>
             <en><![CDATA[Continue Reading]]></en>
         </locale>
-        <locale name="copyright.text">
+        <locale name="copyright.text" html="true">
             <de><![CDATA[Copyright [year]]]></de>
             <en><![CDATA[Copyright [year]]]></en>
         </locale>
