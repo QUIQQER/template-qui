@@ -6,27 +6,27 @@
             <title>
                 <locale group="quiqqer/template-qui" var="admin.layout.startpage" />
             </title>
-            <desc>
+            <description>
                 <locale group="quiqqer/template-qui" var="admin.layout.startpage.desc" />
-            </desc>
+            </description>
         </layout>
 
         <layout type="layout/leftSidebar">
             <title>
                 <locale group="quiqqer/template-qui" var="admin.layout.leftSidebar" />
             </title>
-            <desc>
+            <description>
                 <locale group="quiqqer/template-qui" var="admin.layout.leftSidebar.desc" />
-            </desc>
+            </description>
         </layout>
 
         <layout type="layout/rightSidebar">
             <title>
                 <locale group="quiqqer/template-qui" var="admin.layout.rightSidebar" />
             </title>
-            <desc>
+            <description>
                 <locale group="quiqqer/template-qui" var="admin.layout.rightSidebar.desc" />
-            </desc>
+            </description>
         </layout>
 
     </layouts>

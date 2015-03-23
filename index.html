@@ -119,6 +119,9 @@
         </header>
 
         <!-- content -->
+        {$Template->getLayout()}
+
+        {*
         {if $Site->getAttribute('type') == 'quiqqer/template-qui:types/startpage'}
             {$Template->getBody()}
 
@@ -154,6 +157,7 @@
             {/if}
         </div>
         {/if}
+        *}
 
         <!-- footer -->
         <footer class="page-footer">

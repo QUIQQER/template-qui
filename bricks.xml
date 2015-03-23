@@ -159,7 +159,7 @@
             <!-- specific type areas -->
             <layouts>
 
-                <layout type="layout/startpage">
+                <layout layout="layout/startpage">
                     <area name="startpageContent">
                         <title>
                             <locale group="quiqqer/template-qui"
@@ -174,7 +174,7 @@
                     </area>
                 </layout>
 
-                <layout type="layout/leftSidebar">
+                <layout layout="layout/leftSidebar">
                     <area name="leftSidebar" inheritance="1">
                         <title>
                             <locale group="quiqqer/template-qui"
@@ -188,7 +188,7 @@
                         </description>
                     </area>
                 </layout>
-                <layout type="layout/rightSidebar">
+                <layout layout="layout/rightSidebar">
                     <area name="rightSidebar" inheritance="1">
                         <title>
                             <locale group="quiqqer/template-qui"
