@@ -3,21 +3,27 @@
 
     <layouts>
         <layout type="layout/startpage">
-            <locale group="quiqqer/template-qui" var="admin.layout.startpage" />
+            <title>
+                <locale group="quiqqer/template-qui" var="admin.layout.startpage" />
+            </title>
             <desc>
                 <locale group="quiqqer/template-qui" var="admin.layout.startpage.desc" />
             </desc>
         </layout>
 
         <layout type="layout/leftSidebar">
-            <locale group="quiqqer/template-qui" var="admin.layout.leftSidebar" />
+            <title>
+                <locale group="quiqqer/template-qui" var="admin.layout.leftSidebar" />
+            </title>
             <desc>
                 <locale group="quiqqer/template-qui" var="admin.layout.leftSidebar.desc" />
             </desc>
         </layout>
 
         <layout type="layout/rightSidebar">
-            <locale group="quiqqer/template-qui" var="admin.layout.rightSidebar" />
+            <title>
+                <locale group="quiqqer/template-qui" var="admin.layout.rightSidebar" />
+            </title>
             <desc>
                 <locale group="quiqqer/template-qui" var="admin.layout.rightSidebar.desc" />
             </desc>
