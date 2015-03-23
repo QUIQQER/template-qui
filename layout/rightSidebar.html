@@ -1,45 +1,53 @@
-{object class="\QUI\Bricks\Manager" assign=BricksManager}
-{assign var=rightSideBar value=$BricksManager->getBricksByArea('rightSidebar', $Site)}
-{assign var=contentBricks value=$BricksManager->getBricksByArea('contentBricks', $Site)}
-
-<div class="grid-100 mobile-grid-100 grid-parent page-multible-content" role="main">
-
-    <div class="page-multible-left grid-66 mobile-grid-100">
-        <div class="page-box">
-            {if $Site->getAttribute('image_emotion')}
-            <div class="page-image">
-                {image src=$Site->getAttribute('image_emotion') width=1200}
-            </div>
-            {/if}
-
-            <div class="page-box-inner page-content">
-                {if $Site->getAttribute('type') != 'quiqqer/template-qui:types/rightSidebar'}
-                    {$Template->getBody()}
-                {else}
-                    {$Site->getAttribute('content')}
-                {/if}
-            </div>
-
-            {if !empty( $contentBricks )}
-            {foreach from=$contentBricks item=Brick}
-            <div class="page-box-inner page-content">
-                {$Brick->create()}
-            </div>
-            {/foreach}
-            {/if}
-        </div>
+<div class="grid-container grid-parent page" id="page">
+    {if $Site->getId() != 1}
+    <div class="page-breadcrumb">
+        {control control="\QUI\Controls\Breadcrumb"}
     </div>
+    {/if}
 
-    <div class="page-multible-right grid-33 mobile-grid-100">
-        {if !empty( $rightSideBar)}
-            {foreach from=$rightSideBar item=Brick}
+    {object class="\QUI\Bricks\Manager" assign=BricksManager}
+    {assign var=rightSideBar value=$BricksManager->getBricksByArea('rightSidebar', $Site)}
+    {assign var=contentBricks value=$BricksManager->getBricksByArea('contentBricks', $Site)}
+
+    <div class="grid-100 mobile-grid-100 grid-parent page-multible-content" role="main">
+
+        <div class="page-multible-left grid-66 mobile-grid-100">
             <div class="page-box">
+                {if $Site->getAttribute('image_emotion')}
+                <div class="page-image">
+                    {image src=$Site->getAttribute('image_emotion') width=1200}
+                </div>
+                {/if}
+
+                <div class="page-box-inner page-content">
+                    {if $Site->getAttribute('type') != 'quiqqer/template-qui:types/rightSidebar'}
+                        {$Template->getBody()}
+                    {else}
+                        {$Site->getAttribute('content')}
+                    {/if}
+                </div>
+
+                {if !empty( $contentBricks )}
+                {foreach from=$contentBricks item=Brick}
                 <div class="page-box-inner page-content">
                     {$Brick->create()}
                 </div>
+                {/foreach}
+                {/if}
             </div>
-            {/foreach}
-        {/if}
-    </div>
+        </div>
 
+        <div class="page-multible-right grid-33 mobile-grid-100">
+            {if !empty( $rightSideBar)}
+                {foreach from=$rightSideBar item=Brick}
+                <div class="page-box">
+                    <div class="page-box-inner page-content">
+                        {$Brick->create()}
+                    </div>
+                </div>
+                {/foreach}
+            {/if}
+        </div>
+
+    </div>
 </div>
