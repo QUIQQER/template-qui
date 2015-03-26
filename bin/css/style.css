@@ -72,60 +72,6 @@ input:focus::-moz-placeholder {
     color: rgba( 0, 0, 0, 0 );
 }
 
-/** qui design
- * ========================================================== */
-
-.qui-button {
-    border: none;
-    border-radius: 3px;
-    box-shadow: 0 0 2px #999;
-    cursor: pointer;
-    float: left;
-    font-size: 1.1em;
-    line-height: 30px;
-    margin: 0;
-    padding: 0.65em 1.5em !important;
-    position: relative;
-    text-decoration: none;
-    transition: all 0.2s ease 0s;
-}
-
-.quiqqer-sheets-desktop a,
-.quiqqer-sheets-desktop span {
-    border-radius: 3px !important;
-    color: #5d5d5d;
-    margin-right: 2px !important;
-}
-
-.quiqqer-sheets-desktop a:hover {
-    border: 1px solid #d14 !important;
-}
-
-.quiqqer-sheets-desktop-current {
-    background: #D9D6D7 !important;
-    border: 1px solid #D9D6D7 !important;
-    border-radius: 3px !important;
-    color: #231F20 !important;
-}
-
-.quiqqer-sheets-desktop-disabled {
-    color: #AAAAAA !important;
-    border-color: #DDDDDD !important;
-}
-
-.control-background {
-    background: #f7f7f7;
-}
-
-.control-color {
-    color: #231F20;
-}
-
-.control-background-active {
-    background: #d14 !important;
-    color: #FFF !important;
-}
-
 /** page design
  * ========================================================== */
 
@@ -316,6 +262,11 @@ input:focus::-moz-placeholder {
     margin-top: 20px;
 }
 
+.page-content hr {
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
 .page-content blockquote,
 .page-content p,
 .page-content pre {
@@ -369,6 +320,20 @@ input:focus::-moz-placeholder {
     margin: 0;
 }
 
+.page-content a {
+    text-decoration: none;
+}
+
+.page-content:hover a {
+    text-decoration: underline;
+}
+
+.page-content:hover .qui-button,
+.page-content:hover .button,
+.page-content:hover button {
+    text-decoration: none;
+}
+
 /** page breadcrumb
  * ========================================================== */
 
@@ -376,7 +341,7 @@ input:focus::-moz-placeholder {
     background: #fff;
     border-bottom: 1px solid #ccc;
     font-size: 12px;
-    margin: 20px 0 0;
+    margin: 20px 10px 0;
     padding: 20px;
 }
 
@@ -477,4 +442,64 @@ input:focus::-moz-placeholder {
         float: left;
         padding-left: 0;
     }
+}
+
+
+/** qui design
+ * ========================================================== */
+
+.qui-button {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 2px #999;
+    cursor: pointer;
+    float: left;
+    font-size: 1.1em;
+    line-height: 30px;
+    margin: 0;
+    padding: 0.65em 1.5em !important;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.2s ease 0s;
+}
+
+.quiqqer-sheets-desktop a,
+.quiqqer-sheets-desktop span {
+    border-radius: 3px !important;
+    color: #5d5d5d;
+    margin-right: 2px !important;
+    padding: 0 15px;
+}
+
+.quiqqer-sheets-desktop a:hover {
+    border: 1px solid #d14 !important;
+}
+
+.quiqqer-sheets-desktop-current {
+    background: #D9D6D7 !important;
+    border: 1px solid #D9D6D7 !important;
+    border-radius: 3px !important;
+    color: #231F20 !important;
+}
+
+.quiqqer-sheets-desktop-disabled {
+    color: #AAAAAA !important;
+    border-color: #DDDDDD !important;
+}
+
+.control-background {
+    background: #f7f7f7;
+}
+
+.control-color {
+    color: #231F20;
+}
+
+.control-background-active {
+    background: #d14 !important;
+    color: #FFF !important;
+}
+
+.quiqqer-navigation ul {
+    margin: 0 0 10px !important;
 }
