@@ -45,6 +45,14 @@
             <de><![CDATA[QUIQQER - Template: QUI]]></de>
             <en><![CDATA[QUIQQER - Template: QUI]]></en>
         </locale>
+        <locale name="bricks.StartpageIntro.title">
+            <de><![CDATA[Baustein: 3er Baustein Startseite mit Bildern, Texten & Links]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+        <locale name="bricks.Startpage2Box.title">
+            <de><![CDATA[Baustein: 2er Baustein auf der Startseite]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
         <locale name="area.startpageContent.description">
             <de><![CDATA[Inhaltsbereich eines Startseiten Layouts]]></de>
             <en><![CDATA[]]></en>
@@ -62,11 +70,15 @@
             <en><![CDATA[Layout - Right sidebar]]></en>
         </locale>
         <locale name="admin.layout.leftSidebar.description">
-            <de><![CDATA[]]></de>
+            <de><![CDATA[Standardmäßig Sidebar auf der linken Seite]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+        <locale name="bricks.Startpage3Box.title">
+            <de><![CDATA[Baustein: 3er Baustein auf der Startseite]]></de>
             <en><![CDATA[]]></en>
         </locale>
         <locale name="admin.layout.startpage.description">
-            <de><![CDATA[]]></de>
+            <de><![CDATA[Standardmäßig Layout der Startseite ]]></de>
             <en><![CDATA[]]></en>
         </locale>
     </groups>
@@ -135,20 +147,8 @@
             <de><![CDATA[Seitenbilder anzeigen]]></de>
             <en><![CDATA[Show site images]]></en>
         </locale>
-        <locale name="bricks.StartpageIntro.title">
-            <de><![CDATA[Baustein: 3er Baustein Startseite mit Bildern, Texten & Links]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="bricks.Startpage2Box.title">
-            <de><![CDATA[Baustein: 2er Baustein auf der Startseite]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
         <locale name="area.sidebar.no.description">
             <de><![CDATA[]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="bricks.Startpage3Box.title">
-            <de><![CDATA[Baustein: 3er Baustein auf der Startseite]]></de>
             <en><![CDATA[]]></en>
         </locale>
     </groups>
