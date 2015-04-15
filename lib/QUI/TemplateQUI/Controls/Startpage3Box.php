@@ -88,10 +88,8 @@ class Startpage3Box extends QUI\Control
      */
     protected function _getSitesByList()
     {
-        $Project   = $this->_getProject();
-        $limit     = $this->getAttribute( 'limit' );
-        $sitetypes = $this->getAttribute( 'sitetypes' );
-        $order     = $this->getAttribute( 'order' );
+        $limit = $this->getAttribute( 'limit' );
+        $order = $this->getAttribute( 'order' );
 
         if ( !$limit ) {
             $limit = 6;
@@ -101,43 +99,13 @@ class Startpage3Box extends QUI\Control
             $order = 'release_from ASC';
         }
 
-        $sitetypes = explode( ';', $sitetypes );
-
-        $ids   = array();
-        $types = array();
-        $where = array();
-
-        foreach ( $sitetypes as $sitetypeEntry )
-        {
-            if ( is_numeric( $sitetypeEntry ) )
-            {
-                $ids[] = $sitetypeEntry;
-                continue;
-            }
-
-            $types[] = $sitetypeEntry;
-        }
-
-        if ( !empty( $ids ) )
-        {
-            $where['id'] = array(
-                'type' => 'IN',
-                'value' => $ids
-            );
-        }
-
-        if ( !empty( $types ) )
-        {
-            $where['type'] = array(
-                'type' => 'IN',
-                'value' => $types
-            );
-        }
-
-        return $Project->getSites(array(
-            'where_or' => $where,
-            'limit'    => $limit,
-            'order'    => $order
-        ));
+        return QUI\Projects\Site\Utils::getSitesByInputList(
+            $this->_getProject(),
+            $this->getAttribute( 'sitetypes' ),
+            array(
+                'limit' => $limit,
+                'order' => $order
+            )
+        );
     }
 }
