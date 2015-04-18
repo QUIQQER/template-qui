@@ -17,6 +17,7 @@ class Startpage3Box extends QUI\Control
 {
     /**
      * constructor
+     *
      * @param Array $attributes
      */
     public function __construct($attributes = array())
@@ -30,41 +31,39 @@ class Startpage3Box extends QUI\Control
             'showImage' => true
         ));
 
-        parent::setAttributes( $attributes );
+        parent::setAttributes($attributes);
 
         $this->addCSSFile(
-            dirname(__FILE__) . '/Startpage3Box.css'
+            dirname(__FILE__).'/Startpage3Box.css'
         );
     }
 
     /**
      * (non-PHPdoc)
+     *
      * @see \QUI\Control::create()
      */
     public function getBody()
     {
         $Engine = QUI::getTemplateManager()->getEngine();
 
-        $limit     = $this->getAttribute( 'limit' );
-        $sitetypes = $this->getAttribute( 'sitetypes' );
-        $order     = $this->getAttribute( 'order' );
+        $limit = $this->getAttribute('limit');
+        $sitetypes = $this->getAttribute('sitetypes');
+        $order = $this->getAttribute('order');
 
-        if ( !$limit ) {
+        if (!$limit) {
             $limit = 6;
         }
 
-        if ( !$order ) {
+        if (!$order) {
             $order = 'release_from ASC';
         }
 
 
-
-        if ( !empty( $sitetypes ) )
-        {
+        if (!empty($sitetypes)) {
             $children = $this->_getSitesByList();
 
-        } else
-        {
+        } else {
             $children = $this->_getProject()->getSites(array(
                 'limit' => $limit,
                 'order' => $order
@@ -77,7 +76,7 @@ class Startpage3Box extends QUI\Control
             'this'     => $this
         ));
 
-        return $Engine->fetch( dirname( __FILE__ ) .'/Startpage3Box.html' );
+        return $Engine->fetch(dirname(__FILE__).'/Startpage3Box.html');
     }
 
 
@@ -88,20 +87,20 @@ class Startpage3Box extends QUI\Control
      */
     protected function _getSitesByList()
     {
-        $limit = $this->getAttribute( 'limit' );
-        $order = $this->getAttribute( 'order' );
+        $limit = $this->getAttribute('limit');
+        $order = $this->getAttribute('order');
 
-        if ( !$limit ) {
+        if (!$limit) {
             $limit = 6;
         }
 
-        if ( !$order ) {
+        if (!$order) {
             $order = 'release_from ASC';
         }
 
         return QUI\Projects\Site\Utils::getSitesByInputList(
             $this->_getProject(),
-            $this->getAttribute( 'sitetypes' ),
+            $this->getAttribute('sitetypes'),
             array(
                 'limit' => $limit,
                 'order' => $order
