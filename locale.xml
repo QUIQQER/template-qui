@@ -54,7 +54,7 @@
             <en><![CDATA[]]></en>
         </locale>
         <locale name="area.startpageContent.description">
-            <de><![CDATA[Inhaltsbereich eines Startseiten Layouts]]></de>
+            <de><![CDATA[Inhaltsbereich eines Startseitenlayouts]]></de>
             <en><![CDATA[]]></en>
         </locale>
         <locale name="admin.layout.leftSidebar">
@@ -146,11 +146,11 @@
     </groups>
     <groups name="quiqqer/template-qui" datatype="js,php">
         <locale name="Startpage2Box.showImage">
-            <de><![CDATA[Seiten-Bilder anzeigen]]></de>
+            <de><![CDATA[Seitenbilder anzeigen]]></de>
             <en><![CDATA[Show site images]]></en>
         </locale>
         <locale name="Startpage3Box.showImage">
-            <de><![CDATA[Seiten-Bilder anzeigen]]></de>
+            <de><![CDATA[Seitenbilder anzeigen]]></de>
             <en><![CDATA[Show site images]]></en>
         </locale>
         <locale name="Startpage3Box.title">
