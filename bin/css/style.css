@@ -321,11 +321,11 @@ input:focus::-moz-placeholder {
 }
 
 .page-content a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .page-content:hover a {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .page-content:hover .qui-button,
