@@ -17,6 +17,17 @@
         type="text/css"
     />
 
+    {assign var=layoutType value=$Template->getLayoutType()}
+
+    {if $layoutType == 'layout/startpage'}
+        <link href="{$URL_TPL_DIR}bin/layouts/startpage.css" rel="stylesheet" type="text/css" />
+    {else if $layoutType == 'layout/rightSidebar'}
+        <link href="{$URL_TPL_DIR}bin/layouts/rightSidebar.css" rel="stylesheet" type="text/css" />
+    {else if $layoutType == 'layout/leftSidebar'}
+        <link href="{$URL_TPL_DIR}bin/layouts/leftSidebar.css" rel="stylesheet" type="text/css" />
+    {/if}
+
+
     <!--[if (lt IE 9) & (!IEMobile)]>
         <link rel="stylesheet" href="{$URL_TPL_DIR}bin/css/unsemantic/ie.css" />
     <![endif]-->
@@ -121,44 +132,6 @@
 
         <!-- content -->
         {$Template->getLayout()}
-
-        {*
-        {if $Site->getAttribute('type') == 'quiqqer/template-qui:types/startpage'}
-            {$Template->getBody()}
-
-        {else}
-        <div class="grid-container grid-parent page" id="page">
-            {if $Site->getId() != 1}
-            <div class="page-breadcrumb">
-                {control control="\QUI\Controls\Breadcrumb"}
-            </div>
-            {/if}
-
-            {if $ownSideType}
-                {$Template->getBody()}
-
-            {elseif $quiTplType && $quiTplType == 'rightSidebar'}
-                {include file="`$TPL_DIR`types/rightSidebar.html"}
-
-            {elseif $quiTplType && $quiTplType == 'leftSidebar'}
-                {include file="`$TPL_DIR`types/leftSidebar.html"}
-
-            {else}
-                <div class="page-multible-content">
-                    {if $Site->getAttribute('image_emotion')}
-                    <div class="page-image">
-                        {image src=$Site->getAttribute('image_emotion') width=1200}
-                    </div>
-                    {/if}
-
-                    <div class="grid-100 mobile-grid-100 page-content page-box" role="main">
-                        {$Template->getBody()}
-                    </div>
-                </div>
-            {/if}
-        </div>
-        {/if}
-        *}
 
         <!-- footer -->
         <footer class="page-footer">
