@@ -88,6 +88,7 @@ input:focus::-moz-placeholder {
 }
 
 .page-box pre {
+    margin-bottom: 10px;
     max-width: 100%;
     overflow: auto;
 }
@@ -265,6 +266,10 @@ input:focus::-moz-placeholder {
 .page-content hr {
     border: none;
     border-top: 1px solid #ccc;
+    clear: both;
+    float: left;
+    margin: 2em 0 1em;
+    width: 100%;
 }
 
 .page-content blockquote,
