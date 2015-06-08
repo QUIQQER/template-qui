@@ -285,6 +285,14 @@ input:focus::-moz-placeholder {
     margin: 0 0 10px 0;
 }
 
+.page-content ol ol,
+.page-content ol ul,
+.page-content ul ul,
+.page-content ul ol {
+    clear: both;
+    margin: 0;
+}
+
 .page-content li {
     clear: both;
     line-height: 1.5;
