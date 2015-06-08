@@ -40,11 +40,6 @@ a {
     color: #d14;
     padding: 0 3px;
     text-decoration: underline;
-
--webkit-transition: all 0.2s ease;
-   -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-     -o-transition: all 0.2s ease;
 }
 
 a:hover {
@@ -52,11 +47,6 @@ a:hover {
     border-radius: 3px;
     color: #fff;
     text-decoration: none;
-
--webkit-transition: all 0.2s ease;
-   -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-     -o-transition: all 0.2s ease;
 }
 
 ul, ol {
