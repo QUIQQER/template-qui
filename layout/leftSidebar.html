@@ -5,7 +5,6 @@
     </div>
     {/if}
 
-    {object class="\QUI\Bricks\Manager" assign=BricksManager}
     {assign var=leftSideBar value=$BricksManager->getBricksByArea('leftSidebar', $Site)}
     {assign var=contentBricks value=$BricksManager->getBricksByArea('contentBricks', $Site)}
 

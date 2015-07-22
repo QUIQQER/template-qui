@@ -21,9 +21,10 @@ if (QUI\Projects\Media\Utils::isMediaUrl($configLogo)) {
  */
 
 $Engine->assign(array(
-    'logo'        => $logo,
-    'ownSideType' =>
+    'logo'          => $logo,
+    'ownSideType'   =>
         strpos($Site->getAttribute('type'), 'quiqqer/template-qui:') !== false
             ? 1 : 0,
-    'quiTplType'  => $Project->getConfig('templateQUI.settings.standardType')
+    'quiTplType'    => $Project->getConfig('templateQUI.settings.standardType'),
+    'BricksManager' => \QUI\Bricks\Manager::init()
 ));

@@ -125,6 +125,10 @@ input:focus::-moz-placeholder {
     text-align: center;
 }
 
+.quiqqer-navigation ul {
+    margin: 0 !important;
+}
+
 .page-header-navigation li {
     display: inline-block;
     list-style-type: none;
@@ -501,8 +505,4 @@ input:focus::-moz-placeholder {
 .control-background-active {
     background: #d14 !important;
     color: #FFF !important;
-}
-
-.quiqqer-navigation ul {
-    margin: 0 0 10px !important;
 }

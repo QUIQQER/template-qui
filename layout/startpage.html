@@ -15,7 +15,6 @@
 
 <div class="grid-container grid-parent page" id="page">
     <div class="grid-100 mobile-grid-100 page-content" role="main">
-        {object class="\QUI\Bricks\Manager" assign=BricksManager}
         {assign var=bricks value=$BricksManager->getBricksByArea('startpageContent', $Site)}
         {foreach from=$bricks item=Brick}
         <section class="startpage-section">

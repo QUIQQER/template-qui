@@ -10,8 +10,6 @@
     {$Template->getHeader()}
     {assign var=_tmp value=$Template->setAttribute('content-header', false)}
 
-    {object class="\QUI\Bricks\Manager" assign=BricksManager}
-
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic"
         rel="stylesheet"
         type="text/css"
@@ -37,6 +35,7 @@
         <link href="{$URL_TPL_DIR}bin/css/unsemantic/unsemantic-grid-responsive.css" rel="stylesheet" type="text/css" />
         <link href="{$URL_TPL_DIR}bin/css/style.css" rel="stylesheet" type="text/css" />
         <link href="{$URL_TPL_DIR}bin/css/buttons.css" rel="stylesheet" type="text/css" />
+        <link href="{$URL_TPL_DIR}bin/css/messages.css" rel="stylesheet" type="text/css" />
 
         {if $quiTplType && $quiTplType == 'rightSidebar'}
             <link href="{$URL_TPL_DIR}bin/types/rightSidebar.css" rel="stylesheet" type="text/css" />

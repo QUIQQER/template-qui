@@ -36,6 +36,7 @@
             <css src="//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic"/>
             <css src="URL_OPT_DIR/quiqqer/template-qui/bin/css/style.css"/>
             <css src="URL_OPT_DIR/quiqqer/template-qui/bin/css/buttons.css"/>
+            <css src="URL_OPT_DIR/quiqqer/template-qui/bin/css/messages.css"/>
 
             <styles>
                 <style element="a">
@@ -107,6 +108,36 @@
                         <attribute name="class">button-pink</attribute>
                     </attributes>
                 </style>
+
+                <!-- messages -->
+                <style element="div">
+                    <locale group="quiqqer/template-qui" var="template.message.error"/>
+                    <attributes>
+                        <attribute name="class">content-message-error</attribute>
+                    </attributes>
+                </style>
+
+                <style element="div">
+                    <locale group="quiqqer/template-qui" var="template.attention.error"/>
+                    <attributes>
+                        <attribute name="class">content-message-attention</attribute>
+                    </attributes>
+                </style>
+
+                <style element="div">
+                    <locale group="quiqqer/template-qui" var="template.success.error"/>
+                    <attributes>
+                        <attribute name="class">content-message-success</attribute>
+                    </attributes>
+                </style>
+
+                <style element="div">
+                    <locale group="quiqqer/template-qui" var="template.information.error"/>
+                    <attributes>
+                        <attribute name="class">content-message-information</attribute>
+                    </attributes>
+                </style>
+
 
             </styles>
 
