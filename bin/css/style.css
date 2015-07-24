@@ -66,6 +66,7 @@ input:focus::-moz-placeholder {
     color: rgba( 0, 0, 0, 0 );
 }
 
+.page-header-logo:hover,
 .quiqqer-sheets a:hover,
 button:hover,
 .qui-button:hover,
