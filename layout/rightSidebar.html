@@ -40,6 +40,11 @@
             {if !empty( $rightSideBar)}
                 {foreach from=$rightSideBar item=Brick}
                 <div class="page-box">
+                    {if $Brick->getAttribute('title')}
+                    <header>
+                        <h3>{$Brick->getAttribute('title')}</h3>
+                    </header>
+                    {/if}
                     <div class="page-box-inner page-content">
                         {$Brick->create()}
                     </div>

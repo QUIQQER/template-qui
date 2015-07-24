@@ -140,9 +140,11 @@
                     {assign var=footerLeft value=$BricksManager->getBricksByArea('footerLeft', $Site)}
                     {foreach from=$footerLeft item=Brick}
                     <section class="page-footer-left-section">
+                        {if $Brick->getAttribute('title')}
                         <header>
                             <h3>{$Brick->getAttribute('title')}</h3>
                         </header>
+                        {/if}
                         {$Brick->create()}
                     </section>
                     {/foreach}
@@ -152,9 +154,11 @@
                     {assign var=footerLeft value=$BricksManager->getBricksByArea('footerRight', $Site)}
                     {foreach from=$footerLeft item=Brick}
                     <section class="page-footer-right-section">
+                        {if $Brick->getAttribute('title')}
                         <header>
                             <h3>{$Brick->getAttribute('title')}</h3>
                         </header>
+                        {/if}
                         {$Brick->create()}
                     </section>
                     {/foreach}
