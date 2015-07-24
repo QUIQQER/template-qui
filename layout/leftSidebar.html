@@ -14,12 +14,12 @@
             {if !empty( $leftSideBar )}
             {foreach from=$leftSideBar item=Brick}
             <div class="page-box">
-                {if $Brick->getAttribute('title')}
-                <header>
-                    <h3>{$Brick->getAttribute('title')}</h3>
-                </header>
-                {/if}
                 <div class="page-box-inner page-content">
+                    {if $Brick->getAttribute('title')}
+                    <header>
+                        <h3>{$Brick->getAttribute('title')}</h3>
+                    </header>
+                    {/if}
                     {$Brick->create()}
                 </div>
             </div>
