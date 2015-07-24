@@ -38,13 +38,17 @@ img {
 
 a {
     color: #d14;
-    padding: 0 3px;
     text-decoration: underline;
+    transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
 }
 
 a:hover {
     background: #d14;
-    border-radius: 3px;
+    border-radius: 0;
+    box-shadow: 0 0 0 5px #d14;
     color: #fff;
     text-decoration: none;
 }
@@ -61,6 +65,24 @@ textarea:focus::-moz-placeholder,
 input:focus::-moz-placeholder {
     color: rgba( 0, 0, 0, 0 );
 }
+
+.quiqqer-sheets a:hover,
+button:hover,
+.qui-button:hover,
+.button-black:hover,
+.button-grey:hover,
+.button-white:hover,
+.button-silver:hover,
+.button-orange:hover,
+.button-red:hover,
+.button-blue:hover,
+.button-rosy:hover,
+.button-green:hover,
+.button-pink:hover,
+.content-button:hover{
+    box-shadow: none;
+}
+
 
 /** page design
  * ========================================================== */
@@ -141,6 +163,10 @@ input:focus::-moz-placeholder {
     padding: 0.6em 1.2em;
     text-decoration: none;
     white-space: nowrap;
+}
+
+.page-header-navigation a:hover {
+    box-shadow: none;
 }
 
 .page-header-navigation a:hover {
@@ -339,6 +365,14 @@ input:focus::-moz-placeholder {
 .page-content:hover .button,
 .page-content:hover button {
     text-decoration: none;
+}
+
+.page-content a {
+    display: inline-block;
+}
+
+.page-content a img {
+    display: block;
 }
 
 /** page breadcrumb
