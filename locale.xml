@@ -78,7 +78,47 @@
             <en><![CDATA[]]></en>
         </locale>
         <locale name="admin.layout.startpage.description">
-            <de><![CDATA[Standardmäßig Layout der Startseite ]]></de>
+            <de><![CDATA[Standardmäßig Layout der Startseite ]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+        <locale name="Startpage2Box.showImage">
+            <de><![CDATA[Seitenbilder anzeigen]]></de>
+            <en><![CDATA[Show site images]]></en>
+        </locale>
+        <locale name="Startpage3Box.showImage">
+            <de><![CDATA[Seitenbilder anzeigen]]></de>
+            <en><![CDATA[Show site images]]></en>
+        </locale>
+        <locale name="Startpage3Box.title">
+            <de><![CDATA[Baustein-Überschrift]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+        <locale name="Startpage3Box.limit">
+            <de><![CDATA[Angezeigte Seiten]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+        <locale name="Startpage3Box.sitetypes">
+            <de><![CDATA[Seiten hinzufügen ]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+        <locale name="Startpage2Box.limit">
+            <de><![CDATA[Angezeigte Seiten]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+        <locale name="Startpage2Box.sitetypes">
+            <de><![CDATA[Seiten hinzufügen]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+        <locale name="bricks.gallery.component.setting.folderId">
+            <de><![CDATA[Media-Ordner auswählen]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+        <locale name="bricks.gallery.component.setting.effect">
+            <de><![CDATA[Galerie-Effekt]]></de>
+            <en><![CDATA[]]></en>
+        </locale>
+        <locale name="Startpage2Box.title">
+            <de><![CDATA[Baustein-Überschrift]]></de>
             <en><![CDATA[]]></en>
         </locale>
     </groups>
@@ -181,50 +221,6 @@
         </locale>
         <locale name="template.button.pink">
             <de><![CDATA[Link: Pinker Button]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-    </groups>
-    <groups name="quiqqer/template-qui" datatype="js,php">
-        <locale name="Startpage2Box.showImage">
-            <de><![CDATA[Seitenbilder anzeigen]]></de>
-            <en><![CDATA[Show site images]]></en>
-        </locale>
-        <locale name="Startpage3Box.showImage">
-            <de><![CDATA[Seitenbilder anzeigen]]></de>
-            <en><![CDATA[Show site images]]></en>
-        </locale>
-        <locale name="Startpage3Box.title">
-            <de><![CDATA[Baustein-Überschrift]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="Startpage3Box.limit">
-            <de><![CDATA[Angezeigte Seiten]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="Startpage3Box.sitetypes">
-            <de><![CDATA[Seiten hinzufügen ]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="Startpage2Box.limit">
-            <de><![CDATA[Angezeigte Seiten]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="Startpage2Box.sitetypes">
-            <de><![CDATA[Seiten hinzufügen]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-    </groups>
-    <groups name="quiqqer/template-qui" datatype="js,php ">
-        <locale name="bricks.gallery.component.setting.folderId">
-            <de><![CDATA[Media-Ordner auswählen]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="bricks.gallery.component.setting.effect">
-            <de><![CDATA[Galerie-Effekt]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="Startpage2Box.title">
-            <de><![CDATA[Baustein-Überschrift]]></de>
             <en><![CDATA[]]></en>
         </locale>
     </groups>
