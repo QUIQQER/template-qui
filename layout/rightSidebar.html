@@ -12,6 +12,12 @@
 
         <div class="page-multible-left grid-66 mobile-grid-100">
             <div class="page-box">
+                {if $Site->getAttribute('type') != 'quiqqer/template-qui:types/rightSidebar'}
+                    {assign var=body value=$Template->getBody()}
+                {else}
+                    {assign var=body value=$Site->getAttribute('content')}
+                {/if}
+
                 {if $Site->getAttribute('image_emotion')}
                 <div class="page-image">
                     {image src=$Site->getAttribute('image_emotion') width=1200}
@@ -19,19 +25,15 @@
                 {/if}
 
                 <div class="page-box-inner page-content">
-                    {if $Site->getAttribute('type') != 'quiqqer/template-qui:types/rightSidebar'}
-                        {$Template->getBody()}
-                    {else}
-                        {$Site->getAttribute('content')}
-                    {/if}
+                    {$body}
                 </div>
 
                 {if !empty( $contentBricks )}
-                {foreach from=$contentBricks item=Brick}
-                <div class="page-box-inner page-content">
-                    {$Brick->create()}
-                </div>
-                {/foreach}
+                    {foreach from=$contentBricks item=Brick}
+                    <div class="page-box-inner page-content">
+                        {$Brick->create()}
+                    </div>
+                    {/foreach}
                 {/if}
             </div>
         </div>

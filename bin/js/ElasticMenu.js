@@ -4,8 +4,12 @@
  *
  * @module project/ElasticMenu
  * @author www.pcsg.de (Henning Leutz)
+ *
+ * @require qui/QUI
+ * @require qui/controls/Control
+ * @require URL_TEMPLATE_DIR +bin/js/snap.svg-min.js
+ * @require css!package/quiqqer/template-qui/bin/js/ElasticMenu.css
  */
-
 define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
 
     'qui/QUI',
@@ -101,7 +105,7 @@ define('package/quiqqer/template-qui/bin/js/ElasticMenu', [
 
             // mobile header
             this.$MobileClose = new Element('div', {
-                'class' : 'hide-on-desktop hide-on-desktop',
+                'class' : 'hide-on-desktop',
                 html   : 'Menü schließen',
                 styles : {
                     background : '#dddddd',

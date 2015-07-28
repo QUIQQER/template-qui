@@ -4,6 +4,7 @@
 }
 
 .templateQUI-startpage-intro-entry {
+    color: #666;
     float: left;
     text-align: center;
     margin: 3em 0 0;
@@ -14,6 +15,7 @@
 }
 
 .templateQUI-startpage-intro h3 {
+    color: #666;
     margin: 0.5em 0;
 }
 
@@ -22,8 +24,18 @@
     text-decoration: none;
 }
 
+.templateQUI-startpage-intro-entry:hover,
+.templateQUI-startpage-intro-entry:hover h3 {
+    color: #333 !important;
+}
+
 .templateQUI-startpage-intro a:hover {
     background: transparent;
+    box-shadow: none;
+}
+
+.templateQUI-startpage-intro a:hover span {
+    color: #333 !important;
 }
 
 
