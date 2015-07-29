@@ -163,6 +163,11 @@ button:hover,
     margin: 0 !important;
 }
 
+.quiqqer-navigation li {
+    margin: 0 !important;
+    padding: 0;
+}
+
 .page-header-navigation li {
     display: inline-block;
     list-style-type: none;
