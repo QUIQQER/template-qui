@@ -16,13 +16,15 @@
 
             {if !empty( $prefixContentBricks )}
             {foreach from=$prefixContentBricks item=Brick}
-            <div class="page-box">
-                {if $Brick->getAttribute('title')}
-                <header>
-                    <h3>{$Brick->getAttribute('title')}</h3>
-                </header>
-                {/if}
-                {$Brick->create()}
+            <div class="page-box page-box-prefix">
+                <div class="page-box-inner page-content">
+                    {if $Brick->getAttribute('title')}
+                    <header>
+                        <h3>{$Brick->getAttribute('title')}</h3>
+                    </header>
+                    {/if}
+                    {$Brick->create()}
+                </div>
             </div>
             {/foreach}
             {/if}
@@ -57,13 +59,15 @@
 
             {if !empty( $suffixContentBricks )}
             {foreach from=$suffixContentBricks item=Brick}
-            <div class="page-box">
-                {if $Brick->getAttribute('title')}
-                <header>
-                    <h3>{$Brick->getAttribute('title')}</h3>
-                </header>
-                {/if}
-                {$Brick->create()}
+            <div class="page-box page-box-suffix">
+                <div class="page-box-inner page-content">
+                    {if $Brick->getAttribute('title')}
+                    <header>
+                        <h3>{$Brick->getAttribute('title')}</h3>
+                    </header>
+                    {/if}
+                    {$Brick->create()}
+                </div>
             </div>
             {/foreach}
             {/if}

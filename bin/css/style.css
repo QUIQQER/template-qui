@@ -115,6 +115,14 @@ button:hover,
     width: 100%;
 }
 
+.page-box-prefix {
+    margin-bottom: 20px;
+}
+
+.page-box-suffix {
+    margin-top: 20px;
+}
+
 .page-multible-content {
     margin: 20px 0 0;
 }
