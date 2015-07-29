@@ -168,6 +168,10 @@ button:hover,
     padding: 0;
 }
 
+.quiqqer-navigation li a {
+    max-width: 90%
+}
+
 .page-header-navigation li {
     display: inline-block;
     list-style-type: none;
