@@ -136,10 +136,10 @@
         <footer class="page-footer">
 
             <div class="grid-container page-footer-container">
-                <div class="page-footer-left grid-parent grid-60 mobile-grid-100">
-                    {assign var=footerLeft value=$BricksManager->getBricksByArea('footerLeft', $Site)}
-                    {foreach from=$footerLeft item=Brick}
-                    <section class="page-footer-left-section">
+                <div class="page-footer grid-parent grid-100 mobile-grid-100">
+                    {assign var=footer value=$BricksManager->getBricksByArea('footer', $Site)}
+                    {foreach from=$footer item=Brick}
+                    <section class="page-footer-section {$Brick->getAttribute('classes')}">
                         {if $Brick->getAttribute('title')}
                         <header>
                             <h3>{$Brick->getAttribute('title')}</h3>
@@ -150,23 +150,9 @@
                     {/foreach}
                 </div>
 
-                <div class="page-footer-right grid-parent grid-40 mobile-grid-100">
-                    {assign var=footerLeft value=$BricksManager->getBricksByArea('footerRight', $Site)}
-                    {foreach from=$footerLeft item=Brick}
-                    <section class="page-footer-right-section">
-                        {if $Brick->getAttribute('title')}
-                        <header>
-                            <h3>{$Brick->getAttribute('title')}</h3>
-                        </header>
-                        {/if}
-                        {$Brick->create()}
-                    </section>
-                    {/foreach}
-                </div>
-
-                <p class="page-footer-copyright">
+                <div class="page-footer-copyright">
                     {locale group="quiqqer/template-qui" var="copyright.text" year=$smarty.now|date_format:"%Y"}
-                </p>
+                </div>
             </div>
 
         </footer>

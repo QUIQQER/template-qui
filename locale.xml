@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <locales>
     <groups name="quiqqer/template-qui" datatype="php,js">
-        <locale name="area.footer.left.title">
-            <de><![CDATA[Footer links]]></de>
-            <en><![CDATA[Footer left]]></en>
+        <locale name="area.footer.title">
+            <de><![CDATA[Footer]]></de>
+            <en><![CDATA[Footer]]></en>
         </locale>
-        <locale name="area.footer.left.description">
-            <de><![CDATA[Linke Spalte im Footer]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="area.footer.right.title">
-            <de><![CDATA[Footer rechts]]></de>
-            <en><![CDATA[Footer right]]></en>
-        </locale>
-        <locale name="area.footer.right.description">
-            <de><![CDATA[Rechte Spalte im Footer]]></de>
-            <en><![CDATA[Right side in the footer]]></en>
+        <locale name="area.footer.description">
+            <de><![CDATA[Footer Bereich]]></de>
+            <en><![CDATA[Footer Bereich]]></en>
         </locale>
         <locale name="area.sidebar.left.title">
             <de><![CDATA[Linke Sidebar]]></de>
@@ -62,12 +54,16 @@
             <en><![CDATA[Layout - Left sidebar]]></en>
         </locale>
         <locale name="admin.layout.startpage">
-            <de><![CDATA[Layout - Startseite]]></de>
-            <en><![CDATA[Layout - startpage]]></en>
+            <de><![CDATA[Layout - Landingpage]]></de>
+            <en><![CDATA[Layout - Landingpage]]></en>
         </locale>
         <locale name="admin.layout.rightSidebar">
             <de><![CDATA[Layout - Rechte Sidebar]]></de>
             <en><![CDATA[Layout - Right sidebar]]></en>
+        </locale>
+        <locale name="admin.layout.noSidebar">
+            <de><![CDATA[Layout - Keine Sidebar]]></de>
+            <en><![CDATA[Layout - No sidebar]]></en>
         </locale>
         <locale name="admin.layout.leftSidebar.description">
             <de><![CDATA[Standardmäßig Sidebar auf der linken Seite]]></de>

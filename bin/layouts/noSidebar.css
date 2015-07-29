@@ -1,0 +1,43 @@
+
+.startpage-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% auto;
+    padding: 8em 0;
+    text-align: center;
+}
+
+.startpage-image header {
+    background: #252122;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 100%;
+    padding: 2.5em 2em;
+    text-align: center;
+    width: 500px;
+}
+
+.startpage-image h2 {
+    color: #fff;
+    font-size: 2.5em;
+    margin: 0 0 0.65em;
+}
+
+.startpage-image-short {
+    color: #d14;
+    font-size: 1.5em;
+}
+
+.startpage-section {
+    clear: both;
+    float: left;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 767px) {
+    .startpage-image {
+        background-size: auto 100%;
+    }
+}

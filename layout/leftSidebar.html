@@ -7,6 +7,8 @@
 
     {assign var=leftSideBar value=$BricksManager->getBricksByArea('leftSidebar', $Site)}
     {assign var=contentBricks value=$BricksManager->getBricksByArea('contentBricks', $Site)}
+    {assign var=prefixContentBricks value=$BricksManager->getBricksByArea('prefixContentBricks', $Site)}
+    {assign var=suffixContentBricks value=$BricksManager->getBricksByArea('suffixContentBricks', $Site)}
 
     <div class="grid-100 mobile-grid-100 grid-parent page-multible-content" role="main">
 
@@ -28,6 +30,21 @@
         </div>
 
         <div class="page-multible-right grid-parent grid-66 mobile-grid-100">
+
+            {if !empty( $prefixContentBricks )}
+            {foreach from=$prefixContentBricks item=Brick}
+            <div class="page-box">
+                {if $Brick->getAttribute('title')}
+                <header>
+                    <h3>{$Brick->getAttribute('title')}</h3>
+                </header>
+                {/if}
+                {$Brick->create()}
+            </div>
+            {/foreach}
+            {/if}
+
+
             <div class="page-box">
                 {if $Site->getAttribute('image_emotion')}
                 <div class="page-image">
@@ -51,6 +68,21 @@
                 {/foreach}
                 {/if}
             </div>
+
+
+            {if !empty( $suffixContentBricks )}
+            {foreach from=$suffixContentBricks item=Brick}
+            <div class="page-box">
+                {if $Brick->getAttribute('title')}
+                <header>
+                    <h3>{$Brick->getAttribute('title')}</h3>
+                </header>
+                {/if}
+                {$Brick->create()}
+            </div>
+            {/foreach}
+            {/if}
+
         </div>
 
     </div>

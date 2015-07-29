@@ -11,6 +11,15 @@
             </description>
         </layout>
 
+        <layout type="layout/noSidebar">
+            <title>
+                <locale group="quiqqer/template-qui" var="admin.layout.noSidebar" />
+            </title>
+            <description>
+                <locale group="quiqqer/template-qui" var="admin.layout.noSidebar.desc" />
+            </description>
+        </layout>
+
         <layout type="layout/leftSidebar">
             <title>
                 <locale group="quiqqer/template-qui" var="admin.layout.leftSidebar" />

@@ -7,10 +7,27 @@
 
     {assign var=rightSideBar value=$BricksManager->getBricksByArea('rightSidebar', $Site)}
     {assign var=contentBricks value=$BricksManager->getBricksByArea('contentBricks', $Site)}
+    {assign var=prefixContentBricks value=$BricksManager->getBricksByArea('prefixContentBricks', $Site)}
+    {assign var=suffixContentBricks value=$BricksManager->getBricksByArea('suffixContentBricks', $Site)}
 
     <div class="grid-100 mobile-grid-100 grid-parent page-multible-content" role="main">
 
         <div class="page-multible-left grid-66 mobile-grid-100">
+
+            {if !empty( $prefixContentBricks )}
+            {foreach from=$prefixContentBricks item=Brick}
+            <div class="page-box">
+                {if $Brick->getAttribute('title')}
+                <header>
+                    <h3>{$Brick->getAttribute('title')}</h3>
+                </header>
+                {/if}
+                {$Brick->create()}
+            </div>
+            {/foreach}
+            {/if}
+
+
             <div class="page-box">
                 {if $Site->getAttribute('type') != 'quiqqer/template-qui:types/rightSidebar'}
                     {assign var=body value=$Template->getBody()}
@@ -36,6 +53,20 @@
                     {/foreach}
                 {/if}
             </div>
+
+
+            {if !empty( $suffixContentBricks )}
+            {foreach from=$suffixContentBricks item=Brick}
+            <div class="page-box">
+                {if $Brick->getAttribute('title')}
+                <header>
+                    <h3>{$Brick->getAttribute('title')}</h3>
+                </header>
+                {/if}
+                {$Brick->create()}
+            </div>
+            {/foreach}
+            {/if}
         </div>
 
         <div class="page-multible-right grid-33 mobile-grid-100">

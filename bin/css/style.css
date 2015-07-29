@@ -400,7 +400,7 @@ button:hover,
     float: left;
     line-height: 1.4em;
     margin: 40px 0 0;
-    padding: 20px;
+    padding: 0 10px;
     width: 100%;
 }
 
@@ -440,11 +440,9 @@ button:hover,
     font-size: 0.8em;
 }
 
-.page-footer-left-section,
-.page-footer-right-section {
+.page-footer-section {
     float: left;
     margin-bottom: 2em;
-    width: 100%;
 }
 
 .page-footer-copyright {
@@ -452,6 +450,7 @@ button:hover,
     clear: both;
     float: left;
     font-size: 0.8em;
+    margin-bottom: 20px;
     margin-top: 40px;
     padding-top: 20px;
     text-align: center;

@@ -6,51 +6,51 @@
             <title>
                 <locale group="quiqqer/template-qui"
                         var="bricks.StartpageIntro.title"
-                />
+                        />
             </title>
             <description>
                 <locale group="quiqqer/template-qui"
                         var="bricks.StartpageIntro.description"
-                />
+                        />
             </description>
             <settings>
                 <setting name="title1">
-                    <locale group="quiqqer/template-qui" var="startpage.title1" />
+                    <locale group="quiqqer/template-qui" var="startpage.title1"/>
                 </setting>
                 <setting name="icon1">
-                    <locale group="quiqqer/template-qui" var="startpage.icon1" />
+                    <locale group="quiqqer/template-qui" var="startpage.icon1"/>
                 </setting>
                 <setting name="text1">
-                    <locale group="quiqqer/template-qui" var="startpage.text1" />
+                    <locale group="quiqqer/template-qui" var="startpage.text1"/>
                 </setting>
                 <setting name="link1" class="project-site">
-                    <locale group="quiqqer/template-qui" var="startpage.link1" />
+                    <locale group="quiqqer/template-qui" var="startpage.link1"/>
                 </setting>
 
                 <setting name="title2">
-                    <locale group="quiqqer/template-qui" var="startpage.title2" />
+                    <locale group="quiqqer/template-qui" var="startpage.title2"/>
                 </setting>
                 <setting name="icon2">
-                    <locale group="quiqqer/template-qui" var="startpage.icon2" />
+                    <locale group="quiqqer/template-qui" var="startpage.icon2"/>
                 </setting>
                 <setting name="text2">
-                    <locale group="quiqqer/template-qui" var="startpage.text2" />
+                    <locale group="quiqqer/template-qui" var="startpage.text2"/>
                 </setting>
                 <setting name="link2" class="project-site">
-                    <locale group="quiqqer/template-qui" var="startpage.link2" />
+                    <locale group="quiqqer/template-qui" var="startpage.link2"/>
                 </setting>
 
                 <setting name="title3">
-                    <locale group="quiqqer/template-qui" var="startpage.title3" />
+                    <locale group="quiqqer/template-qui" var="startpage.title3"/>
                 </setting>
                 <setting name="icon3">
-                    <locale group="quiqqer/template-qui" var="startpage.icon3" />
+                    <locale group="quiqqer/template-qui" var="startpage.icon3"/>
                 </setting>
                 <setting name="text3">
-                    <locale group="quiqqer/template-qui" var="startpage.text3" />
+                    <locale group="quiqqer/template-qui" var="startpage.text3"/>
                 </setting>
                 <setting name="link3" class="project-site">
-                    <locale group="quiqqer/template-qui" var="startpage.link3" />
+                    <locale group="quiqqer/template-qui" var="startpage.link3"/>
                 </setting>
             </settings>
         </brick>
@@ -59,33 +59,33 @@
             <title>
                 <locale group="quiqqer/template-qui"
                         var="bricks.Startpage2Box.title"
-                />
+                        />
             </title>
             <description>
                 <locale group="quiqqer/template-qui"
                         var="bricks.Startpage2Box.description"
-                />
+                        />
             </description>
             <settings>
                 <setting name="title">
                     <locale group="quiqqer/template-qui"
                             var="Startpage2Box.title"
-                    />
+                            />
                 </setting>
                 <setting name="limit" type="number">
                     <locale group="quiqqer/template-qui"
                             var="Startpage2Box.limit"
-                    />
+                            />
                 </setting>
                 <setting name="sitetypes" data-qui="controls/projects/project/site/Select">
                     <locale group="quiqqer/template-qui"
                             var="Startpage2Box.sitetypes"
-                    />
+                            />
                 </setting>
                 <setting name="showImage" type="checkbox">
                     <locale group="quiqqer/template-qui"
                             var="Startpage2Box.showImage"
-                    />
+                            />
                 </setting>
             </settings>
         </brick>
@@ -94,33 +94,33 @@
             <title>
                 <locale group="quiqqer/template-qui"
                         var="bricks.Startpage3Box.title"
-                />
+                        />
             </title>
             <description>
                 <locale group="quiqqer/template-qui"
                         var="bricks.Startpage3Box.description"
-                />
+                        />
             </description>
             <settings>
                 <setting name="title">
                     <locale group="quiqqer/template-qui"
                             var="Startpage3Box.title"
-                    />
+                            />
                 </setting>
                 <setting name="limit" type="number">
                     <locale group="quiqqer/template-qui"
                             var="Startpage3Box.limit"
-                    />
+                            />
                 </setting>
                 <setting name="sitetypes" data-qui="controls/projects/project/site/Select">
                     <locale group="quiqqer/template-qui"
                             var="Startpage3Box.sitetypes"
-                    />
+                            />
                 </setting>
                 <setting name="showImage" type="checkbox">
                     <locale group="quiqqer/template-qui"
                             var="Startpage3Box.showImage"
-                    />
+                            />
                 </setting>
             </settings>
         </brick>
@@ -130,28 +130,16 @@
         <templateAreas>
             <!-- global areas -->
             <areas>
-                <area name="footerLeft" inheritance="1">
+                <area name="footer" inheritance="1">
                     <title>
                         <locale group="quiqqer/template-qui"
-                                var="area.footer.left.title"
-                        />
+                                var="area.footer.title"
+                                />
                     </title>
                     <description>
                         <locale group="quiqqer/template-qui"
-                                var="area.footer.left.description"
-                        />
-                    </description>
-                </area>
-                <area name="footerRight" inheritance="1">
-                    <title>
-                        <locale group="quiqqer/template-qui"
-                                var="area.footer.right.title"
-                        />
-                    </title>
-                    <description>
-                        <locale group="quiqqer/template-qui"
-                                var="area.footer.right.description"
-                        />
+                                var="area.footer.description"
+                                />
                     </description>
                 </area>
             </areas>
@@ -164,12 +152,27 @@
                         <title>
                             <locale group="quiqqer/template-qui"
                                     var="area.startpageContent.title"
-                            />
+                                    />
                         </title>
                         <description>
                             <locale group="quiqqer/template-qui"
                                     var="area.startpageContent.description"
-                            />
+                                    />
+                        </description>
+                    </area>
+                </layout>
+
+                <layout layout="layout/noSidebar">
+                    <area name="noSidebar">
+                        <title>
+                            <locale group="quiqqer/template-qui"
+                                    var="area.noSidebar.title"
+                                    />
+                        </title>
+                        <description>
+                            <locale group="quiqqer/template-qui"
+                                    var="area.noSidebar.description"
+                                    />
                         </description>
                     </area>
                 </layout>
@@ -179,26 +182,79 @@
                         <title>
                             <locale group="quiqqer/template-qui"
                                     var="area.sidebar.left.title"
-                            />
+                                    />
                         </title>
                         <description>
                             <locale group="quiqqer/template-qui"
                                     var="area.sidebar.left.description"
-                            />
+                                    />
+                        </description>
+                    </area>
+
+                    <area name="prefixContentBricks" inheritance="1">
+                        <title>
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.prefix.content.title"
+                                    />
+                        </title>
+                        <description>
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.prefix.content.description"
+                                    />
+                        </description>
+                    </area>
+
+                    <area name="suffixContentBricks" inheritance="1">
+                        <title>
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.suffix.content.title"
+                                    />
+                        </title>
+                        <description>
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.suffix.content.description"
+                                    />
                         </description>
                     </area>
                 </layout>
+
                 <layout layout="layout/rightSidebar">
                     <area name="rightSidebar" inheritance="1">
                         <title>
                             <locale group="quiqqer/template-qui"
                                     var="area.sidebar.right.title"
-                            />
+                                    />
                         </title>
                         <description>
                             <locale group="quiqqer/template-qui"
                                     var="area.sidebar.right.description"
-                            />
+                                    />
+                        </description>
+                    </area>
+
+                    <area name="prefixContentBricks" inheritance="1">
+                        <title>
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.prefix.content.title"
+                                    />
+                        </title>
+                        <description>
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.prefix.content.description"
+                                    />
+                        </description>
+                    </area>
+
+                    <area name="suffixContentBricks" inheritance="1">
+                        <title>
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.suffix.content.title"
+                                    />
+                        </title>
+                        <description>
+                            <locale group="quiqqer/template-qui"
+                                    var="area.sidebar.suffix.content.description"
+                                    />
                         </description>
                     </area>
                 </layout>
