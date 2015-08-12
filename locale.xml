@@ -177,45 +177,5 @@
             <de><![CDATA[Layout: Keine Sidebar]]></de>
             <en><![CDATA[]]></en>
         </locale>
-        <locale name="template.button.black">
-            <de><![CDATA[Link: Schwarzer Button]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="template.button.grey">
-            <de><![CDATA[Link: Grauer Button]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="template.button.white">
-            <de><![CDATA[Link: Weiser Button]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="template.button.silver">
-            <de><![CDATA[Link: Silberer Button]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="template.button.orange">
-            <de><![CDATA[Link: Orangener Button]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="template.button.red">
-            <de><![CDATA[Link: Roter Button]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="template.button.blue">
-            <de><![CDATA[Link: Blauer Button]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="template.button.rosy">
-            <de><![CDATA[Link: Rosa Button]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="template.button.green">
-            <de><![CDATA[Link: Grüner Button]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="template.button.pink">
-            <de><![CDATA[Link: Pinker Button]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
     </groups>
 </locales>

@@ -25,12 +25,7 @@ window.addEvent('domready', function()
     "use strict";
 
     // load QUI
-    require([
-
-        'qui/QUI',
-        'package/quiqqer/template-qui/bin/js/Ellipsify'
-
-    ], function(QUI, Ellipsify)
+    require(['qui/QUI'], function(QUI)
     {
         QUI.addEvent("onError", function(msg, url, linenumber)
         {
@@ -38,7 +33,5 @@ window.addEvent('domready', function()
             console.error( url );
             console.error( 'LineNo: '+ linenumber );
         });
-
-        Ellipsify.parse();
     });
 });

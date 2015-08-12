@@ -34,8 +34,6 @@
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
         <link href="{$URL_TPL_DIR}bin/css/unsemantic/unsemantic-grid-responsive.css" rel="stylesheet" type="text/css" />
         <link href="{$URL_TPL_DIR}bin/css/style.css" rel="stylesheet" type="text/css" />
-        <link href="{$URL_TPL_DIR}bin/css/buttons.css" rel="stylesheet" type="text/css" />
-        <link href="{$URL_TPL_DIR}bin/css/messages.css" rel="stylesheet" type="text/css" />
 
         {if $quiTplType && $quiTplType == 'rightSidebar'}
             <link href="{$URL_TPL_DIR}bin/types/rightSidebar.css" rel="stylesheet" type="text/css" />
@@ -54,21 +52,7 @@
     </div>
 
     <!-- navigation -->
-    <nav class="page-menu" data-qui="package/quiqqer/template-qui/bin/js/ElasticMenu" style="display: none">
-
-        <div class="page-navigation">
-
-            <a href="{url id=1}" class="page-navigation-home">
-                <span class="fa fa-home"></span>
-                {site id=1 attribute="title"}
-            </a>
-
-            {include file="`$TPL_DIR`leftMenu.html"
-                Site=$Project->firstChild()
-                ActiveSite=$Site
-            }
-        </div>
-    </nav>
+    {control control="\QUI\Menu\Elastic"}
 
     <!-- page -->
     <div class="body-container">
