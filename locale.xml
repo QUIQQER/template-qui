@@ -1,34 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <locales>
     <groups name="quiqqer/template-qui" datatype="php,js">
+        <!-- areas -->
         <locale name="area.footer.title">
-            <de><![CDATA[Footer]]></de>
-            <en><![CDATA[Footer]]></en>
+            <de><![CDATA[Footer Bausteinzone]]></de>
+            <en><![CDATA[Footer brickarea]]></en>
         </locale>
         <locale name="area.footer.description">
-            <de><![CDATA[Footer Bereich]]></de>
-            <en><![CDATA[Footer Bereich]]></en>
+            <de><![CDATA[Bausteinzone des Footer]]></de>
+            <en><![CDATA[Brickarea of the footer]]></en>
         </locale>
+
+        <locale name="area.startpageContent.title">
+            <de><![CDATA[Inhalts-Zone (Landingpage)]]></de>
+            <en><![CDATA[Content area (Landingpage)]]></en>
+        </locale>
+        <locale name="area.startpageContent.description">
+            <de><![CDATA[Bausteinzone eines Landingpage Layouts]]></de>
+            <en><![CDATA[Brickarea of a landingpage layout]]></en>
+        </locale>
+
         <locale name="area.sidebar.left.title">
-            <de><![CDATA[Linke Sidebar]]></de>
-            <en><![CDATA[Left sidebar]]></en>
+            <de><![CDATA[Linke Bausteinzone]]></de>
+            <en><![CDATA[Left brickarea]]></en>
         </locale>
         <locale name="area.sidebar.left.description">
-            <de><![CDATA[Links neben dem Inhalt]]></de>
-            <en><![CDATA[Left side in the footer]]></en>
+            <de><![CDATA[Bausteinzone links neben dem Inhalt]]></de>
+            <en><![CDATA[Brickarea to the left of the content]]></en>
         </locale>
+
         <locale name="area.sidebar.right.title">
-            <de><![CDATA[Rechte Sidebar]]></de>
-            <en><![CDATA[Right sidebar]]></en>
+            <de><![CDATA[Rechte Bausteinzone]]></de>
+            <en><![CDATA[Right brickarea]]></en>
         </locale>
         <locale name="area.sidebar.right.description">
-            <de><![CDATA[Rechts neben dem Inhalt]]></de>
-            <en><![CDATA[Right side in the footer]]></en>
+            <de><![CDATA[Bausteinzone rechts neben dem Inhalt]]></de>
+            <en><![CDATA[Brickarea to the right of the content]]></en>
         </locale>
-        <locale name="area.startpageContent.title">
-            <de><![CDATA[Startseiten Inhalts-Zone]]></de>
-            <en><![CDATA[Startpage content area]]></en>
+
+        <locale name="area.noSidebar.title">
+            <de><![CDATA[Inhalts-Zone (Keine Sidebar)]]></de>
+            <en><![CDATA[Content area (No Sidebar)]]></en>
         </locale>
+        <locale name="area.noSidebar.description">
+            <de><![CDATA[Inhaltszone eines Keine-Sidebar-Layouts]]></de>
+            <en><![CDATA[Content area of no sidebar layout]]></en>
+        </locale>
+
+        <locale name="area.sidebar.prefix.content.title">
+            <de><![CDATA[Prefix Zone]]></de>
+            <en><![CDATA[Prefix area]]></en>
+        </locale>
+        <locale name="area.sidebar.prefix.content.description">
+            <de><![CDATA[Bausteinzone vor dem Inhalt]]></de>
+            <en><![CDATA[Brickarea before the content]]></en>
+        </locale>
+
+        <locale name="area.sidebar.suffix.content.title">
+            <de><![CDATA[Suffix Zone]]></de>
+            <en><![CDATA[Suffix area]]></en>
+        </locale>
+        <locale name="area.sidebar.suffix.content.description">
+            <de><![CDATA[Bausteinzone nach dem Inhalt]]></de>
+            <en><![CDATA[Brickarea after the content]]></en>
+        </locale>
+
+
+
+
         <locale name="package.title">
             <de><![CDATA[QUIQQER - Template: QUI]]></de>
             <en><![CDATA[QUIQQER - Template: QUI]]></en>
@@ -43,10 +82,6 @@
         </locale>
         <locale name="bricks.Startpage2Box.title">
             <de><![CDATA[Baustein: 2er Baustein auf der Startseite]]></de>
-            <en><![CDATA[]]></en>
-        </locale>
-        <locale name="area.startpageContent.description">
-            <de><![CDATA[Inhaltsbereich eines Startseitenlayouts]]></de>
             <en><![CDATA[]]></en>
         </locale>
         <locale name="admin.layout.leftSidebar">
@@ -172,10 +207,6 @@
         <locale name="startpage.link3">
             <de><![CDATA[Startseiten Box 3 - Link]]></de>
             <en><![CDATA[Startpage Box 3 - Link]]></en>
-        </locale>
-        <locale name="area.sidebar.no.description">
-            <de><![CDATA[Layout: Keine Sidebar]]></de>
-            <en><![CDATA[]]></en>
         </locale>
     </groups>
 </locales>

@@ -6,7 +6,6 @@
     {/if}
 
     {assign var=rightSideBar value=$BricksManager->getBricksByArea('rightSidebar', $Site)}
-    {assign var=contentBricks value=$BricksManager->getBricksByArea('contentBricks', $Site)}
     {assign var=prefixContentBricks value=$BricksManager->getBricksByArea('prefixContentBricks', $Site)}
     {assign var=suffixContentBricks value=$BricksManager->getBricksByArea('suffixContentBricks', $Site)}
 
@@ -46,14 +45,6 @@
                 <div class="page-box-inner page-content">
                     {$body}
                 </div>
-
-                {if !empty( $contentBricks )}
-                    {foreach from=$contentBricks item=Brick}
-                    <div class="page-box-inner page-content">
-                        {$Brick->create()}
-                    </div>
-                    {/foreach}
-                {/if}
             </div>
 
 
