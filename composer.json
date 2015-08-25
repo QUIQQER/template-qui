@@ -20,7 +20,7 @@
         "quiqqer/bricks": "dev-dev",
         "quiqqer/buttons": "dev-dev",
         "quiqqer/messages": "dev-dev",
-        "quiqqer/menu": "dev-master"
+        "quiqqer/menu": "dev-dev"
     },
 
     "autoload": {
