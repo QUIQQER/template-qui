@@ -3,24 +3,24 @@
     clear: both;
     float: left;
     width: 100%;
+    overflow: hidden;
 }
-
-.templateQUI-startpage3box header {
-    border-top: 1px solid #ccc;
-    margin: 5em 0 2em;
-    position: relative;
-    text-align: center;
-    width: 100%;
-}
-
 
 .templateQUI-startpage3box header:after {
     clear: both;
     content: "";
 }
 
+/* ------ TEST -------- */
+
+.templateQUI-startpage3box header {
+    margin: 5em 0 2em;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
 .templateQUI-startpage3box h2 {
-    background: #f7f7f7;
     display: inline;
     float: none;
     font-size: 1.5em;
@@ -28,6 +28,27 @@
     position: relative;
     top: -0.7em;
 }
+.templateQUI-startpage3box h2:before {
+    content: '';
+    display: inline;
+    width: 500px;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    left: -500px;
+}
+
+.templateQUI-startpage3box h2:after {
+    content: '';
+    display: inline;
+    width: 500px;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    right: -500px;
+}
+
+/* ------ TEST END -------- */
 
 .templateQUI-startpage3box-entry:nth-child(3n+5) {
     clear: both;
@@ -111,8 +132,8 @@
     }
 
     .templateQUI-startpage3box h2 {
-        font-size: 16px;
-        top: -0.9em;
+        font-size: 1.25em;
+
     }
 
     .templateQUI-startpage3box header {
