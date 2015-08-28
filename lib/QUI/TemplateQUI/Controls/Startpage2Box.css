@@ -50,6 +50,11 @@
 
 .templateQUI-startpage2box-entry-inner h3 {
     font-size: 1.35em;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
 }
 
 .templateQUI-startpage2box-entry-content {
