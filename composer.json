@@ -19,7 +19,8 @@
         "quiqqer/quiqqer": "*@dev",
         "quiqqer/bricks": "dev-dev",
         "quiqqer/buttons": "dev-dev",
-        "quiqqer/messages": "dev-dev"
+        "quiqqer/messages": "dev-dev",
+        "quiqqer/menu": "dev-dev"
     },
 
     "autoload": {
