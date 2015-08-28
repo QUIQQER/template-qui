@@ -39,14 +39,34 @@
     width: 100%;
 }
 
-.templateQUI-startpage2box-entry-image {
-    background-color: #dddddd;
+/* --------------- Fix --------------- */
+
+.templateQUI-startpage2box-entry-image-fix {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% auto;
+    display: inline-block;
+    height: 0;
+    max-width: 100%;
     padding: 8em 0;
     text-align: center;
+    vertical-align: middle;
 }
+
+.templateQUI-startpage2box-entry-image {
+    text-align: center;
+    background-color: #dddddd;
+
+}
+
+.templateQUI-startpage2box-entry-no-image {
+    background-color: #dddddd;
+    height: 100%;
+    padding: 8em 0;
+    width: 100%;
+}
+
+/* --------------- Fix end --------------- */
 
 .templateQUI-startpage2box-entry-inner h3 {
     font-size: 1.35em;
