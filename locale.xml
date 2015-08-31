@@ -65,6 +65,15 @@
             <en><![CDATA[Brickarea after the content]]></en>
         </locale>
 
+        <locale name="area.header.suffix.bricks.title">
+            <de><![CDATA[Header Suffix]]></de>
+            <en><![CDATA[Header suffix]]></en>
+        </locale>
+        <locale name="area.header.suffix.bricks.description">
+            <de><![CDATA[Bausteinzone nach dem Header]]></de>
+            <en><![CDATA[Brickarea after the header]]></en>
+        </locale>
+
 
 
 
@@ -85,20 +94,20 @@
             <en><![CDATA[]]></en>
         </locale>
         <locale name="admin.layout.leftSidebar">
-            <de><![CDATA[Layout - Linke Sidebar]]></de>
-            <en><![CDATA[Layout - Left sidebar]]></en>
+            <de><![CDATA[Linke Sidebar]]></de>
+            <en><![CDATA[Left sidebar]]></en>
         </locale>
         <locale name="admin.layout.startpage">
-            <de><![CDATA[Layout - Landingpage]]></de>
-            <en><![CDATA[Layout - Landingpage]]></en>
+            <de><![CDATA[Landingpage (Startpage)]]></de>
+            <en><![CDATA[Landingpage]]></en>
         </locale>
         <locale name="admin.layout.rightSidebar">
-            <de><![CDATA[Layout - Rechte Sidebar]]></de>
-            <en><![CDATA[Layout - Right sidebar]]></en>
+            <de><![CDATA[Rechte Sidebar]]></de>
+            <en><![CDATA[Right sidebar]]></en>
         </locale>
         <locale name="admin.layout.noSidebar">
-            <de><![CDATA[Layout - Keine Sidebar]]></de>
-            <en><![CDATA[Layout - No sidebar]]></en>
+            <de><![CDATA[Keine Sidebar]]></de>
+            <en><![CDATA[No sidebar]]></en>
         </locale>
         <locale name="admin.layout.leftSidebar.description">
             <de><![CDATA[Standardmäßig Sidebar auf der linken Seite]]></de>

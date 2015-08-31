@@ -16,6 +16,9 @@
     />
 
     {assign var=layoutType value=$Template->getLayoutType()}
+    {assign var=headerSuffixBricks value=$BricksManager->getBricksByArea('headerSuffix', $Site)}
+    {assign var=footerPrefixBricks value=$BricksManager->getBricksByArea('footerPrefix', $Site)}
+
 
     {if $layoutType == 'layout/startpage'}
         <link href="{$URL_TPL_DIR}bin/layouts/startpage.css" rel="stylesheet" type="text/css" />
@@ -113,8 +116,36 @@
             {/if}
         </header>
 
+
+        {assign var=headerSuffix value=$BricksManager->getBricksByArea('headerSuffix', $Site)}
+        {foreach $headerSuffix as $Brick}
+        <div class="grid-container">
+            <div class="grid-100 mobile-grid-100">
+                <section class="page-box page-box-prefix {$Brick->getAttribute('classes')}">
+                    {$Brick->create()}
+                </section>
+            </div>
+        </div>
+        {/foreach}
+
+
         <!-- content -->
         {$Template->getLayout()}
+
+
+
+        {assign var=footerPrefix value=$BricksManager->getBricksByArea('footerPrefix', $Site)}
+        {foreach $footerPrefix as $Brick}
+        <div class="grid-container">
+            <div class="grid-100 mobile-grid-100">
+                <section class="page-box page-box-suffix {$Brick->getAttribute('classes')}">
+                    {$Brick->create()}
+                </section>
+            </div>
+        </div>
+        {/foreach}
+
+
 
         <!-- footer -->
         <footer class="page-footer">
@@ -124,11 +155,6 @@
                     {assign var=footer value=$BricksManager->getBricksByArea('footer', $Site)}
                     {foreach from=$footer item=Brick}
                     <section class="page-footer-section {$Brick->getAttribute('classes')}">
-                        {if $Brick->getAttribute('title')}
-                        <header>
-                            <h3>{$Brick->getAttribute('title')}</h3>
-                        </header>
-                        {/if}
                         {$Brick->create()}
                     </section>
                     {/foreach}

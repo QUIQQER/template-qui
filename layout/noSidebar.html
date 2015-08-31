@@ -1,8 +1,6 @@
 <!-- image -->
 {if $Site->getAttribute('image_emotion')}
 {image assign=image src=$Site->getAttribute('image_emotion') width=1900 onlysrc=true rewrited=true}
-{assign var=prefixContentBricks value=$BricksManager->getBricksByArea('prefixContentBricks', $Site)}
-{assign var=suffixContentBricks value=$BricksManager->getBricksByArea('suffixContentBricks', $Site)}
 <div class="startpage-image"
      style="background-image: url('{$image}')"
 >
@@ -15,19 +13,18 @@
 </div>
 {/if}
 
+{assign var=prefixContentBricks value=$BricksManager->getBricksByArea('prefixContentBricks', $Site)}
+{assign var=suffixContentBricks value=$BricksManager->getBricksByArea('suffixContentBricks', $Site)}
+
 <div class="grid-container grid-parent page" id="page">
 
     <div class="grid-100 mobile-grid-100 page-content" role="main">
+
 
         {if !empty( $prefixContentBricks )}
         {foreach from=$prefixContentBricks item=Brick}
         <div class="page-box page-box-prefix">
             <div class="page-box-inner page-content">
-                {if $Brick->getAttribute('title')}
-                <header>
-                    <h3>{$Brick->getAttribute('title')}</h3>
-                </header>
-                {/if}
                 {$Brick->create()}
             </div>
         </div>
@@ -51,11 +48,6 @@
         {foreach from=$suffixContentBricks item=Brick}
         <div class="page-box page-box-suffix">
             <div class="page-box-inner page-content">
-                {if $Brick->getAttribute('title')}
-                <header>
-                    <h3>{$Brick->getAttribute('title')}</h3>
-                </header>
-                {/if}
                 {$Brick->create()}
             </div>
         </div>

@@ -88,6 +88,7 @@ button:hover,
 }
 
 
+
 /** page design
  * ========================================================== */
 
@@ -116,11 +117,13 @@ button:hover,
 }
 
 .page-box-prefix {
-    margin-bottom: 20px;
+    margin: 10px 0;
+    padding: 20px;
 }
 
 .page-box-suffix {
-    margin-top: 20px;
+    margin-top: 10px 0;
+    padding: 20px;
 }
 
 .page-multible-content {
@@ -281,6 +284,18 @@ button:hover,
     max-height: 400px;
     overflow: hidden;
     width: 100%;
+}
+
+/** header suffix
+ * ========================================================== */
+
+.page-box-prefix-header-suffix {
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.page-content-header-suffix {
+    padding:  0 20px ;
 }
 
 

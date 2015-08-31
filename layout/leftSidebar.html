@@ -1,27 +1,17 @@
-<div class="grid-container grid-parent page" id="page">
-    {if $Site->getId() != 1}
-    <div class="page-breadcrumb">
-        {control control="\QUI\Controls\Breadcrumb"}
-    </div>
-    {/if}
+<div class="grid-container page" id="page">
 
     {assign var=leftSideBar value=$BricksManager->getBricksByArea('leftSidebar', $Site)}
     {assign var=contentBricks value=$BricksManager->getBricksByArea('contentBricks', $Site)}
     {assign var=prefixContentBricks value=$BricksManager->getBricksByArea('prefixContentBricks', $Site)}
     {assign var=suffixContentBricks value=$BricksManager->getBricksByArea('suffixContentBricks', $Site)}
 
-    <div class="grid-100 mobile-grid-100 grid-parent page-multible-content" role="main">
+    <div class="grid-100 mobile-grid-100 page-multible-content" role="main">
 
         <div class="page-multible-left grid-parent grid-33 mobile-grid-100">
             {if !empty( $leftSideBar )}
             {foreach from=$leftSideBar item=Brick}
             <div class="page-box">
                 <div class="page-box-inner page-content">
-                    {if $Brick->getAttribute('title')}
-                    <header>
-                        <h3>{$Brick->getAttribute('title')}</h3>
-                    </header>
-                    {/if}
                     {$Brick->create()}
                 </div>
             </div>
@@ -34,12 +24,7 @@
             {if !empty( $prefixContentBricks )}
             {foreach from=$prefixContentBricks item=Brick}
             <div class="page-box page-box-prefix">
-                <div class="page-box-inner page-content">
-                    {if $Brick->getAttribute('title')}
-                    <header>
-                        <h3>{$Brick->getAttribute('title')}</h3>
-                    </header>
-                    {/if}
+                <div class="page-box-inner">
                     {$Brick->create()}
                 </div>
             </div>
@@ -75,7 +60,7 @@
             {if !empty( $suffixContentBricks )}
             {foreach from=$suffixContentBricks item=Brick}
             <div class="page-box page-box-suffix">
-                <div class="page-box-inner page-content">
+                <div class="page-box-inner">
                     {if $Brick->getAttribute('title')}
                     <header>
                         <h3>{$Brick->getAttribute('title')}</h3>
