@@ -100,8 +100,15 @@ button:hover,
 }
 
 .page-box img {
+    display: block;
+    margin: 0 auto;
     max-width: 100%;
     height: auto !important;
+}
+
+.page-box .image_site {
+    max-height: 350px;
+    overflow: hidden;
 }
 
 .page-box pre {
@@ -117,12 +124,23 @@ button:hover,
 }
 
 .page-box-prefix {
-    margin: 10px 0;
+    /*margin-top: 20px;*/
+    margin-bottom: 20px;
+    /*padding: 20px;*/
+}
+
+.page-box-prefix-div {
     padding: 20px;
+    margin-top: 20px;
 }
 
 .page-box-suffix {
-    margin-top: 10px 0;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.page-box-suffix-div {
+    margin-bottom: 20px;
     padding: 20px;
 }
 
@@ -422,6 +440,15 @@ button:hover,
     padding: 20px;
 }
 
+.quiqqer-breadcrumb-container ul {
+    clear: none;
+}
+
+.quiqqer-breadcrumb-container ul li {
+    width: auto;
+    clear: none;
+}
+
 /** page footer
  * ========================================================== */
 
@@ -430,9 +457,9 @@ button:hover,
     clear: both;
     color: #858484;
     float: left;
+    font-size: 0.92em;
     line-height: 1.4em;
-    margin: 40px 0 0;
-    padding: 0 10px;
+    padding: 20px 10px 0;
     width: 100%;
 }
 
@@ -475,6 +502,7 @@ button:hover,
 .page-footer-section {
     float: left;
     margin-bottom: 2em;
+    padding: 0 20px;
 }
 
 .page-footer-copyright {

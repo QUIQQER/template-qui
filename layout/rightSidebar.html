@@ -27,9 +27,9 @@
                     {assign var=body value=$Site->getAttribute('content')}
                 {/if}
 
-                {if $Site->getAttribute('image_emotion')}
-                <div class="page-image">
-                    {image src=$Site->getAttribute('image_emotion') width=1200}
+                {if $Site->getAttribute('image_site')}
+                <div class="image_site">
+                    {image src=$Site->getAttribute('image_site') width=1200}
                 </div>
                 {/if}
 

@@ -1,4 +1,4 @@
-<!-- image -->
+<!-- image
 {if $Site->getAttribute('image_emotion')}
 {image assign=image src=$Site->getAttribute('image_emotion') width=1900 onlysrc=true rewrited=true}
 <div class="startpage-image"
@@ -12,7 +12,7 @@
     </header>
 </div>
 {/if}
-
+-->
 {assign var=prefixContentBricks value=$BricksManager->getBricksByArea('prefixContentBricks', $Site)}
 {assign var=suffixContentBricks value=$BricksManager->getBricksByArea('suffixContentBricks', $Site)}
 

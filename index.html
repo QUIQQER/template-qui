@@ -60,7 +60,18 @@
     <!-- page -->
     <div class="body-container">
         <!-- header -->
-        <header class="grid-100 mobile-grid-100 page-header">
+
+        <header class="grid-100 mobile-grid-100 page-header"
+            {if $Site->getAttribute('image_emotion')}
+            {image src=$Site->getAttribute('image_emotion') assign=image_emotion rewrited=true onlysrc=true}
+                style="background-image: url('{$URL_TPL_DIR}bin/images/overlay.png'), url('{$image_emotion}');
+                background-position: center center;
+                background-size: 100% auto;
+                background-repeat: no-repeat;"
+            {else}
+                style="background-image: none;"
+            {/if}
+        >
             {if $logo}
                 <a href="{url id=1}" class="page-header-logo">
                     {image src=$logo}
@@ -121,7 +132,7 @@
         {foreach $headerSuffix as $Brick}
         <div class="grid-container">
             <div class="grid-100 mobile-grid-100">
-                <section class="page-box page-box-prefix {$Brick->getAttribute('classes')}">
+                <section class="page-box page-box-prefix-div {$Brick->getAttribute('classes')}">
                     {$Brick->create()}
                 </section>
             </div>
@@ -138,7 +149,7 @@
         {foreach $footerPrefix as $Brick}
         <div class="grid-container">
             <div class="grid-100 mobile-grid-100">
-                <section class="page-box page-box-suffix {$Brick->getAttribute('classes')}">
+                <section class="page-box page-box-suffix-div {$Brick->getAttribute('classes')}">
                     {$Brick->create()}
                 </section>
             </div>
@@ -154,7 +165,7 @@
                 <div class="page-footer grid-parent grid-100 mobile-grid-100">
                     {assign var=footer value=$BricksManager->getBricksByArea('footer', $Site)}
                     {foreach from=$footer item=Brick}
-                    <section class="page-footer-section {$Brick->getAttribute('classes')}">
+                    <section class="page-footer-section {$Brick->getAttribute('classes')} grid-parent grid-25">
                         {$Brick->create()}
                     </section>
                     {/foreach}
