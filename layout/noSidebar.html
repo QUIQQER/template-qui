@@ -1,18 +1,5 @@
-<!-- image
-{if $Site->getAttribute('image_emotion')}
-{image assign=image src=$Site->getAttribute('image_emotion') width=1900 onlysrc=true rewrited=true}
-<div class="startpage-image"
-     style="background-image: url('{$image}')"
->
-    <header>
-        <h2>{$Site->getAttribute('title')}</h2>
-        <div class="startpage-image-short">
-            {$Site->getAttribute('short')}
-        </div>
-    </header>
-</div>
-{/if}
--->
+
+{assign var=bricks value=$BricksManager->getBricksByArea('noSidebar', $Site)}
 {assign var=prefixContentBricks value=$BricksManager->getBricksByArea('prefixContentBricks', $Site)}
 {assign var=suffixContentBricks value=$BricksManager->getBricksByArea('suffixContentBricks', $Site)}
 
@@ -31,12 +18,13 @@
         {/foreach}
         {/if}
 
-        {assign var=bricks value=$BricksManager->getBricksByArea('noSidebar', $Site)}
+
         {foreach from=$bricks item=Brick}
         <section class="startpage-section">
             {$Brick->create()}
         </section>
         {/foreach}
+
 
         {if $Site->getAttribute('content')}
         <div class="grid-100 mobile-grid-100 page-content page-box" role="main">

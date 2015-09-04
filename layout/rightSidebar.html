@@ -1,4 +1,3 @@
-
 <div class="grid-container page" id="page">
 
     {assign var=rightSideBar value=$BricksManager->getBricksByArea('rightSidebar', $Site)}
@@ -22,20 +21,14 @@
 
             <div class="page-box">
                 {if $Site->getAttribute('type') != 'quiqqer/template-qui:types/rightSidebar'}
-                    {assign var=body value=$Template->getBody()}
+                    <div class="page-content">
+                        {$Template->getBody()}
+                    </div>
                 {else}
-                    {assign var=body value=$Site->getAttribute('content')}
+                    <div class="page-box-inner page-content">
+                        {$Site->getAttribute('content')}
+                    </div>
                 {/if}
-
-                {if $Site->getAttribute('image_site')}
-                <div class="image_site">
-                    {image src=$Site->getAttribute('image_site') width=1200}
-                </div>
-                {/if}
-
-                <div class="page-box-inner page-content">
-                    {$body}
-                </div>
             </div>
 
 

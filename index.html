@@ -162,7 +162,9 @@
         <footer class="page-footer">
 
             <div class="grid-container page-footer-container">
+
                 <div class="page-footer grid-parent grid-100 mobile-grid-100">
+
                     {assign var=footer value=$BricksManager->getBricksByArea('footer', $Site)}
                     {foreach from=$footer item=Brick}
                     <section class="page-footer-section {$Brick->getAttribute('classes')} grid-parent grid-25">

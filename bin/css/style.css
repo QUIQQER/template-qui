@@ -37,16 +37,16 @@ img {
 }
 
 a {
-    color: #d14;
+    color: #dd151b;
     max-width: 100%;
     text-decoration: underline;
 }
 
 a:hover {
-    background: #d14;
+    background: #dd151b;
     border-radius: 0;
-    box-shadow: 0 0 0 5px #d14;
-    color: #fff;
+    box-shadow: 0 0 0 5px #dd151b;
+    color: #faddde;
     position: relative;
     text-decoration: none;
     z-index: 1;
@@ -453,11 +453,12 @@ button:hover,
  * ========================================================== */
 
 .page-footer {
-    background: #2E2633;
+    /*background: #2E2633;*/
+    background: #27202b;
     clear: both;
     color: #858484;
     float: left;
-    font-size: 0.92em;
+    font-size: 0.94em;
     line-height: 1.4em;
     padding: 20px 10px 0;
     width: 100%;
@@ -552,6 +553,7 @@ button:hover,
 /** qui design
  * ========================================================== */
 
+/*
 .qui-button {
     border: none;
     border-radius: 3px;
@@ -566,7 +568,7 @@ button:hover,
     text-decoration: none;
     transition: all 0.2s ease 0s;
 }
-
+*/
 .quiqqer-sheets-desktop a,
 .quiqqer-sheets-desktop span {
     border-radius: 3px !important;
@@ -576,7 +578,7 @@ button:hover,
 }
 
 .quiqqer-sheets-desktop a:hover {
-    border: 1px solid #d14 !important;
+    border: 1px solid #dd151b !important;
 }
 
 .quiqqer-sheets-desktop-current {
@@ -600,6 +602,6 @@ button:hover,
 }
 
 .control-background-active {
-    background: #d14 !important;
+    background: #dd151b !important;
     color: #FFF !important;
 }
