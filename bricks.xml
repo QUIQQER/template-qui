@@ -157,15 +157,28 @@
                     </description>
                 </area>
 
-                <area name="footer" inheritance="1">
+                <area name="footer-25" inheritance="1">
                     <title>
                         <locale group="quiqqer/template-qui"
-                                var="area.footer.title"
+                                var="area.footer-25.title"
                                 />
                     </title>
                     <description>
                         <locale group="quiqqer/template-qui"
-                                var="area.footer.description"
+                                var="area.footer-25.description"
+                                />
+                    </description>
+                </area>
+
+                <area name="footer-100" inheritance="1">
+                    <title>
+                        <locale group="quiqqer/template-qui"
+                                var="area.footer-100.title"
+                                />
+                    </title>
+                    <description>
+                        <locale group="quiqqer/template-qui"
+                                var="area.footer-100.description"
                                 />
                     </description>
                 </area>

@@ -8,6 +8,15 @@
                     <conf name="logo">
                         <type><![CDATA[string]]></type>
                     </conf>
+                    <conf name="minHeaderNoSidebar">
+                        <type><![CDATA[bool]]></type>
+                    </conf>
+                    <conf name="minHeaderLeftSidebar">
+                        <type><![CDATA[bool]]></type>
+                    </conf>
+                    <conf name="minHeaderRightSidebar">
+                        <type><![CDATA[bool]]></type>
+                    </conf>
                 </section>
             </config>
 
@@ -17,12 +26,46 @@
                         <text>QUI Template Settings</text>
                         <icon>URL_BIN_DIR/22x22/quiqqer.png</icon>
 
-                        <settings title="templateQUI.settings" name="templateQUI.settings">
+                        <settings title="templateQUI.settings" name="templateQUI.settings.logo">
                             <title>
-                                QUI Template Einstellungen
+                                <locale group="quiqqer/template-qui" var="templateQUI.settings.logo.title" />
                             </title>
                             <input conf="templateQUI.settings.logo" class="media-image">
-                                <text>Header-Logo</text>
+                                <text>
+                                    <locale group="quiqqer/template-qui" var="templateQUI.settings.logo.text" />
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/template-qui" var="templateQUI.settings.logo.description" />
+                                </description>
+                            </input>
+                        </settings>
+
+                        <settings title="templateQUI.settings" name="templateQUI.header.settings">
+                            <title>
+                                <locale group="quiqqer/template-qui" var="templateQUI.header.settings.text" />Header Größe einstellen
+                            </title>
+
+                            <input conf="templateQUI.settings.minHeaderNoSidebar" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/template-qui" var="minHeaderNoSidebar.text" />
+                                </text>
+                                <description><locale group="quiqqer/template-qui" var="minHeaderNoSidebar.description" /></description>
+                            </input>
+                            <input conf="templateQUI.settings.minHeaderLeftSidebar" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/template-qui" var="minHeaderLeftSidebar.text" />
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/template-qui" var="minHeaderLeftSidebar.description" />
+                                </description>
+                            </input>
+                            <input conf="templateQUI.settings.minHeaderRightSidebar" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/template-qui" var="minHeaderRightSidebar.text" />
+                                </text>
+                                <description>
+                                    <locale group="quiqqer/template-qui" var="minHeaderRightSidebar.description" />
+                                </description>
                             </input>
                         </settings>
 

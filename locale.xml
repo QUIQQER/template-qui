@@ -2,13 +2,22 @@
 <locales>
     <groups name="quiqqer/template-qui" datatype="php,js">
         <!-- areas -->
-        <locale name="area.footer.title">
-            <de><![CDATA[Footer Bausteinzone]]></de>
-            <en><![CDATA[Footer brickarea]]></en>
+        <locale name="area.footer-25.title">
+            <de><![CDATA[Footer Bausteinzone (25%)]]></de>
+            <en><![CDATA[Footer brickarea (25%)]]></en>
         </locale>
-        <locale name="area.footer.description">
-            <de><![CDATA[Bausteinzone des Footer]]></de>
-            <en><![CDATA[Brickarea of the footer]]></en>
+        <locale name="area.footer-25.description">
+            <de><![CDATA[Bausteinzone des Footer (Länge: 25%)]]></de>
+            <en><![CDATA[Brickarea of the footer (width: 25%)]]></en>
+        </locale>
+
+        <locale name="area.footer-100.title">
+            <de><![CDATA[Footer Bausteinzone (100%)]]></de>
+            <en><![CDATA[Footer brickarea (100%)]]></en>
+        </locale>
+        <locale name="area.footer-100.description">
+            <de><![CDATA[Bausteinzone des Footer (Länge: 100%)]]></de>
+            <en><![CDATA[Brickarea of the footer (width: 100%)]]></en>
         </locale>
 
         <locale name="area.startpageContent.title">
@@ -226,5 +235,54 @@
             <de><![CDATA[Startseiten Box 3 - Link]]></de>
             <en><![CDATA[Startpage Box 3 - Link]]></en>
         </locale>
+
+        <!-- logo settings -->
+        <locale name="templateQUI.settings.logo.title">
+            <de><![CDATA[Logo hochladen]]></de>
+            <en><![CDATA[Logo upload]]></en>
+        </locale>
+        <locale name="templateQUI.settings.logo.text">
+            <de><![CDATA[Header-Logo]]></de>
+            <en><![CDATA[Header Logo]]></en>
+        </locale>
+        <locale name="templateQUI.settings.logo.description">
+            <de><![CDATA[Hier können Sie Ihr eigenes Bild hochladen, das auf allen Seiten oben im Kopfbereich erscheint]]></de>
+            <en><![CDATA[muss noch übersetzt werden]]></en>
+        </locale>
+
+
+        <!-- header settings -->
+        <locale name="templateQUI.header.settings.text">
+            <de><![CDATA[Header Größe einstellen.]]></de>
+            <en><![CDATA[Set the height of the header.]]></en>
+        </locale>
+
+        <locale name="minHeaderNoSidebar.text">
+            <de><![CDATA[Keine Sidebar]]></de>
+            <en><![CDATA[No sidebar]]></en>
+        </locale>
+        <locale name="minHeaderNoSidebar.description">
+            <de><![CDATA[Kleiner Header für Layout "Keine Sidebar" aktivieren.]]></de>
+            <en><![CDATA[Activate small header for no sidebar layout.]]></en>
+        </locale>
+
+        <locale name="minHeaderLeftSidebar.text">
+            <de><![CDATA[Linke Sidebar]]></de>
+            <en><![CDATA[Left sidebar]]></en>
+        </locale>
+        <locale name="minHeaderLeftSidebar.description">
+            <de><![CDATA[Kleiner Header für Layout "Linke Sidebar" aktivieren.]]></de>
+            <en><![CDATA[Activate small header for left sidebar layout.]]></en>
+        </locale>
+
+        <locale name="minHeaderRightSidebar.text">
+            <de><![CDATA[Rechte Sidebar]]></de>
+            <en><![CDATA[Right sidebar]]></en>
+        </locale>
+        <locale name="minHeaderRightSidebar.description">
+            <de><![CDATA[Kleiner Header für Layout "Rechte Sidebar" aktivieren.]]></de>
+            <en><![CDATA[Activate small header for right sidebar layout.]]></en>
+        </locale>
+
     </groups>
 </locales>

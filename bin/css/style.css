@@ -162,7 +162,6 @@ button:hover,
     z-index: 2;
 }
 
-
 .page-header-logo:hover {
     background: none;
 }
@@ -176,7 +175,7 @@ button:hover,
  * ========================================================== */
 
 .page-header-navigation {
-    margin-top: 3em;
+    margin-top: 1.5em;
     text-align: center;
 }
 
@@ -295,6 +294,22 @@ button:hover,
     text-decoration: none;
 }
 
+.page-header-min {
+    padding: 2em 0;
+}
+
+.page-header-navigation {
+    margin-top: 3.5em;
+}
+
+.page-header-min .page-header-logo img {
+    max-height: 50px;
+}
+
+.page-header-min .page-header-navigation {
+    margin-top: 1.5em;
+}
+
 /** page image
  * ========================================================== */
 
@@ -308,7 +323,7 @@ button:hover,
  * ========================================================== */
 
 .page-box-prefix-header-suffix {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 20px;
 }
 
@@ -440,6 +455,10 @@ button:hover,
     padding: 20px;
 }
 
+.quiqqer-breadcrumb {
+    font-size: 12px;
+}
+
 .quiqqer-breadcrumb-container ul {
     clear: none;
 }
@@ -452,14 +471,37 @@ button:hover,
 /** page footer
  * ========================================================== */
 
+.page-header-big {
+    height: 600px;
+}
+
+.page-footer-section:after {
+    clear: both;
+    content: '';
+    float: none;
+    display: block;
+}
+
+.page-footer-section-100 {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.page-footer-section-100 > * {
+    display: inline-block;
+    text-align: center;
+}
+
 .page-footer {
     /*background: #2E2633;*/
-    background: #27202b;
+    background: #1c171f;
     clear: both;
-    color: #858484;
+    /*color: #858484;*/
+    color: #5e5e5e;
     float: left;
-    font-size: 0.94em;
-    line-height: 1.4em;
+    font-size: 0.9em;
+    line-height: 1.7em;
     padding: 20px 10px 0;
     width: 100%;
 }
@@ -493,7 +535,7 @@ button:hover,
 .page-footer h4 {
     color: #ffffff;
     font-size: 1.7em;
-    margin: 0.8em 0 1em;
+    margin: 0 0 1em;
 }
 
 .page-footer label {
@@ -501,7 +543,6 @@ button:hover,
 }
 
 .page-footer-section {
-    float: left;
     margin-bottom: 2em;
     padding: 0 20px;
 }
@@ -521,22 +562,35 @@ button:hover,
 /** responsive
  **************************************************/
 
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+    .page-footer-section {
+        padding: 0 5px;
+    }
+}
+
 @media screen and (max-width: 767px) {
 
     .body-container {
         margin-top: 50px;
     }
-
+/*
     .page-header {
         padding: 1em 0;
     }
-
+*/
     .page-content { font-size: 11.5pt; }
 
     .page-content h1 { font-size: 1.5em; }
     .page-content h2 { font-size: 1.4em; }
     .page-content h3 { font-size: 1.3em; }
     .page-content h4 { font-size: 1.2em; }
+
+    .page-footer h2,
+    .page-footer h3,
+    .page-footer h4 {
+        margin: 0.8em 0 1em;
+    }
 
 
     .page-footer-left {

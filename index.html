@@ -61,10 +61,10 @@
     <div class="body-container">
         <!-- header -->
 
-        <header class="grid-100 mobile-grid-100 page-header"
+        <header class="grid-100 mobile-grid-100 page-header{if $minHeader} page-header-min{/if}"
             {if $Site->getAttribute('image_emotion')}
             {image src=$Site->getAttribute('image_emotion') assign=image_emotion rewrited=true onlysrc=true}
-                style="background-image: url('{$URL_TPL_DIR}bin/images/overlay.png'), url('{$image_emotion}');
+                style="background-image: url('{$image_emotion}');
                 background-position: center center;
                 background-size: 100% auto;
                 background-repeat: no-repeat;"
@@ -165,12 +165,20 @@
 
                 <div class="page-footer grid-parent grid-100 mobile-grid-100">
 
-                    {assign var=footer value=$BricksManager->getBricksByArea('footer', $Site)}
+                    {assign var=footer value=$BricksManager->getBricksByArea('footer-25', $Site)}
                     {foreach from=$footer item=Brick}
-                    <section class="page-footer-section {$Brick->getAttribute('classes')} grid-parent grid-25">
+                    <section class="page-footer-section page-footer-section-25 {$Brick->getAttribute('classes')} grid-parent grid-25">
                         {$Brick->create()}
                     </section>
                     {/foreach}
+
+                    {assign var=footer value=$BricksManager->getBricksByArea('footer-100', $Site)}
+                    {foreach from=$footer item=Brick}
+                    <section class="page-footer-section-100 {$Brick->getAttribute('classes')} grid-parent grid-100">
+                        {$Brick->create()}
+                    </section>
+                    {/foreach}
+
                 </div>
 
                 <div class="page-footer-copyright">
