@@ -37,6 +37,38 @@ switch ($Template->getLayoutType()) {
 
 }
 
+/**
+ * colors
+ */
+
+$colorFooterBackground = '#1c171f';
+$colorFooterFont = '#858484';
+$colorMain = '#dd151b';
+$colorBackground = '#f7f7f7';
+
+if ($Project->getConfig('templateQUI.settings.colorFooterBackground')) {
+    $colorFooterBackground = $Project->getConfig('templateQUI.settings.colorFooterBackground');
+}
+
+if ($Project->getConfig('templateQUI.settings.colorFooterFont')) {
+    $colorFooterFont = $Project->getConfig('templateQUI.settings.colorFooterFont');
+}
+
+if ($Project->getConfig('templateQUI.settings.colorMain')) {
+    $colorMain = $Project->getConfig('templateQUI.settings.colorMain');
+}
+
+if ($Project->getConfig('templateQUI.settings.colorBackground')) {
+    $colorBackground = $Project->getConfig('templateQUI.settings.colorBackground');
+}
+
+$Engine->assign(array(
+    'colorFooterBackground' => $colorFooterBackground,
+    'colorFooterFont'       => $colorFooterFont,
+    'colorMain'             => $colorMain,
+    'colorBackground'       => $colorBackground,
+));
+
 
 /**
  * own site type?

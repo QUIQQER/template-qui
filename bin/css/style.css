@@ -15,7 +15,6 @@ html, body {
 }
 
 body {
-    background: #f7f7f7;
     color: #5d5d5d;
     font: 12pt "Open Sans";
     line-height: 1.75em;
@@ -37,16 +36,12 @@ img {
 }
 
 a {
-    color: #dd151b;
     max-width: 100%;
     text-decoration: underline;
 }
 
 a:hover {
-    background: #dd151b;
     border-radius: 0;
-    box-shadow: 0 0 0 5px #dd151b;
-    color: #faddde;
     position: relative;
     text-decoration: none;
     z-index: 1;
@@ -58,10 +53,6 @@ a:hover {
 
 .page-content .templateQUI-startpage-intro-entry a:hover {
     color: inherit;
-}
-
-a:hover * {
-    color: #fff !important;
 }
 
 ul, ol {
@@ -124,30 +115,22 @@ button:hover,
 .button-active,
 .button:active,
 .button:hover {
-    background: #dd151b;
     box-shadow: none;
         -moz-box-shadow: none;
         -webkit-box-shadow: none;
-    color: #FFFFFF;
     opacity: 1;
 }
 
 /* footer button (contact) */
 
 footer button {
-    background: #b61318;
-    color: #faddde ;
     padding: 0.5em 1em;
     box-shadow: none;
     margin: 1em 0em 0 0;
     float: right;
-    opacity: 0.7;
+    opacity: 0.8;
+    color: #363636
 }
-
-footer button {
-    background: #980c10;
-}
-
 
 /** page design
  * ========================================================== */
@@ -294,7 +277,6 @@ footer button {
     }
 
     .page-header-navigation-sub:before {
-        border-bottom: 10px solid rgba(34, 30, 31, 0.98);
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         content: "";
@@ -302,16 +284,17 @@ footer button {
         left: 25%;
         margin-left: -10px;
         position: absolute;
-        top: 0.5em;
+        top: 0.48em;
+        opacity: 0.9;
     }
 
     .page-header-navigation-sub-list {
-        background: rgba(34, 30, 31, 0.98);
         border-radius: 5px;
         box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.5);
         margin-top: 1em;
         padding: 1.25em 1.5em;
         text-align: left;
+        opacity: 0.965;
     }
 
     .page-header-navigation-sub-entry-link {
@@ -327,8 +310,8 @@ footer button {
     .page-header-navigation-sub-entry-link:hover {
         color: #fff;
     }
-    
-    .page-header-navigation-sub-entry a:hover {
+
+.page-header-navigation-sub-entry a:hover {
         background: none;
     }
 
@@ -562,10 +545,7 @@ footer button {
 }
 
 .page-footer {
-    /*background: #2E2633;*/
-    background: #1c171f;
     clear: both;
-    color: #858484;
     float: left;
     font-size: 0.9em;
     line-height: 1.7em;
@@ -586,12 +566,11 @@ footer button {
 .page-footer input,
 .page-footer textarea,
 .page-footer select {
-    color: #c5c4c4;
+    color: #c0bfbf;
 }
 
 .page-footer header,
 .page-footer header a {
-    color: #ffffff;
     font-size: 1.1em;
     text-decoration: none;
     padding: 0;
@@ -600,7 +579,6 @@ footer button {
 .page-footer h2,
 .page-footer h3,
 .page-footer h4 {
-    color: #ffffff;
     font-size: 1.7em;
     margin: 0 0 1em;
 }
@@ -653,11 +631,15 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #dd151b;
     opacity: 1;
     background: none;
     box-shadow: none;
     text-decoration: underline;
+}
+
+/* Social icons hover */
+footer a:hover * {
+    color: #fff ;
 }
 
 /** responsive
@@ -733,7 +715,6 @@ footer ul li a:hover {
 }
 
 .quiqqer-sheets-desktop a:hover {
-    border: 1px solid #dd151b !important;
 }
 
 .quiqqer-sheets-desktop-current {
@@ -757,6 +738,4 @@ footer ul li a:hover {
 }
 
 .control-background-active {
-    background: #dd151b !important;
-    color: #FFF !important;
 }

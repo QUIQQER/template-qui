@@ -47,6 +47,74 @@
         {/if}
     <!-- [end] css combine -->
 
+    <style>
+
+        body {
+            background: {$colorBackground};
+        }
+
+        a {
+            color: {$colorMain};
+        }
+
+        a:hover {
+            background: {$colorMain};
+            box-shadow: 0 0 0 5px {$colorMain};
+            color: #ffffff;
+        }
+
+        .page-header-navigation-sub-list {
+            background: {$colorFooterBackground};
+        }
+
+        .page-header-navigation-sub:before {
+            border-bottom: 10px solid {$colorFooterBackground};
+        }
+
+        button:hover,
+        .button-active,
+        .button:active,
+        .button:hover {
+            background: {$colorMain};
+            color: #FFFFFF;
+        }
+
+        .page-footer button {
+            background: {$colorMain};
+            color: #ffffff;
+        }
+
+        .page-footer {
+            background: {$colorFooterBackground};
+            color: {$colorFooterFont} !important;
+        }
+
+        .page-footer header,
+        .page-footer header a {
+            color: #ffffff;
+        }
+
+        .page-footer h2,
+        .page-footer h3,
+        .page-footer h4 {
+            color: {$colorFooterFont};
+        }
+
+        footer ul li a:hover {
+            color: {$colorMain};
+        }
+
+        .quiqqer-sheets-desktop a:hover {
+            border: 1px solid {$colorMain} !important;
+        }
+
+        .control-background-active {
+            background: {$colorMain} !important;
+            color: #FFFFFF !important;
+        }
+
+    </style>
+
 </head>
 <body>
 

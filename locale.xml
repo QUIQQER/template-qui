@@ -284,5 +284,32 @@
             <en><![CDATA[Activate small header for right sidebar layout.]]></en>
         </locale>
 
+        <!-- Colors -->
+        <locale name="templateQUI.settings.color.title">
+            <de><![CDATA[Farbverwaltung]]></de>
+            <en><![CDATA[Color management]]></en>
+        </locale>
+
+        <locale name="template.settings.colorFooterBackground.text">
+            <de><![CDATA[Footer Hintegrundfarbe]]></de>
+            <en><![CDATA[Footer background color]]></en>
+        </locale>
+        <locale name="template.settings.colorFooterFont.text">
+            <de><![CDATA[Footer Schriftfarbe]]></de>
+            <en><![CDATA[Footer font color]]></en>
+        </locale>
+        <locale name="template.settings.colorMain.text">
+            <de><![CDATA[Hauptfarbe]]></de>
+            <en><![CDATA[Main color]]></en>
+        </locale>
+        <locale name="template.settings.colorMain.description">
+            <de><![CDATA[Farbeinstellung für Links, Linksefekte, anklickbaren Schaltflächen, usw.]]></de>
+            <en><![CDATA[Set the color of links, buttons, etc.]]></en>
+        </locale>
+        <locale name="template.settings.colorBackground.text">
+            <de><![CDATA[Hintergrund Farbe]]></de>
+            <en><![CDATA[Background color]]></en>
+        </locale>
+
     </groups>
 </locales>
