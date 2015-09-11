@@ -24,9 +24,12 @@
     text-decoration: none;
 }
 
-.templateQUI-startpage-intro-entry:hover,
-.templateQUI-startpage-intro-entry:hover h3 {
+.templateQUI-startpage-intro-entry:hover {
     color: #333 !important;
+}
+
+.templateQUI-startpage-intro-entry:hover h3 {
+    color: inherit !important;
 }
 
 .templateQUI-startpage-intro a:hover {

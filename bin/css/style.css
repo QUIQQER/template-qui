@@ -56,6 +56,10 @@ a:hover {
     color: #fff;
 }
 
+.page-content .templateQUI-startpage-intro-entry a:hover {
+    color: inherit;
+}
+
 a:hover * {
     color: #fff !important;
 }
@@ -64,9 +68,9 @@ ul, ol {
     padding-left: 30px;
 }
 
-::-webkit-input-placeholder { color: rgba( 0, 0, 0, 0.5 ); }
-::-moz-placeholder { color: rgba( 0, 0, 0, 0.5 ); }
-:-ms-input-placeholder { color: rgba( 0, 0, 0, 0.5 ); }
+::-webkit-input-placeholder { color: rgba( 0, 0, 0, 0.5 ); font-size: 0.8em; }
+::-moz-placeholder { color: rgba( 0, 0, 0, 0.5 ); font-size: 0.8em; }
+:-ms-input-placeholder { color: rgba( 0, 0, 0, 0.5 ); font-size: 0.8em; }
 
 textarea:focus::-moz-placeholder,
 input:focus::-moz-placeholder {
@@ -561,8 +565,7 @@ footer button {
     /*background: #2E2633;*/
     background: #1c171f;
     clear: both;
-    /*color: #858484;*/
-    color: #5e5e5e;
+    color: #858484;
     float: left;
     font-size: 0.9em;
     line-height: 1.7em;
@@ -623,6 +626,10 @@ footer button {
     width: 100%;
 }
 
+.page-footer ::-webkit-input-placeholder { color: rgba( 255, 255, 255, 0.3 ); }
+.page-footer ::-moz-placeholder { color: rgba( 255, 255, 255, 0.4 ); }
+.page-footer :-ms-input-placeholder { color: rgba( 255, 255, 255, 0.3); }
+
 /* links styling for footer */
 footer:hover a {
     text-decoration: none;
@@ -640,8 +647,9 @@ footer ul li {
 }
 
 footer ul li a {
-    opacity: 0.6;
+    opacity: 0.9;
     display: block;
+    text-decoration: none;
 }
 
 footer ul li a:hover {

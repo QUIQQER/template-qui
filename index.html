@@ -61,7 +61,7 @@
     <div class="body-container">
         <!-- header -->
 
-        <header class="grid-100 mobile-grid-100 page-header{if $minHeader} page-header-min{/if}"
+        <header class="grid-100 mobile-grid-100 page-header {if $minHeader}page-header-min{/if}"
             {if $Site->getAttribute('image_emotion')}
             {image src=$Site->getAttribute('image_emotion') assign=image_emotion rewrited=true onlysrc=true}
                 style="background-image: url('{$image_emotion}');
