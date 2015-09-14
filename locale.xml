@@ -290,13 +290,17 @@
             <en><![CDATA[Color management]]></en>
         </locale>
 
-        <locale name="template.settings.colorFooterBackground.text">
+        <locale name="template.settings.colorFooterBackground.text" html="true">
             <de><![CDATA[Footer Hintegrundfarbe]]></de>
             <en><![CDATA[Footer background color]]></en>
         </locale>
         <locale name="template.settings.colorFooterFont.text">
             <de><![CDATA[Footer Schriftfarbe]]></de>
             <en><![CDATA[Footer font color]]></en>
+        </locale>
+        <locale name="template.settings.colorFooterLinks.text">
+            <de><![CDATA[Footer Linksfarbe]]></de>
+            <en><![CDATA[Footer links color]]></en>
         </locale>
         <locale name="template.settings.colorMain.text">
             <de><![CDATA[Hauptfarbe]]></de>

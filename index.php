@@ -45,6 +45,7 @@ $colorFooterBackground = '#1c171f';
 $colorFooterFont = '#858484';
 $colorMain = '#dd151b';
 $colorBackground = '#f7f7f7';
+$colorFooterLinks = 'dd151b';
 
 if ($Project->getConfig('templateQUI.settings.colorFooterBackground')) {
     $colorFooterBackground = $Project->getConfig('templateQUI.settings.colorFooterBackground');
@@ -62,11 +63,16 @@ if ($Project->getConfig('templateQUI.settings.colorBackground')) {
     $colorBackground = $Project->getConfig('templateQUI.settings.colorBackground');
 }
 
+if ($Project->getConfig('templateQUI.settings.colorFooterLinks')) {
+    $colorFooterLinks = $Project->getConfig('templateQUI.settings.colorFooterLinks');
+}
+
 $Engine->assign(array(
     'colorFooterBackground' => $colorFooterBackground,
     'colorFooterFont'       => $colorFooterFont,
     'colorMain'             => $colorMain,
     'colorBackground'       => $colorBackground,
+    'colorFooterLinks'      => $colorFooterLinks
 ));
 
 

@@ -25,6 +25,10 @@
                         <type><![CDATA[string]]></type>
                         <defaultvalue>#858484</defaultvalue>
                     </conf>
+                    <conf name="colorFooterLinks">
+                        <type><![CDATA[string]]></type>
+                        <defaultvalue>#858484</defaultvalue>
+                    </conf>
                     <conf name="colorMain">
                         <type><![CDATA[string]]></type>
                         <defaultvalue>#dd151b</defaultvalue>
@@ -102,6 +106,13 @@
                                 <text>
                                     <locale group="quiqqer/template-qui"
                                             var="template.settings.colorFooterFont.text"
+                                            />
+                                </text>
+                            </input>
+                            <input conf="templateQUI.settings.colorFooterLinks" type="color">
+                                <text>
+                                    <locale group="quiqqer/template-qui"
+                                            var="template.settings.colorFooterLinks.text"
                                             />
                                 </text>
                             </input>

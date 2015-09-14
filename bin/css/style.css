@@ -284,11 +284,13 @@ footer button {
         left: 25%;
         margin-left: -10px;
         position: absolute;
-        top: 0.48em;
+        top: 0.49em;
+        /*top: 0.48em;*/
         opacity: 0.9;
     }
 
     .page-header-navigation-sub-list {
+        display: block;
         border-radius: 5px;
         box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.5);
         margin-top: 1em;
@@ -637,10 +639,10 @@ footer ul li a:hover {
     text-decoration: underline;
 }
 
-/* Social icons hover */
+/* Social icons hover
 footer a:hover * {
     color: #fff ;
-}
+}*/
 
 /** responsive
  **************************************************/
