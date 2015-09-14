@@ -51,8 +51,8 @@ Entwickler
 
 Default colors:
 
-* colorFooterBackground: `#1c171f`
-* colorFooterFont: `#858484`
+* colorFooterBackground: `#414141`
+* colorFooterFont: `#d1d1d1`
 * colorMain: `#dd151b`
 * colorBackground: `#f7f7f7`
-* colorFooterLinks: `#dd151b`
+* colorFooterLinks: `#e6e6e6`

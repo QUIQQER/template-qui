@@ -19,23 +19,23 @@
                     </conf>
                     <conf name="colorFooterBackground">
                         <type><![CDATA[string]]></type>
-                        <defaultvalue>#1c171f</defaultvalue>
+                        <defaultvalue>#414141</defaultvalue>
                     </conf>
                     <conf name="colorFooterFont">
                         <type><![CDATA[string]]></type>
-                        <defaultvalue>#858484</defaultvalue>
+                        <defaultvalue>#D1D1D1</defaultvalue>
                     </conf>
                     <conf name="colorFooterLinks">
                         <type><![CDATA[string]]></type>
-                        <defaultvalue>#858484</defaultvalue>
+                        <defaultvalue>#E6E6E6</defaultvalue>
                     </conf>
                     <conf name="colorMain">
                         <type><![CDATA[string]]></type>
-                        <defaultvalue>#dd151b</defaultvalue>
+                        <defaultvalue>#DD151B</defaultvalue>
                     </conf>
                     <conf name="colorBackground">
                         <type><![CDATA[string]]></type>
-                        <defaultvalue>#f7f7f7</defaultvalue>
+                        <defaultvalue>#F7F7F7</defaultvalue>
                     </conf>
                 </section>
             </config>

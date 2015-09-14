@@ -41,11 +41,11 @@ switch ($Template->getLayoutType()) {
  * colors
  */
 
-$colorFooterBackground = '#1c171f';
-$colorFooterFont = '#858484';
+$colorFooterBackground = '#414141';
+$colorFooterFont = '#D1D1D1';
 $colorMain = '#dd151b';
-$colorBackground = '#f7f7f7';
-$colorFooterLinks = 'dd151b';
+$colorBackground = '#F7F7F7';
+$colorFooterLinks = 'E6E6E6';
 
 if ($Project->getConfig('templateQUI.settings.colorFooterBackground')) {
     $colorFooterBackground = $Project->getConfig('templateQUI.settings.colorFooterBackground');
