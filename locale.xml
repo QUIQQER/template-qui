@@ -2,22 +2,13 @@
 <locales>
     <groups name="quiqqer/template-qui" datatype="php,js">
         <!-- areas -->
-        <locale name="area.footer-25.title">
-            <de><![CDATA[Footer Bausteinzone (25%)]]></de>
-            <en><![CDATA[Footer brickarea (25%)]]></en>
+        <locale name="area.footer.title">
+            <de><![CDATA[Footer Bausteinzone]]></de>
+            <en><![CDATA[Footer brickarea]]></en>
         </locale>
-        <locale name="area.footer-25.description">
-            <de><![CDATA[Bausteinzone des Footer (Länge: 25%)]]></de>
-            <en><![CDATA[Brickarea of the footer (width: 25%)]]></en>
-        </locale>
-
-        <locale name="area.footer-100.title">
-            <de><![CDATA[Footer Bausteinzone (100%)]]></de>
-            <en><![CDATA[Footer brickarea (100%)]]></en>
-        </locale>
-        <locale name="area.footer-100.description">
-            <de><![CDATA[Bausteinzone des Footer (Länge: 100%)]]></de>
-            <en><![CDATA[Brickarea of the footer (width: 100%)]]></en>
+        <locale name="area.footer.description">
+            <de><![CDATA[Bausteinzone des Footer]]></de>
+            <en><![CDATA[Brickarea of the footer]]></en>
         </locale>
 
         <locale name="area.startpageContent.title">
