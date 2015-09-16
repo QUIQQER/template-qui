@@ -239,9 +239,7 @@
 
                     {assign var=footer value=$BricksManager->getBricksByArea('footer', $Site)}
                     {foreach from=$footer item=Brick}
-                    <section class="{$Brick->getAttribute('classes')}">
                         {$Brick->create()}
-                    </section>
                     {/foreach}
 
                 </div>
