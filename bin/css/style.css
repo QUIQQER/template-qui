@@ -535,17 +535,6 @@ footer button {
     display: block;
 }
 
-.page-footer-section-100 {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-}
-
-.page-footer-section-100 > * {
-    display: inline-block;
-    text-align: center;
-}
-
 .page-footer {
     clear: both;
     float: left;
@@ -555,15 +544,15 @@ footer button {
     width: 100%;
 }
 
-.page-footer-left {
-    float: left;
-    padding-right: 20px;
-}
+    .page-footer-left {
+        float: left;
+        padding-right: 20px;
+    }
 
-.page-footer-right {
-    float: left;
-    padding-left: 20px;
-}
+    .page-footer-right {
+        float: left;
+        padding-left: 20px;
+    }
 
 .page-footer input,
 .page-footer textarea,

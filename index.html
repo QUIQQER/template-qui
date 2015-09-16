@@ -237,9 +237,9 @@
 
                 <div class="page-footer grid-parent grid-100 mobile-grid-100">
 
-                    {assign var=footer value=$BricksManager->getBricksByArea('footer-100', $Site)}
+                    {assign var=footer value=$BricksManager->getBricksByArea('footer', $Site)}
                     {foreach from=$footer item=Brick}
-                    <section class="page-footer-section-100 {$Brick->getAttribute('classes')} grid-parent grid-100">
+                    <section class="{$Brick->getAttribute('classes')}">
                         {$Brick->create()}
                     </section>
                     {/foreach}
