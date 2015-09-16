@@ -39,7 +39,7 @@ class StartpageIntro extends QUI\Control
             'link3'  => ''
         ));
 
-        parent::setAttributes($attributes);
+        parent::__construct($attributes);
 
         $this->addCSSFile(
             dirname(__FILE__).'/StartpageIntro.css'

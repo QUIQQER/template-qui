@@ -315,5 +315,10 @@
             <en><![CDATA[Background color]]></en>
         </locale>
 
+        <locale name="brick.control.setting.order">
+            <de><![CDATA[Sortierung]]></de>
+            <en><![CDATA[Sort]]></en>
+        </locale>
+        
     </groups>
 </locales>

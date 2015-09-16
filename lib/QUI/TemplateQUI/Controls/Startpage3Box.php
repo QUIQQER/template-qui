@@ -28,13 +28,14 @@ class Startpage3Box extends QUI\Control
             'limit'     => 6,
             'title'     => 'Header 3',
             'sitetypes' => false,
-            'showImage' => true
+            'showImage' => true,
+            'order'     => 'release_from DESC'
         ));
 
-        parent::setAttributes($attributes);
+        parent::__construct($attributes);
 
         $this->addCSSFile(
-            dirname(__FILE__).'/Startpage3Box.css'
+            dirname(__FILE__) . '/Startpage3Box.css'
         );
     }
 
@@ -47,36 +48,12 @@ class Startpage3Box extends QUI\Control
     {
         $Engine = QUI::getTemplateManager()->getEngine();
 
-        $limit = $this->getAttribute('limit');
-        $sitetypes = $this->getAttribute('sitetypes');
-        $order = $this->getAttribute('order');
-
-        if (!$limit) {
-            $limit = 6;
-        }
-
-        if (!$order) {
-            $order = 'release_from ASC';
-        }
-
-
-        if (!empty($sitetypes)) {
-            $children = $this->_getSitesByList();
-
-        } else {
-            $children = $this->_getProject()->getSites(array(
-                'limit' => $limit,
-                'order' => $order
-            ));
-        }
-
-
         $Engine->assign(array(
-            'children' => $children,
+            'children' => $this->_getSitesByList(),
             'this'     => $this
         ));
 
-        return $Engine->fetch(dirname(__FILE__).'/Startpage3Box.html');
+        return $Engine->fetch(dirname(__FILE__) . '/Startpage3Box.html');
     }
 
 
@@ -87,20 +64,44 @@ class Startpage3Box extends QUI\Control
      */
     protected function _getSitesByList()
     {
-        $limit = $this->getAttribute('limit');
-        $order = $this->getAttribute('order');
+        $sitetypes = $this->getAttribute('sitetypes');
+        $limit     = $this->getAttribute('limit');
 
         if (!$limit) {
             $limit = 6;
         }
 
-        if (!$order) {
-            $order = 'release_from ASC';
+        // order
+        switch ($this->getAttribute('order')) {
+            case 'name ASC':
+            case 'name DESC':
+            case 'title ASC':
+            case 'title DESC':
+            case 'c_date ASC':
+            case 'c_date DESC':
+            case 'd_date ASC':
+            case 'd_date DESC':
+            case 'release_from ASC':
+            case 'release_from DESC':
+                $order = $this->getAttribute('order');
+                break;
+
+            default:
+                $order = 'release_from DESC';
+                break;
         }
+
+        if (empty($sitetypes)) {
+            return $this->_getProject()->getSites(array(
+                'limit' => $limit,
+                'order' => $order
+            ));
+        }
+
 
         return QUI\Projects\Site\Utils::getSitesByInputList(
             $this->_getProject(),
-            $this->getAttribute('sitetypes'),
+            $sitetypes,
             array(
                 'limit' => $limit,
                 'order' => $order
