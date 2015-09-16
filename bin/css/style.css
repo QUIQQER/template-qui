@@ -604,34 +604,28 @@ footer:hover a {
     text-decoration: none;
 }
 
-footer ul {
+.page-footer ul {
     list-style: none;
-    list-style: none;
-    padding-left: 0.0em;
+    padding-left: 0;
     padding-right: 0;
 }
 
-footer ul li {
+.page-footer ul li {
     line-height: 2em;
 }
 
-footer ul li a {
+.page-footer ul li a {
     opacity: 0.9;
     display: block;
     text-decoration: none;
 }
 
-footer ul li a:hover {
+.page-footer ul li a:hover {
     opacity: 1;
     background: none;
     box-shadow: none;
     text-decoration: underline;
 }
-
-/* Social icons hover
-footer a:hover * {
-    color: #fff ;
-}*/
 
 /** responsive
  **************************************************/
