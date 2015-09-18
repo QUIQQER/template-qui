@@ -11,8 +11,6 @@
     content: "";
 }
 
-/* ------ TEST -------- */
-
 .templateQUI-startpage2box header {
     margin: 5em 0 2em;
     position: relative;
@@ -29,26 +27,26 @@
     top: -0.7em;
 }
 .templateQUI-startpage2box h2:before {
+    background: #ccc;
     content: '';
     display: inline;
-    width: 500px;
     height: 1px;
-    background: #ccc;
-    position: absolute;
     left: -500px;
+    position: absolute;
+    top: 55%;
+    width: 500px;
 }
 
 .templateQUI-startpage2box h2:after {
+    background: #ccc;
     content: '';
     display: inline;
-    width: 500px;
     height: 1px;
-    background: #ccc;
     position: absolute;
     right: -500px;
+    top: 55%;
+    width: 500px;
 }
-
-/* ------ TEST END -------- */
 
 .templateQUI-startpage2box-entry:nth-child(even) {
     clear: both;
