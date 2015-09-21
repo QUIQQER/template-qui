@@ -615,13 +615,11 @@ footer:hover a {
 }
 
 .page-footer ul li a {
-    opacity: 0.9;
     display: block;
     text-decoration: none;
 }
 
 .page-footer ul li a:hover {
-    opacity: 1;
     background: none;
     box-shadow: none;
     text-decoration: underline;
