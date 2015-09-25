@@ -302,7 +302,7 @@
             <en><![CDATA[Set the color of links, buttons, etc.]]></en>
         </locale>
         <locale name="template.settings.colorBackground.text">
-            <de><![CDATA[Hintergrund Farbe]]></de>
+            <de><![CDATA[Hintergrundfarbe]]></de>
             <en><![CDATA[Background color]]></en>
         </locale>
 
