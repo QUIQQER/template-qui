@@ -253,7 +253,7 @@
             <en><![CDATA[No sidebar]]></en>
         </locale>
         <locale name="minHeaderNoSidebar.description">
-            <de><![CDATA[Kleiner Header für Layout "Keine Sidebar" aktivieren.]]></de>
+            <de><![CDATA[Kleinen Header für Layout "Keine Sidebar" aktivieren.]]></de>
             <en><![CDATA[Activate small header for no sidebar layout.]]></en>
         </locale>
 
@@ -262,7 +262,7 @@
             <en><![CDATA[Left sidebar]]></en>
         </locale>
         <locale name="minHeaderLeftSidebar.description">
-            <de><![CDATA[Kleiner Header für Layout "Linke Sidebar" aktivieren.]]></de>
+            <de><![CDATA[Kleinen Header für Layout "Linke Sidebar" aktivieren.]]></de>
             <en><![CDATA[Activate small header for left sidebar layout.]]></en>
         </locale>
 
@@ -271,7 +271,7 @@
             <en><![CDATA[Right sidebar]]></en>
         </locale>
         <locale name="minHeaderRightSidebar.description">
-            <de><![CDATA[Kleiner Header für Layout "Rechte Sidebar" aktivieren.]]></de>
+            <de><![CDATA[Kleinen Header für Layout "Rechte Sidebar" aktivieren.]]></de>
             <en><![CDATA[Activate small header for right sidebar layout.]]></en>
         </locale>
 
@@ -290,8 +290,8 @@
             <en><![CDATA[Footer font color]]></en>
         </locale>
         <locale name="template.settings.colorFooterLinks.text">
-            <de><![CDATA[Footer Linksfarbe]]></de>
-            <en><![CDATA[Footer links color]]></en>
+            <de><![CDATA[Footer Link-Farbe]]></de>
+            <en><![CDATA[Footer link color]]></en>
         </locale>
         <locale name="template.settings.colorMain.text">
             <de><![CDATA[Hauptfarbe]]></de>
