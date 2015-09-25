@@ -4,8 +4,6 @@ QUIQQER Template Qui
 Responsives Template mit zahlreichen Bausteinzonen und Einstellungsmöglichkeiten.
 
 
-
-
 Packetname:
 ----------
 
