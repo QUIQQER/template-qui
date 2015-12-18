@@ -18,18 +18,18 @@ class Startpage3Box extends QUI\Control
     /**
      * constructor
      *
-     * @param Array $attributes
+     * @param array $attributes
      */
     public function __construct($attributes = array())
     {
         // default options
         $this->setAttributes(array(
-            'class'     => '',
-            'limit'     => 6,
-            'title'     => 'Header 3',
+            'class' => '',
+            'limit' => 6,
+            'title' => 'Header 3',
             'sitetypes' => false,
             'showImage' => true,
-            'order'     => 'release_from DESC'
+            'order' => 'release_from DESC'
         ));
 
         parent::__construct($attributes);
@@ -49,8 +49,8 @@ class Startpage3Box extends QUI\Control
         $Engine = QUI::getTemplateManager()->getEngine();
 
         $Engine->assign(array(
-            'children' => $this->_getSitesByList(),
-            'this'     => $this
+            'children' => $this->getSitesByList(),
+            'this' => $this
         ));
 
         return $Engine->fetch(dirname(__FILE__) . '/Startpage3Box.html');
@@ -62,7 +62,7 @@ class Startpage3Box extends QUI\Control
      *
      * @return array
      */
-    protected function _getSitesByList()
+    protected function getSitesByList()
     {
         $sitetypes = $this->getAttribute('sitetypes');
         $limit     = $this->getAttribute('limit');
@@ -92,7 +92,7 @@ class Startpage3Box extends QUI\Control
         }
 
         if (empty($sitetypes)) {
-            return $this->_getProject()->getSites(array(
+            return $this->getProject()->getSites(array(
                 'limit' => $limit,
                 'order' => $order
             ));
@@ -100,7 +100,7 @@ class Startpage3Box extends QUI\Control
 
 
         return QUI\Projects\Site\Utils::getSitesByInputList(
-            $this->_getProject(),
+            $this->getProject(),
             $sitetypes,
             array(
                 'limit' => $limit,
