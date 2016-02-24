@@ -722,3 +722,56 @@ footer:hover a {
 
 .control-background-active {
 }
+
+
+/** contact form (site type: contact)
+ * ========================================================== */
+
+.qui-form > fieldset {
+    border: none;
+}
+
+.qui-form input:hover,
+.qui-form input:focus,
+.qui-form textarea:hover,
+.qui-form textarea:focus {
+    outline: 1px solid #ccc;
+}
+
+.qui-form legend {
+    background: none;
+    margin-bottom: 0;
+    width: auto;
+}
+
+.qui-formfield-body {
+    padding: 10px 0;
+}
+
+.qui-formfield label {
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.qui-form input[type='checkbox'],
+.qui-form input[type='radio'] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.qui-form input[type='submit']:hover,
+.qui-form input[type='button']:hover {
+    color: #fff;
+}
+
+.qui-form input:required,
+.qui-form select:required {
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.qui-form select:required {
+    background-position: 98% center;
+}

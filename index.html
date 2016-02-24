@@ -117,6 +117,18 @@
             color: #FFFFFF !important;
         }
 
+
+        .qui-form input[type='submit']:hover,
+        .qui-form input[type='button']:hover {
+            background: {$colorMain};
+            outline: 1px solid {$colorMain};
+        }
+
+        .qui-form input:required,
+        .qui-form select:required {
+            background-image: url('{$URL_TPL_DIR}bin/images/star.png');
+        }
+
     </style>
 
 </head>
