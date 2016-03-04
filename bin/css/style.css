@@ -751,7 +751,6 @@ footer:hover a {
 .qui-formfield label {
     display: block;
     margin-bottom: 10px;
-
 }
 
 .qui-form input[type='checkbox'],
@@ -760,18 +759,49 @@ footer:hover a {
     vertical-align: middle;
 }
 
-.qui-form input[type='submit']:hover,
-.qui-form input[type='button']:hover {
-    color: #fff;
+/*********************************************************************************/
+/* Nav style (in sidebar) navigation
+/*********************************************************************************/
+
+
+
+#page li.quiqqer-navigation-li {
+    margin-bottom: 0 !important;
 }
 
-.qui-form input:required,
-.qui-form select:required {
-    background-position: right center;
-    background-size: contain;
-    background-repeat: no-repeat;
+#page ul.quiqqer-navigation-level-1,
+#page ul.quiqqer-navigation-level-2,
+#page ul.quiqqer-navigation-level-3,
+#page ul.quiqqer-navigation-level-4 {
+    padding-left: 0;
+    margin: 0 !important;
+    list-style: none;
 }
 
-.qui-form select:required {
-    background-position: 98% center;
+#page ul.quiqqer-navigation-level-2 .quiqqer-navigation-entry {
+    margin-left: 20px;
+    width: calc(100% - 20px);
+}
+
+#page ul.quiqqer-navigation-level-3 .quiqqer-navigation-entry {
+    margin-left: 40px;
+    width: calc(100% - 40px);
+}
+
+#page ul.quiqqer-navigation-level-4  .quiqqer-navigation-entry {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+}
+
+#page .quiqqer-navigation .fa {
+    line-height:2.3em;
+}
+
+#page .quiqqer-navigation-active {
+    font-weight: bold;
+}
+
+#page .quiqqer-navigation-open,
+#page .quiqqer-navigation-close {
+    position: relative;
 }
