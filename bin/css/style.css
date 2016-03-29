@@ -35,6 +35,10 @@ img {
     margin:0
 }
 
+fieldset {
+    border: none;
+}
+
 a {
     max-width: 100%;
     text-decoration: underline;
