@@ -57,6 +57,7 @@ a:hover {
 
 ul, ol {
     padding-left: 30px;
+    padding-top: 10px;
 }
 
 ::-webkit-input-placeholder { color: rgba( 0, 0, 0, 0.5 ); font-size: 0.8em; }
