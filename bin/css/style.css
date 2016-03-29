@@ -809,3 +809,11 @@ footer:hover a {
 #page .quiqqer-navigation-close {
     position: relative;
 }
+
+/*********************************************************************************/
+/* search plugin
+/*********************************************************************************/
+
+.qui-search-settings {
+    overflow: visible;
+}
