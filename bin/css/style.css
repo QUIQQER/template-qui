@@ -41,7 +41,7 @@ fieldset {
 
 a {
     max-width: 100%;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover {
@@ -478,10 +478,10 @@ footer button {
 .page-content li p {
     margin: 0;
 }
-
+/*
 .page-content a {
     text-decoration: underline;
-}
+}*/
 
 .page-content:hover a {
     text-decoration: none;
@@ -514,6 +514,10 @@ footer button {
 
 .quiqqer-breadcrumb {
     font-size: 12px;
+}
+
+.quiqqer-breadcrumb-container a {
+    border-bottom: none;
 }
 
 .quiqqer-breadcrumb-container ul {
@@ -742,6 +746,10 @@ footer:hover a {
     outline: 1px solid #ccc;
 }
 
+.qui-form input[type='submit']:hover {
+    color: #fff;
+}
+
 .qui-form legend {
     background: none;
     margin-bottom: 0;
@@ -816,4 +824,60 @@ footer:hover a {
 
 .qui-search-settings {
     overflow: visible;
+}
+
+/*********************************************************************************/
+/* site type: quiqqer/tags:types/tag-search
+/*********************************************************************************/
+
+a.quiqqer-tags-search-result-entry-link:hover,
+.quiqqer-tags-list-result-entry a:hover {
+    background: none;
+    box-shadow: none;
+}
+
+a.quiqqer-tags-search-result-entry-link div,
+a.quiqqer-tags-search-result-entry-link:hover div,
+.quiqqer-tags-list-result-entry a div,
+.quiqqer-tags-list-result-entry a:hover div{
+    color: black;
+}
+
+a.quiqqer-tags-search-result-entry-link:hover h4,
+.quiqqer-tags-list-result-entry a:hover h3 {
+    text-decoration: underline;
+}
+
+/*********************************************************************************/
+/* content switcher
+/*********************************************************************************/
+
+.content-switcher .content-switcher-content {
+    /* max-width: 580px; (page width : 2) */
+    padding-left: 50px;
+}
+
+.content-switcher-image {
+    background-position: left;
+    max-height: 500px;
+}
+
+.push-custom {
+    background-position: right;
+}
+
+.content-switcher .pull-custom {
+    /* left: -580px; -1x(page width : 2) */
+    padding-right: 50px;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .content-switcher .content-switcher-content {
+        padding-left: 0;
+    }
+
+    .content-switcher .pull-custom {
+        padding-right: 0;
+    }
 }
