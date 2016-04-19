@@ -42,7 +42,8 @@
             <en><![CDATA[Continue Reading]]></en>
         </locale>
         <locale name="copyright.text" html="true">
-            <de><![CDATA[<p style="text-align: center">&copy; Copyright [year] - PCSG - Computer &amp; Internet Service OHG</p>]]></de>
+            <de>
+                <![CDATA[<p style="text-align: center">&copy; Copyright [year] - PCSG - Computer &amp; Internet Service OHG</p>]]></de>
             <en><![CDATA[Copyright [year]]]></en>
         </locale>
         <locale name="startpage.title1">
@@ -306,7 +307,8 @@
             <en><![CDATA[Header Logo]]></en>
         </locale>
         <locale name="templateQUI.settings.logo.description">
-            <de><![CDATA[Hier können Sie Ihr eigenes Bild hochladen, das auf allen Seiten oben im Kopfbereich erscheint]]></de>
+            <de>
+                <![CDATA[Hier können Sie Ihr eigenes Bild hochladen, das auf allen Seiten oben im Kopfbereich erscheint]]></de>
             <en><![CDATA[muss noch übersetzt werden]]></en>
         </locale>
         <locale name="templateQUI.header.settings.text">
