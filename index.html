@@ -117,14 +117,34 @@
             color: #FFFFFF !important;
         }
 
+
+        .qui-form input[type='submit']:hover,
+        .qui-form input[type='button']:hover {
+            background: {$colorMain};
+            outline: 1px solid {$colorMain};
+        }
+
+        .qui-form input:required,
+        .qui-form select:required {
+            background-image: url('{$URL_TPL_DIR}bin/images/star.png');
+        }
+
+        /* lang options */
+
+        .quiqqer-bricks-languageswitch-flag-entry-text {
+            display: {$langText};
+        }
+
+        .quiqqer-bricks-languageswitch-flag-entry-icon {
+            display: {$langFlag};
+        }
+
     </style>
 
 </head>
 <body>
 
-    <div class="page-languages hide-on-mobile">
-        {control control="\QUI\Controls\LangSwitch" Site=$Site}
-    </div>
+
 
     <!-- navigation -->
     {control control="\QUI\Menu\Elastic"}
@@ -144,61 +164,78 @@
                 style="background-image: none;"
             {/if}
         >
-            {if $logo}
-                <a href="{url id=1}" class="page-header-logo">
-                    {image src=$logo}
-                </a>
-            {else}
-            <h1>
-                {$Site->getAttribute( 'title' )}
-            </h1>
-            {/if}
 
-            {assign var=FirstChild value=$Project->firstChild()}
-            {assign var=children value=$FirstChild->getNavigation()}
-            {if count($children)}
-            <nav class="page-header-navigation hide-on-mobile">
+            <div class="grid-container">
 
-                <ul>
-                    {if $Site->getId() != 1}
-                    <li>
-                        <a href="{url site=$FirstChild}">
-                            <i class="fa fa-home"></i>
-                            {$FirstChild->getAttribute('title')}
-                        </a>
-                    </li>
-                    {/if}
-                    {foreach from=$children item=Child}
-                    <li class="page-header-navigation-entry">
-                        <a href="{url site=$Child}">
-                            <i class="fa fa-caret-right"></i>
-                            {$Child->getAttribute('title')}
-                        </a>
-
-                        <!-- submenu -->
-                        {assign var=subnavigation value=$Child->getNavigation()}
-                        {if count( $subnavigation )}
-                        <div class="page-header-navigation-sub smooth">
-                            <ul class="page-header-navigation-sub-list">
-                                {foreach from=$subnavigation item=subChild}
-                                    <li class="page-header-navigation-sub-entry">
-                                        <a href="{url site=$subChild}"
-                                           class="page-header-navigation-sub-entry-link"
-                                        >
-                                            {$subChild->getAttribute('title')}
-                                        </a>
-                                    </li>
-                                {/foreach}
-                            </ul>
-                        </div>
+                {if $langSwitchDisplay}
+                <div class="page-languages hide-on-mobile">
+                    <div class="grid-100 grid-container page-languages-container">
+                        {if $langSwitchShowLabel}
+                        <span class="page-languages-text">
+                            {locale group="quiqqer/template-qui" var="page.language.text"}
+                        </span>
                         {/if}
-                    </li>
-                    {/foreach}
-                </ul>
-            </nav>
-            {/if}
-        </header>
+                    {control control="QUI\Bricks\Controls\LanguageSwitches\Flags" Site=$Site}
+                    </div>
+                </div>
+                {/if}
 
+                {if $logo}
+                    <a href="{url id=1}" class="page-header-logo">
+                        {image src=$logo}
+                    </a>
+                {else}
+                <h1>
+                    {$Site->getAttribute( 'title' )}
+                </h1>
+                {/if}
+
+                {assign var=FirstChild value=$Project->firstChild()}
+                {assign var=children value=$FirstChild->getNavigation()}
+                {if count($children)}
+                <nav class="page-header-navigation hide-on-mobile">
+
+                    <ul>
+                        {if $Site->getId() != 1}
+                        <li>
+                            <a href="{url site=$FirstChild}">
+                                <i class="fa fa-home"></i>
+                                {$FirstChild->getAttribute('title')}
+                            </a>
+                        </li>
+                        {/if}
+                        {foreach from=$children item=Child}
+                        <li class="page-header-navigation-entry">
+                            <a href="{url site=$Child}">
+                                <i class="fa fa-caret-right"></i>
+                                {$Child->getAttribute('title')}
+                            </a>
+
+                            <!-- submenu -->
+                            {assign var=subnavigation value=$Child->getNavigation()}
+                            {if count( $subnavigation )}
+                            <div class="page-header-navigation-sub smooth">
+                                <ul class="page-header-navigation-sub-list">
+                                    {foreach from=$subnavigation item=subChild}
+                                        <li class="page-header-navigation-sub-entry">
+                                            <a href="{url site=$subChild}"
+                                               class="page-header-navigation-sub-entry-link"
+                                            >
+                                                {$subChild->getAttribute('title')}
+                                            </a>
+                                        </li>
+                                    {/foreach}
+                                </ul>
+                            </div>
+                            {/if}
+                        </li>
+                        {/foreach}
+                    </ul>
+                </nav>
+                {/if}
+
+            </div>
+        </header>
 
         {assign var=headerSuffix value=$BricksManager->getBricksByArea('headerSuffix', $Site)}
         {foreach $headerSuffix as $Brick}
@@ -210,7 +247,6 @@
             </div>
         </div>
         {/foreach}
-
 
         <!-- content -->
         {$Template->getLayout()}

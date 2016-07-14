@@ -37,6 +37,20 @@
                         <type><![CDATA[string]]></type>
                         <defaultvalue>#F7F7F7</defaultvalue>
                     </conf>
+
+                    <!-- language switch -->
+                    <conf name="langSwitch.display">
+                        <type><![CDATA[bool]]></type>
+                        <defaultvalue>0</defaultvalue>
+                    </conf>
+                    <conf name="langSwitch.show.label">
+                        <type><![CDATA[bool]]></type>
+                        <defaultvalue>0</defaultvalue>
+                    </conf>
+                    <conf name="langSwitch.options">
+                        <type><![CDATA[string]]></type>
+                        <defaultvalue>showFlag</defaultvalue>
+                    </conf>
                 </section>
             </config>
 
@@ -135,6 +149,54 @@
                                             />
                                 </text>
                             </input>
+                        </settings>
+
+
+                        <!-- lang switcher options -->
+                        <settings title="templateQUI.settings" name="templateQUI.settings.langSwitch">
+                            <title>
+                                <locale group="quiqqer/template-qui" var="templateQUI.settings.langSwitch.title" />
+                            </title>
+
+                            <input conf="templateQUI.settings.langSwitch.display" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/template-qui"
+                                            var="templateQUI.settings.langSwitch.display.text"
+                                    />
+                                </text>
+                            </input>
+
+                            <input conf="templateQUI.settings.langSwitch.show.label" type="checkbox">
+                                <text>
+                                    <locale group="quiqqer/template-qui"
+                                            var="templateQUI.settings.langSwitch.label.text"
+                                    />
+                                </text>
+                            </input>
+
+                            <select conf="templateQUI.settings.langSwitch.options">
+                                <text>
+                                    <locale group="quiqqer/template-qui"
+                                            var="templateQUI.settings.langSwitch.option.text"
+                                    />
+                                </text>
+
+                                <option value="showFlag">
+                                    <locale group="quiqqer/template-qui"
+                                            var="templateQUI.settings.langSwitch.option.showFlag"
+                                    />
+                                </option>
+                                <option value="showText">
+                                    <locale group="quiqqer/template-qui"
+                                            var="templateQUI.settings.langSwitch.option.showText"
+                                    />
+                                </option>
+                                <option value="showBoth">
+                                    <locale group="quiqqer/template-qui"
+                                            var="templateQUI.settings.langSwitch.option.showBoth"
+                                    />
+                                </option>
+                            </select>
                         </settings>
 
                     </category>

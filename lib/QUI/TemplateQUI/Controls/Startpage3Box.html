@@ -1,11 +1,19 @@
 
 <section class="templateQUI-startpage3box grid-parent grid-100 mobile-grid-100">
 
-    {if $this->getAttribute('title')}
-    <header>
-        <h2>{$this->getAttribute('title')}</h2>
-    </header>
-    {/if}
+    <div class="grid-100 mobile-grid-100">
+        {if $this->getAttribute('title')}
+        <header>
+            <h2>{$this->getAttribute('title')}</h2>
+        </header>
+        {/if}
+
+        {if $this->getAttribute('content')}
+        <div class="grid-100 mobile-grid-100 grid-parent templateQUI-startpage3box-content">
+            {$this->getAttribute('content')}
+        </div>
+        {/if}
+    </div>
 
     {foreach from=$children item=Child}
     <article class="grid-33 mobile-grid-100 templateQUI-startpage3box-entry"
@@ -19,7 +27,7 @@
 
                 <div class="templateQUI-startpage3box-entry-image">
                     <div class="templateQUI-startpage3box-entry-image-fix" style="background-image: url('{$image}')">
-                        {if $Child->getAttribute( 'image_emotion' )}
+                        {if $Child->getAttribute( 'image_site' )}
                             <img src="{$image}" style="visibility: hidden;"/>
                         {/if}
                     </div>

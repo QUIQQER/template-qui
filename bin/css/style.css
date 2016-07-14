@@ -35,9 +35,13 @@ img {
     margin:0
 }
 
+fieldset {
+    border: none;
+}
+
 a {
     max-width: 100%;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 a:hover {
@@ -70,6 +74,20 @@ input:focus::-moz-placeholder {
 
 /** buttons
  * ========================================================== */
+
+.button-black,
+.button-grey,
+.button-white,
+.button-silver,
+.button-orange,
+.button-red,
+.button-blue,
+.button-rosy,
+.button-green,
+.button-pink  {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 .page-header-logo:hover,
 .quiqqer-sheets a:hover,
@@ -340,10 +358,39 @@ footer button {
     position: absolute;
     right: 0;
     top: 0;
+    width: 100%;
+    /*background: rgba(0,0,0,0.2);*/
 }
 
-.quiqqer-langSwitch a {
+.page-languages-container {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.page-languages-container > .quiqqer-bricks-languageswitch-flag {
+    float: right !important;
+    /*padding-left: 20px;*/
+    padding-right: 20px;
+    text-align: right;
+}
+
+a.quiqqer-bricks-languageswitch-flag-entry {
+    padding: 0 6px;
+}
+
+.page-languages-text {
+    margin-right: 10px;
+}
+
+.page-languages a {
     text-decoration: none;
+    color: #333;
+}
+
+.page-languages a:hover {
+    background: none;
+    box-shadow: none;
+    color: #333;
 }
 
 .page-header-min {
@@ -474,10 +521,10 @@ footer button {
 .page-content li p {
     margin: 0;
 }
-
+/*
 .page-content a {
     text-decoration: underline;
-}
+}*/
 
 .page-content:hover a {
     text-decoration: none;
@@ -510,6 +557,10 @@ footer button {
 
 .quiqqer-breadcrumb {
     font-size: 12px;
+}
+
+.quiqqer-breadcrumb-container a {
+    border-bottom: none;
 }
 
 .quiqqer-breadcrumb-container ul {
@@ -721,4 +772,155 @@ footer:hover a {
 }
 
 .control-background-active {
+}
+
+
+/** contact form (site type: contact)
+ * ========================================================== */
+
+.qui-form > fieldset {
+    border: none;
+}
+
+.qui-form input:hover,
+.qui-form input:focus,
+.qui-form textarea:hover,
+.qui-form textarea:focus {
+    outline: 1px solid #ccc;
+}
+
+.qui-form input[type='submit']:hover {
+    color: #fff;
+}
+
+.qui-form legend {
+    background: none;
+    margin-bottom: 0;
+    width: auto;
+}
+
+.qui-formfield-body {
+    padding: 10px 0;
+}
+
+.qui-formfield label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.qui-form input[type='checkbox'],
+.qui-form input[type='radio'] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*********************************************************************************/
+/* Nav style (in sidebar) navigation
+/*********************************************************************************/
+
+
+
+#page li.quiqqer-navigation-li {
+    margin-bottom: 0 !important;
+}
+
+#page ul.quiqqer-navigation-level-1,
+#page ul.quiqqer-navigation-level-2,
+#page ul.quiqqer-navigation-level-3,
+#page ul.quiqqer-navigation-level-4 {
+    padding-left: 0;
+    margin: 0 !important;
+    list-style: none;
+}
+
+#page ul.quiqqer-navigation-level-2 .quiqqer-navigation-entry {
+    margin-left: 20px;
+    width: calc(100% - 20px);
+}
+
+#page ul.quiqqer-navigation-level-3 .quiqqer-navigation-entry {
+    margin-left: 40px;
+    width: calc(100% - 40px);
+}
+
+#page ul.quiqqer-navigation-level-4  .quiqqer-navigation-entry {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+}
+
+#page .quiqqer-navigation .fa {
+    line-height:2.3em;
+}
+
+#page .quiqqer-navigation-active {
+    font-weight: bold;
+}
+
+#page .quiqqer-navigation-open,
+#page .quiqqer-navigation-close {
+    position: relative;
+}
+
+/*********************************************************************************/
+/* search plugin
+/*********************************************************************************/
+
+.qui-search-settings {
+    overflow: visible;
+}
+
+/*********************************************************************************/
+/* site type: quiqqer/tags:types/tag-search
+/*********************************************************************************/
+
+a.quiqqer-tags-search-result-entry-link:hover,
+.quiqqer-tags-list-result-entry a:hover {
+    background: none;
+    box-shadow: none;
+}
+
+a.quiqqer-tags-search-result-entry-link div,
+a.quiqqer-tags-search-result-entry-link:hover div,
+.quiqqer-tags-list-result-entry a div,
+.quiqqer-tags-list-result-entry a:hover div{
+    color: black;
+}
+
+a.quiqqer-tags-search-result-entry-link:hover h4,
+.quiqqer-tags-list-result-entry a:hover h3 {
+    text-decoration: underline;
+}
+
+/*********************************************************************************/
+/* content switcher
+/*********************************************************************************/
+
+.content-switcher .content-switcher-content {
+    /* max-width: 580px; (page width : 2) */
+    padding-left: 50px;
+}
+
+.content-switcher-image {
+    background-position: left;
+    max-height: 500px;
+}
+
+.push-custom {
+    background-position: right;
+}
+
+.content-switcher .pull-custom {
+    /* left: -580px; -1x(page width : 2) */
+    padding-right: 50px;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .content-switcher .content-switcher-content {
+        padding-left: 0;
+    }
+
+    .content-switcher .pull-custom {
+        padding-right: 0;
+    }
 }
