@@ -9,7 +9,7 @@
 /**
  * Project Logo
  */
-$logo = false;
+$logo       = false;
 $configLogo = $Project->getConfig('templateQUI.settings.logo');
 
 if (QUI\Projects\Media\Utils::isMediaUrl($configLogo)) {
@@ -42,10 +42,10 @@ switch ($Template->getLayoutType()) {
  */
 
 $colorFooterBackground = '#414141';
-$colorFooterFont = '#D1D1D1';
-$colorMain = '#dd151b';
-$colorBackground = '#F7F7F7';
-$colorFooterLinks = 'E6E6E6';
+$colorFooterFont       = '#D1D1D1';
+$colorMain             = '#dd151b';
+$colorBackground       = '#F7F7F7';
+$colorFooterLinks      = 'E6E6E6';
 
 if ($Project->getConfig('templateQUI.settings.colorFooterBackground')) {
     $colorFooterBackground = $Project->getConfig('templateQUI.settings.colorFooterBackground');
@@ -75,17 +75,42 @@ $Engine->assign(array(
     'colorFooterLinks'      => $colorFooterLinks
 ));
 
+/**
+ * lang settings
+ */
+
+$langOption = $Project->getConfig('templateQUI.settings.langSwitch.options');
+
+switch ($langOption) {
+    case "showFlag" :
+        $langFlag = "inline";
+        $langText = "none";
+        break;
+    case "showText" :
+        $langFlag = "none";
+        $langText = "inline";
+        break;
+    case "showBoth" :
+        $langFlag = "inline;";
+        $langText = "inline";
+        break;
+}
 
 /**
  * own site type?
  */
 
 $Engine->assign(array(
-    'logo'          => $logo,
-    'ownSideType'   =>
+    'logo'                => $logo,
+    'ownSideType'         =>
         strpos($Site->getAttribute('type'), 'quiqqer/template-qui:') !== false
             ? 1 : 0,
-    'quiTplType'    => $Project->getConfig('templateQUI.settings.standardType'),
-    'BricksManager' => \QUI\Bricks\Manager::init(),
-    'minHeader'     => $minHeader
+    'quiTplType'          => $Project->getConfig('templateQUI.settings.standardType'),
+    'BricksManager'       => \QUI\Bricks\Manager::init(),
+    'minHeader'           => $minHeader,
+    'langSwitchDisplay'   => $Project->getConfig('templateQUI.settings.langSwitch.display'),
+    'langSwitchShowLabel' => $Project->getConfig('templateQUI.settings.langSwitch.show.label'),
+    'langFlag'            => $langFlag,
+    'langText'            => $langText
+
 ));

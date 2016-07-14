@@ -340,7 +340,7 @@
             <en><![CDATA[Activate small header for right sidebar layout.]]></en>
         </locale>
         <locale name="templateQUI.settings.color.title">
-            <de><![CDATA[Farbverwaltung]]></de>
+            <de><![CDATA[Farben]]></de>
             <en><![CDATA[Color management]]></en>
         </locale>
         <locale name="template.settings.colorFooterBackground.text" html="true">
@@ -370,6 +370,50 @@
         <locale name="brick.control.setting.order">
             <de><![CDATA[Sortierung]]></de>
             <en><![CDATA[Sort]]></en>
+        </locale>
+
+        <!-- language label -->
+        <locale name="page.language.text">
+            <de><![CDATA[Sprache wechseln: ]]></de>
+            <en><![CDATA[Language: ]]></en>
+        </locale>
+
+        <!-- language options -->
+        <locale name="templateQUI.settings.langSwitch.title">
+            <de><![CDATA[Sprachen Einstellungen]]></de>
+            <en><![CDATA[Language settings]]></en>
+            <pl><![CDATA[Ustawienia jezykowe]]></pl>
+        </locale>
+        <locale name="templateQUI.settings.langSwitch.display.text">
+            <de><![CDATA[Sprachenwechsel Tool aktivieren?]]></de>
+            <en><![CDATA[Active lang switcher?]]></en>
+            <pl><![CDATA[Uaktywnic mozliwosc zmiany jezyka?]]></pl>
+        </locale>
+
+        <locale name="templateQUI.settings.langSwitch.label.text">
+            <de><![CDATA[Text "Sprache wechseln" anzeigen?]]></de>
+            <en><![CDATA[Show "Language" label?]]></en>
+            <pl><![CDATA[Pokazac tekst "Zmiana jezyka"?]]></pl>
+        </locale>
+        <locale name="templateQUI.settings.langSwitch.option.text">
+            <de><![CDATA[Anzeigen:]]></de>
+            <en><![CDATA[Show:]]></en>
+            <pl><![CDATA[Wyswietl:]]></pl>
+        </locale>
+        <locale name="templateQUI.settings.langSwitch.option.showFlag">
+            <de><![CDATA[Nur Fahne]]></de>
+            <en><![CDATA[Only Flag]]></en>
+            <pl><![CDATA[Tylko flage]]></pl>
+        </locale>
+        <locale name="templateQUI.settings.langSwitch.option.showText">
+            <de><![CDATA[Nur Text]]></de>
+            <en><![CDATA[Only text]]></en>
+            <pl><![CDATA[Tylko tekst]]></pl>
+        </locale>
+        <locale name="templateQUI.settings.langSwitch.option.showBoth">
+            <de><![CDATA[Fahne und Text]]></de>
+            <en><![CDATA[Flag und Text]]></en>
+            <pl><![CDATA[Flage i tekst]]></pl>
         </locale>
     </groups>
 </locales>

@@ -75,6 +75,20 @@ input:focus::-moz-placeholder {
 /** buttons
  * ========================================================== */
 
+.button-black,
+.button-grey,
+.button-white,
+.button-silver,
+.button-orange,
+.button-red,
+.button-blue,
+.button-rosy,
+.button-green,
+.button-pink  {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .page-header-logo:hover,
 .quiqqer-sheets a:hover,
 button:hover,
@@ -344,10 +358,39 @@ footer button {
     position: absolute;
     right: 0;
     top: 0;
+    width: 100%;
+    /*background: rgba(0,0,0,0.2);*/
 }
 
-.quiqqer-langSwitch a {
+.page-languages-container {
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.page-languages-container > .quiqqer-bricks-languageswitch-flag {
+    float: right !important;
+    /*padding-left: 20px;*/
+    padding-right: 20px;
+    text-align: right;
+}
+
+a.quiqqer-bricks-languageswitch-flag-entry {
+    padding: 0 6px;
+}
+
+.page-languages-text {
+    margin-right: 10px;
+}
+
+.page-languages a {
     text-decoration: none;
+    color: #333;
+}
+
+.page-languages a:hover {
+    background: none;
+    box-shadow: none;
+    color: #333;
 }
 
 .page-header-min {
