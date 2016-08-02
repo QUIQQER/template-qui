@@ -82,15 +82,18 @@ $Engine->assign(array(
 $langOption = $Project->getConfig('templateQUI.settings.langSwitch.options');
 
 switch ($langOption) {
-    case "showFlag" :
+    case "showFlag":
         $langFlag = "inline";
         $langText = "none";
         break;
-    case "showText" :
+
+    case "showText":
         $langFlag = "none";
         $langText = "inline";
         break;
-    case "showBoth" :
+
+    default:
+    case "showBoth":
         $langFlag = "inline;";
         $langText = "inline";
         break;
