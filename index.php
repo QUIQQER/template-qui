@@ -117,3 +117,34 @@ $Engine->assign(array(
     'langText'            => $langText
 
 ));
+
+
+/**
+ * Body Class
+ */
+
+$bodyClass = '';
+
+switch ($Template->getLayoutType()) {
+    case 'layout/startpage':
+        $bodyClass = 'homepage';
+        break;
+
+    case 'layout/leftSidebar':
+        $bodyClass = 'left-sidebar';
+        break;
+
+    case 'layout/rightSidebar':
+        $bodyClass = 'right-sidebar';
+        break;
+
+    default:
+        $bodyClass = 'no-sidebar';
+}
+
+$Engine->assign('bodyClass', $bodyClass);
+
+$Engine->assign(
+    'typeClass',
+    'type-'. str_replace(array('/',':'), '-', $Site->getAttribute('type'))
+);
