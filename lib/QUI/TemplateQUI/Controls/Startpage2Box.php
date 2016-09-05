@@ -24,12 +24,12 @@ class Startpage2Box extends QUI\Control
     {
         // default options
         $this->setAttributes(array(
-            'class' => '',
-            'limit' => 2,
-            'title' => 'Header',
+            'class'     => '',
+            'limit'     => 2,
+            'title'     => 'Header',
             'sitetypes' => false,
             'showImage' => true,
-            'order' => 'release_from DESC'
+            'order'     => 'release_from DESC'
         ));
 
         parent::__construct($attributes);
@@ -50,7 +50,7 @@ class Startpage2Box extends QUI\Control
 
         $Engine->assign(array(
             'children' => $this->getSitesByList(),
-            'this' => $this
+            'this'     => $this
         ));
 
         return $Engine->fetch(dirname(__FILE__) . '/Startpage2Box.html');

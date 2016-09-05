@@ -24,19 +24,19 @@ class StartpageIntro extends QUI\Control
     {
         // default options
         $this->setAttributes(array(
-            'class' => '',
+            'class'  => '',
             'title1' => '',
-            'icon1' => '',
-            'text1' => '',
-            'link1' => '',
+            'icon1'  => '',
+            'text1'  => '',
+            'link1'  => '',
             'title2' => '',
-            'icon2' => '',
-            'text2' => '',
-            'link2' => '',
+            'icon2'  => '',
+            'text2'  => '',
+            'link2'  => '',
             'title3' => '',
-            'icon3' => '',
-            'text3' => '',
-            'link3' => ''
+            'icon3'  => '',
+            'text3'  => '',
+            'link3'  => ''
         ));
 
         parent::__construct($attributes);
