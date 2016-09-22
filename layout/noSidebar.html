@@ -1,4 +1,3 @@
-
 {assign var=bricks value=$BricksManager->getBricksByArea('noSidebar', $Site)}
 {assign var=prefixContentBricks value=$BricksManager->getBricksByArea('prefixContentBricks', $Site)}
 {assign var=suffixContentBricks value=$BricksManager->getBricksByArea('suffixContentBricks', $Site)}
@@ -6,7 +5,6 @@
 <div class="grid-container grid-parent page" id="page">
 
     <div class="grid-100 mobile-grid-100 page-content" role="main">
-
 
         {if !empty( $prefixContentBricks )}
         {foreach from=$prefixContentBricks item=Brick}
@@ -28,7 +26,7 @@
 
         {if $Site->getAttribute('content')}
         <div class="grid-100 mobile-grid-100 page-content page-box" role="main">
-            {$Site->getAttribute('content')}
+            {$Template->getBody()}
         </div>
         {/if}
 
