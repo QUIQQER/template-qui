@@ -19,7 +19,7 @@
         </locale>
         <locale name="area.sidebar.left.title">
             <de><![CDATA[Linke Bausteinzone]]></de>
-            <en><![CDATA[Left brickarea]]></en>
+            <en><![CDATA[Left brick area]]></en>
         </locale>
         <locale name="area.sidebar.left.description">
             <de><![CDATA[Bausteinzone links neben dem Inhalt]]></de>
@@ -27,7 +27,7 @@
         </locale>
         <locale name="area.sidebar.right.title">
             <de><![CDATA[Rechte Bausteinzone]]></de>
-            <en><![CDATA[Right brickarea]]></en>
+            <en><![CDATA[Right brick area]]></en>
         </locale>
         <locale name="area.sidebar.right.description">
             <de><![CDATA[Bausteinzone rechts neben dem Inhalt]]></de>
@@ -123,7 +123,7 @@
             <en><![CDATA[Brickarea before the footer]]></en>
         </locale>
         <locale name="area.footerPrefix.title">
-            <de><![CDATA[Footer Prefix]]></de>
+            <de><![CDATA[Oberhalb der Fußzeile (Footer Prefix)]]></de>
             <en><![CDATA[Footer Prefix]]></en>
         </locale>
         <locale name="area.headerSuffix.description">
@@ -131,7 +131,7 @@
             <en><![CDATA[Brickarea after the header]]></en>
         </locale>
         <locale name="area.headerSuffix.title">
-            <de><![CDATA[Header Suffix]]></de>
+            <de><![CDATA[ Unterhalb des Kopfbereiches (Header Suffix )]]></de>
             <en><![CDATA[Header suffix]]></en>
         </locale>
         <locale name="area.header.suffix.bricks.description">
@@ -167,11 +167,11 @@
             <en><![CDATA[Brickarea before the content]]></en>
         </locale>
         <locale name="area.sidebar.suffix.content.title">
-            <de><![CDATA[Suffix Zone]]></de>
+            <de><![CDATA[Unterhalb des Inhaltes (Content Suffix)]]></de>
             <en><![CDATA[Suffix area]]></en>
         </locale>
         <locale name="area.sidebar.prefix.content.title">
-            <de><![CDATA[Prefix Zone]]></de>
+            <de><![CDATA[Oberhalb vom Inhalt (Content Prefix)]]></de>
             <en><![CDATA[Prefix area]]></en>
         </locale>
         <locale name="admin.layout.leftSidebar">
@@ -187,8 +187,8 @@
             <en><![CDATA[Brickarea of the footer]]></en>
         </locale>
         <locale name="area.footer.title">
-            <de><![CDATA[Footer Bausteinzone]]></de>
-            <en><![CDATA[Footer brickarea]]></en>
+            <de><![CDATA[Fußzeile der Seite (Footer)]]></de>
+            <en><![CDATA[Footer brick area]]></en>
         </locale>
         <locale name="template.button.black">
             <de><![CDATA[Link: Schwarzer Button]]></de>
@@ -284,7 +284,7 @@
         </locale>
         <locale name="area.footer-25.title">
             <de><![CDATA[Footer Bausteinzone (25%)]]></de>
-            <en><![CDATA[Footer brickarea (25%)]]></en>
+            <en><![CDATA[Footer brick area (25%)]]></en>
         </locale>
         <locale name="area.footer-25.description">
             <de><![CDATA[Bausteinzone des Footer (Länge: 25%)]]></de>
@@ -292,7 +292,7 @@
         </locale>
         <locale name="area.footer-100.title">
             <de><![CDATA[Footer Bausteinzone (100%)]]></de>
-            <en><![CDATA[Footer brickarea (100%)]]></en>
+            <en><![CDATA[Footer brick area (100%)]]></en>
         </locale>
         <locale name="area.footer-100.description">
             <de><![CDATA[Bausteinzone des Footer (Länge: 100%)]]></de>
