@@ -1,14 +1,13 @@
 {
-    "name": "quiqqer/template-qui",
+    "name": "quiqqer\/template-qui",
     "type": "quiqqer-template",
     "description": "QUI Template",
-    "version": "dev-master",
     "license": "MIT",
     "authors": [
         {
             "name": "Henning Leutz",
             "email": "leutz@pcsg.de",
-            "homepage": "http://www.pcsg.de",
+            "homepage": "http:\/\/www.pcsg.de",
             "role": "Developer"
         }
     ],
@@ -16,16 +15,15 @@
         "email": "support@pcsg.de"
     },
     "require": {
-        "quiqqer/quiqqer": "*@dev",
-        "quiqqer/bricks": "*@dev",
-        "quiqqer/buttons": "*@dev",
-        "quiqqer/messages": "*@dev",
-        "quiqqer/menu": "*@dev"
+        "quiqqer\/quiqqer": "*@dev",
+        "quiqqer\/bricks": "*@dev",
+        "quiqqer\/buttons": "*@dev",
+        "quiqqer\/messages": "*@dev",
+        "quiqqer\/menu": "*@dev"
     },
-
     "autoload": {
         "psr-0": {
-            "QUI": "lib/"
+            "QUI": "lib\/"
         }
     }
 }
